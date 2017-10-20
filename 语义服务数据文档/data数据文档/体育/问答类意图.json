@@ -1,0 +1,22 @@
+//技术统计意图
+{
+    "noSupport": "", //不支持的类型
+    "replyWords": "", 
+    "sGuid": "", 
+    "speakerReplyWords": "", 
+    "sportsStatisticsObjs": [//问答的结果
+        "杰伊·罗德里格斯,进球1个"
+    ]
+}
+
+
+//基本信息意图
+{
+    "noSupport": "", 
+    "replyWords": "", 
+    "sGuid": "", 
+    "speakerReplyWords": "", 
+    "sportsInfoObjs": [
+        "勒布朗-詹姆斯的身高是203CM "
+    ]
+}

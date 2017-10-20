@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Tencent TVS Device SDK: include/aisdk_tts_online.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Tencent TVS Device SDK
+   </div>
+   <div id="projectbrief">提供腾讯唤醒、语音、语义、TTS能力的SDk</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">aisdk_tts_online.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="aisdk__tts__online_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef PACKAGE_TMS_AISDK_AISDK_TTS_ONLINE_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PACKAGE_TMS_AISDK_AISDK_TTS_ONLINE_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AISDK_API_EXPORTS __declspec(dllexport)</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AISDK_CALL_CONV __stdcall</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="aisdk__tts__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">   16</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AISDK_API_EXPORTS</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="aisdk__tts__online_8h.html#a0c7aae0784c0a9b2d261cc305621cd68">   17</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AISDK_CALL_CONV</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="aisdk__tts__online_8h.html#a2f44acaa1d78c5b46f9ddc63cef014f7">   29</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__tts__online_8h.html#a2f44acaa1d78c5b46f9ddc63cef014f7">AISDK_CMD_TTS_RESULT</a> = 4000;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="aisdk__tts__online_8h.html#a5e6a3b2d093f060e0c71f584a2788f3c">   35</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__tts__online_8h.html#a5e6a3b2d093f060e0c71f584a2788f3c">AISDK_CMD_TTS_ERROR</a> = AISDK_CMD_TTS_RESULT + 1;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">// 配置项，key的起始值</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="aisdk__tts__online_8h.html#aeedc5375249fb702b7dc40341426d40c">   38</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__tts__online_8h.html#aeedc5375249fb702b7dc40341426d40c">AISDK_CONFIG_TTS_ONLINE_BEGIN</a> = 4000;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// 配置项，key的结束值</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="aisdk__tts__online_8h.html#ab2ba2ac3f25fafe5ae54ee5b9fa8b9a5">   40</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__tts__online_8h.html#ab2ba2ac3f25fafe5ae54ee5b9fa8b9a5">AISDK_CONFIG_TTS_ONLINE_END</a> = 4999;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="aisdk__tts__online_8h.html#a633ff732c9b9190f7d3857510ba4e772">   50</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__tts__online_8h.html#a633ff732c9b9190f7d3857510ba4e772">AISDK_RESULT_CODE_TTS_DATA</a> = 0;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="aisdk__tts__online_8h.html#a4f84731cb972aa9695450e5c387a8064">   56</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__tts__online_8h.html#a4f84731cb972aa9695450e5c387a8064">AISDK_RESULT_CODE_TTS_LAST_DATA</a> = 1;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="aisdk__tts__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">int</span> <a class="code" href="aisdk__tts__online_8h.html#aaaa590954f9a166907c5d31cd10566fa">aisdkText2Speech</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* text, <span class="keywordtype">int</span> textLen, <span class="keywordtype">void</span>* userData, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<a class="code" href="aisdk__tts__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">int</span> <a class="code" href="aisdk__tts__online_8h.html#ac8d5e25be11e70685a167235203547b4">aisdkCancelText2Speech</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif //PACKAGE_TMS_AISDK_AISDK_TTS_ONLINE_H</span></div>
+<div class="ttc" id="aisdk__tts__online_8h_html_ab2ba2ac3f25fafe5ae54ee5b9fa8b9a5"><div class="ttname"><a href="aisdk__tts__online_8h.html#ab2ba2ac3f25fafe5ae54ee5b9fa8b9a5">AISDK_CONFIG_TTS_ONLINE_END</a></div><div class="ttdeci">const int AISDK_CONFIG_TTS_ONLINE_END</div><div class="ttdef"><b>Definition:</b> <a href="aisdk__tts__online_8h_source.html#l00040">aisdk_tts_online.h:40</a></div></div>
+<div class="ttc" id="aisdk__tts__online_8h_html_ac8d5e25be11e70685a167235203547b4"><div class="ttname"><a href="aisdk__tts__online_8h.html#ac8d5e25be11e70685a167235203547b4">aisdkCancelText2Speech</a></div><div class="ttdeci">AISDK_API_EXPORTS int aisdkCancelText2Speech()</div><div class="ttdoc">取消此次的TTS请求 </div></div>
+<div class="ttc" id="aisdk__tts__online_8h_html_a633ff732c9b9190f7d3857510ba4e772"><div class="ttname"><a href="aisdk__tts__online_8h.html#a633ff732c9b9190f7d3857510ba4e772">AISDK_RESULT_CODE_TTS_DATA</a></div><div class="ttdeci">const int AISDK_RESULT_CODE_TTS_DATA</div><div class="ttdoc">TTS的语音包返回code，标识中间语音数据包 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__tts__online_8h_source.html#l00050">aisdk_tts_online.h:50</a></div></div>
+<div class="ttc" id="aisdk__tts__online_8h_html_a2f44acaa1d78c5b46f9ddc63cef014f7"><div class="ttname"><a href="aisdk__tts__online_8h.html#a2f44acaa1d78c5b46f9ddc63cef014f7">AISDK_CMD_TTS_RESULT</a></div><div class="ttdeci">const int AISDK_CMD_TTS_RESULT</div><div class="ttdoc">回调接口命令定义，当TTS返回结果时发出 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__tts__online_8h_source.html#l00029">aisdk_tts_online.h:29</a></div></div>
+<div class="ttc" id="aisdk__tts__online_8h_html_aaaa590954f9a166907c5d31cd10566fa"><div class="ttname"><a href="aisdk__tts__online_8h.html#aaaa590954f9a166907c5d31cd10566fa">aisdkText2Speech</a></div><div class="ttdeci">AISDK_API_EXPORTS int aisdkText2Speech(const char *text, int textLen, void *userData, int len)</div><div class="ttdoc">TTS识别接口， TTS结果通过回调异步回调返回 </div></div>
+<div class="ttc" id="aisdk__tts__online_8h_html_a4f84731cb972aa9695450e5c387a8064"><div class="ttname"><a href="aisdk__tts__online_8h.html#a4f84731cb972aa9695450e5c387a8064">AISDK_RESULT_CODE_TTS_LAST_DATA</a></div><div class="ttdeci">const int AISDK_RESULT_CODE_TTS_LAST_DATA</div><div class="ttdoc">TTS的最后一个语音包返回code，标识最后一个语音数据包。 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__tts__online_8h_source.html#l00056">aisdk_tts_online.h:56</a></div></div>
+<div class="ttc" id="aisdk__tts__online_8h_html_a5e6a3b2d093f060e0c71f584a2788f3c"><div class="ttname"><a href="aisdk__tts__online_8h.html#a5e6a3b2d093f060e0c71f584a2788f3c">AISDK_CMD_TTS_ERROR</a></div><div class="ttdeci">const int AISDK_CMD_TTS_ERROR</div><div class="ttdoc">回调接口命令定义，当TTS返回出错时发出 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__tts__online_8h_source.html#l00035">aisdk_tts_online.h:35</a></div></div>
+<div class="ttc" id="aisdk__tts__online_8h_html_a8269a58560feaa0a9776a5b3d8de2fc9"><div class="ttname"><a href="aisdk__tts__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a></div><div class="ttdeci">#define AISDK_API_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="aisdk__tts__online_8h_source.html#l00016">aisdk_tts_online.h:16</a></div></div>
+<div class="ttc" id="aisdk__tts__online_8h_html_aeedc5375249fb702b7dc40341426d40c"><div class="ttname"><a href="aisdk__tts__online_8h.html#aeedc5375249fb702b7dc40341426d40c">AISDK_CONFIG_TTS_ONLINE_BEGIN</a></div><div class="ttdeci">const int AISDK_CONFIG_TTS_ONLINE_BEGIN</div><div class="ttdef"><b>Definition:</b> <a href="aisdk__tts__online_8h_source.html#l00038">aisdk_tts_online.h:38</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.14-->
+<!-- start footer part-->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.qq.com/">Tencent
+</a> 
+</small></address>
+</body>
+</html>

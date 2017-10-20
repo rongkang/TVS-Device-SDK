@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sample_list">
+        <item>@string/speech_recognize_name</item>
+        <item>@string/text_to_semantic_name</item>
+        <item>@string/tts_name</item>
+        <item>@string/wakeup_name</item>
+    </string-array>
+</resources>

@@ -1,0 +1,392 @@
+{
+    "detailLink": {
+        "href": "https://aiwx.html5.qq.com/sports/rank?param=D0fduEabSh32gixc37RggVrx3ZtRaZGX8yvxdh8q%2BFBg1vC52i%2Frhw%3D%3D", 
+        "name": "查看全部排名"
+    }, 
+    "noSupport": "", 
+    "rankdata": {
+        "competitionName": "", 
+        "rankdataObjs": [ ], 
+        "requestField": "", 
+        "subject": ""
+    }, 
+    "replyWords": "为你找到了NBA的排名", //有屏端tips
+    "sGuid": "test_test", 
+    "speakerReplyWords": "2016赛季NBA东部前8依次是凯尔特人、骑士、猛龙、奇才、老鹰、雄鹿、步行者、公牛；2016赛季西部依次是勇士、马刺、火箭、快船、爵士、雷霆、灰熊、开拓者。", //无屏端回复语
+    "sportsRecords": [
+        {
+            "competition": "NBA", //联赛
+            "group": "东部", //分组，NBA是东西部
+            "sportsType": 1, //1 篮球 2：足球
+            "teamStatVec": [
+                {
+                    "competition": "东部", //足球里面是联赛，NBA里面代表的是东西部
+                    "gamesBack": 0, //胜场差
+                    "lostMatchCount": 29,//负     
+                    "matchCount": 12695122, ////场次 足球才有效
+                    "planishMatchCount": 12695040,//平 足球才有有效
+                    "rank": "", //排名
+                    "score": "64%", //积分 nba的话就是胜负
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/2.png", //球队logo
+                    "teamName": "凯尔特人", //球队名
+                    "winMatchCount": 53//胜
+                }, 
+                {
+                    "competition": "东部", 
+                    "gamesBack": 2, 
+                    "lostMatchCount": 31, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "62%", 
+                    "teamLogo": "http://img1.gtimg.com/sports/pics/hv1/131/116/2220/144385211.png", 
+                    "teamName": "骑士", 
+                    "winMatchCount": 51
+                }, 
+                {
+                    "competition": "东部", 
+                    "gamesBack": 2, 
+                    "lostMatchCount": 31, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "62%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/28.png", 
+                    "teamName": "猛龙", 
+                    "winMatchCount": 51
+                }, 
+                {
+                    "competition": "东部", 
+                    "gamesBack": 4, 
+                    "lostMatchCount": 33, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "59%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/27.png", 
+                    "teamName": "奇才", 
+                    "winMatchCount": 49
+                }, 
+                {
+                    "competition": "东部", 
+                    "gamesBack": 10, 
+                    "lostMatchCount": 39, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "52%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/1.png", 
+                    "teamName": "老鹰", 
+                    "winMatchCount": 43
+                }, 
+                {
+                    "competition": "东部", 
+                    "gamesBack": 11, 
+                    "lostMatchCount": 40, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "51%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/15.png", 
+                    "teamName": "雄鹿", 
+                    "winMatchCount": 42
+                }, 
+                {
+                    "competition": "东部", 
+                    "gamesBack": 11, 
+                    "lostMatchCount": 40, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "51%", 
+                    "teamLogo": "http://img1.gtimg.com/sports/pics/hv1/43/116/2220/144385123.png", 
+                    "teamName": "步行者", 
+                    "winMatchCount": 42
+                }, 
+                {
+                    "competition": "东部", 
+                    "gamesBack": 12, 
+                    "lostMatchCount": 41, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "50%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/4.png", 
+                    "teamName": "公牛", 
+                    "winMatchCount": 41
+                }, 
+                {
+                    "competition": "东部", 
+                    "gamesBack": 12, 
+                    "lostMatchCount": 41, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "50%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/14.png", 
+                    "teamName": "热火", 
+                    "winMatchCount": 41
+                }, 
+                {
+                    "competition": "东部", 
+                    "gamesBack": 16, 
+                    "lostMatchCount": 45, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "45%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/new/8.png", 
+                    "teamName": "活塞", 
+                    "winMatchCount": 37
+                }, 
+                {
+                    "competition": "东部", 
+                    "gamesBack": 17, 
+                    "lostMatchCount": 46, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "43%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/30.png", 
+                    "teamName": "黄蜂", 
+                    "winMatchCount": 36
+                }, 
+                {
+                    "competition": "东部", 
+                    "gamesBack": 22, 
+                    "lostMatchCount": 51, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "37%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/18.png", 
+                    "teamName": "尼克斯", 
+                    "winMatchCount": 31
+                }, 
+                {
+                    "competition": "东部", 
+                    "gamesBack": 24, 
+                    "lostMatchCount": 53, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "35%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/19.png", 
+                    "teamName": "魔术", 
+                    "winMatchCount": 29
+                }, 
+                {
+                    "competition": "东部", 
+                    "gamesBack": 25, 
+                    "lostMatchCount": 54, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "34%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/20.png", 
+                    "teamName": "76人", 
+                    "winMatchCount": 28
+                }, 
+                {
+                    "competition": "东部", 
+                    "gamesBack": 33, 
+                    "lostMatchCount": 62, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "24%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/17.png", 
+                    "teamName": "篮网", 
+                    "winMatchCount": 20
+                }
+            ]
+        }, 
+        {
+            "competition": "NBA", 
+            "group": "西部", 
+            "sportsType": 1, 
+            "teamStatVec": [
+                {
+                    "competition": "西部", 
+                    "gamesBack": 0, 
+                    "lostMatchCount": 15, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "81%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/901.png", 
+                    "teamName": "勇士", 
+                    "winMatchCount": 67
+                }, 
+                {
+                    "competition": "西部", 
+                    "gamesBack": 6, 
+                    "lostMatchCount": 21, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "74%", 
+                    "teamLogo": "http://img1.gtimg.com/sports/pics/hv1/231/116/2220/144385311.png", 
+                    "teamName": "马刺", 
+                    "winMatchCount": 61
+                }, 
+                {
+                    "competition": "西部", 
+                    "gamesBack": 12, 
+                    "lostMatchCount": 27, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "67%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/10.png", 
+                    "teamName": "火箭", 
+                    "winMatchCount": 55
+                }, 
+                {
+                    "competition": "西部", 
+                    "gamesBack": 16, 
+                    "lostMatchCount": 31, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "62%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/1201.png", 
+                    "teamName": "快船", 
+                    "winMatchCount": 51
+                }, 
+                {
+                    "competition": "西部", 
+                    "gamesBack": 16, 
+                    "lostMatchCount": 31, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "62%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/26.png", 
+                    "teamName": "爵士", 
+                    "winMatchCount": 51
+                }, 
+                {
+                    "competition": "西部", 
+                    "gamesBack": 20, 
+                    "lostMatchCount": 35, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "57%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/25.png", 
+                    "teamName": "雷霆", 
+                    "winMatchCount": 47
+                }, 
+                {
+                    "competition": "西部", 
+                    "gamesBack": 24, 
+                    "lostMatchCount": 39, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "52%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/29.png", 
+                    "teamName": "灰熊", 
+                    "winMatchCount": 43
+                }, 
+                {
+                    "competition": "西部", 
+                    "gamesBack": 26, 
+                    "lostMatchCount": 41, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "50%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/new/22.png", 
+                    "teamName": "开拓者", 
+                    "winMatchCount": 41
+                }, 
+                {
+                    "competition": "西部", 
+                    "gamesBack": 27, 
+                    "lostMatchCount": 42, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "48%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/7.png", 
+                    "teamName": "掘金", 
+                    "winMatchCount": 40
+                }, 
+                {
+                    "competition": "西部", 
+                    "gamesBack": 33, 
+                    "lostMatchCount": 48, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "41%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/3.png", 
+                    "teamName": "鹈鹕", 
+                    "winMatchCount": 34
+                }, 
+                {
+                    "competition": "西部", 
+                    "gamesBack": 34, 
+                    "lostMatchCount": 49, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "40%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/6.png", 
+                    "teamName": "小牛", 
+                    "winMatchCount": 33
+                }, 
+                {
+                    "competition": "西部", 
+                    "gamesBack": 35, 
+                    "lostMatchCount": 50, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "39%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/23.png", 
+                    "teamName": "国王", 
+                    "winMatchCount": 32
+                }, 
+                {
+                    "competition": "西部", 
+                    "gamesBack": 36, 
+                    "lostMatchCount": 51, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "37%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/new/16.png", 
+                    "teamName": "森林狼", 
+                    "winMatchCount": 31
+                }, 
+                {
+                    "competition": "西部", 
+                    "gamesBack": 41, 
+                    "lostMatchCount": 56, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "31%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/13.png", 
+                    "teamName": "湖人", 
+                    "winMatchCount": 26
+                }, 
+                {
+                    "competition": "西部", 
+                    "gamesBack": 43, 
+                    "lostMatchCount": 58, 
+                    "matchCount": 12695122, 
+                    "planishMatchCount": 12695040, 
+                    "rank": "", 
+                    "score": "29%", 
+                    "teamLogo": "http://mat1.gtimg.com/sports/nba/logo/1602/21.png", 
+                    "teamName": "太阳", 
+                    "winMatchCount": 24
+                }
+            ]
+        }
+    ]
+}

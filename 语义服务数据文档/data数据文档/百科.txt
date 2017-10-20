@@ -1,0 +1,6 @@
+﻿{
+	sKeyWord;    //百科词条名
+	sBaikeInfo;  //百科内容
+	sPicUrl;     //对应图片的url
+	sPageUrl;    //百科对应的页面url
+}

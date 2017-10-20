@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TVSDeviceSDKSample</string>
+    <string name="speech_recognize_name">语音语义识别</string>
+    <string name="text_to_semantic_name">文字转语义</string>
+    <string name="tts_name">文字转语音</string>
+    <string name="wakeup_name">唤醒</string>
+    <string name="tts_test_text">兰陵美酒郁金香，玉碗盛来琥珀光。但使主人能醉客，不知何处是他乡</string>
+</resources>

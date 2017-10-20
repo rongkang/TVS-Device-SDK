@@ -1,0 +1,395 @@
+{
+    "allMatchObj": {//查看更多
+        "href": "https://aiwx.html5.qq.com/sports/list?param=D0fduEabSh32gixc37RggUmhF6aBSJDKvgXpnk7HQPJZ4iW%2FHkEDOXVZc9GnQZe8&score=1&clientType=3", 
+        "name": "查看更多"
+    }, 
+    "noSupport": "", 
+    "replyWords": "这是英超08月27日的赛程信息", //有屏端tips
+    "sGuid": "test_test", 
+    "speakerReplyWords": "英超08月27日已经结束了5场比赛，利物浦以4比0战胜阿森纳，托特纳姆热刺以1比1战平伯恩利，切尔西以2比0战胜埃弗顿，西布朗维奇以1比1战平斯托克城，曼联以2比0战胜莱斯特",//无屏端播报内容 
+    "sportsScores": [
+        {
+            "awayTeam": {//客队信息
+                "teamGoal": 0, //得分
+                "teamLogo": "http://mat1.gtimg.com/sports/logo/yingchao/asn.png", //球队logo
+                "teamName": "阿森纳"//球队名
+            }, 
+            "competition": "英超", 
+            "detailObj": {
+                "href": "http://sports.qq.com/kbsweb/game.htm?mid=8:918917", 
+                "name": "查看详情"
+            },  
+            "groupName": "", //分组
+            "homeTeam": {//主队信息
+                "teamGoal": 4, 
+                "teamLogo": "http://mat1.gtimg.com/sports/logo/yingchao/lwp.png", 
+                "teamName": "利物浦"
+            }, 
+            "matchId": "918917", 
+            "period": "已结束", //比赛状态
+            "roundNumber": "3", //轮次
+            "roundType": "第3轮", //杯赛轮次描述
+            "sportsStartTime": "08月27日 23:00", //比赛时间
+            "sportsType": 2 //球赛类型
+        }, 
+        {
+            "awayTeam": {
+                "teamGoal": 1, 
+                "teamLogo": "http://inews.gtimg.com/newsapp_ls/0/157427575/0.jpg", 
+                "teamName": "伯恩利"
+            }, 
+            "competition": "英超", 
+            "detailObj": {
+                "href": "http://sports.qq.com/kbsweb/game.htm?mid=8:918920", 
+                "name": "查看详情"
+            }, 
+            "gifLinks": [
+                {
+                    "dateTime": "2017-08-27 22:55:17", 
+                    "href": "http://wx3.sinaimg.cn/mw690/005GdjYmgy1fiyo99tk71g308k0517wh.gif", 
+                    "title": "深夜福利哦"
+                }, 
+                {
+                    "dateTime": "2017-08-27 23:02:42", 
+                    "href": "http://wx1.sinaimg.cn/mw690/005GdjYmgy1fiyogpxxpgg308i0517wh.gif", 
+                    "title": "孙兴慜一定是看了我发的福利才打了飞机！！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 23:11:05", 
+                    "href": "http://wx4.sinaimg.cn/mw690/005GdjYmgy1fiyopjji87g308i051b29.gif", 
+                    "title": "埃里克森禁区外一脚抽射，这球被防守球员挡出了底线"
+                }, 
+                {
+                    "dateTime": "2017-08-27 23:18:57", 
+                    "href": "http://wx2.sinaimg.cn/mw690/005GdjYmgy1fiyoxnok04g308i0517t2.gif", 
+                    "title": "热刺定位球开出！但是后点凯恩头球顶高了"
+                }, 
+                {
+                    "dateTime": "2017-08-27 23:21:27", 
+                    "href": "http://wx1.sinaimg.cn/mw690/005GdjYmgy1fiyp0ai8grg308i0511ky.gif", 
+                    "title": "威尔通亨手术刀般的直塞"
+                }, 
+                {
+                    "dateTime": "2017-08-27 23:39:04", 
+                    "href": "http://wx4.sinaimg.cn/mw690/005GdjYmgy1fiypitmxg5g308i051npd.gif", 
+                    "title": "凯恩错失良机"
+                }, 
+                {
+                    "dateTime": "2017-08-27 23:41:12", 
+                    "href": "http://wx4.sinaimg.cn/mw690/005GdjYmgy1fiypkxdmeig308i051hdt.gif", 
+                    "title": "洛顿受伤瞬间"
+                }, 
+                {
+                    "dateTime": "2017-08-28 00:07:06", 
+                    "href": "http://wx1.sinaimg.cn/mw690/005GdjYmgy1fiyqbwwhkpg308i051b2a.gif", 
+                    "title": "阿里破门！！！！"
+                }, 
+                {
+                    "dateTime": "2017-08-28 00:17:04", 
+                    "href": "http://wx4.sinaimg.cn/mw690/005GdjYmgy1fiyqm8qj2vg308i051hd8.gif", 
+                    "title": "伍德凌空打飞机"
+                }, 
+                {
+                    "dateTime": "2017-08-28 00:26:36", 
+                    "href": "http://wx2.sinaimg.cn/mw690/005GdjYmgy1fiyqw292vvg308i051axs.gif", 
+                    "title": "七夕节看什么足球！！"
+                }, 
+                {
+                    "dateTime": "2017-08-28 00:31:09", 
+                    "href": "http://wx4.sinaimg.cn/mw690/005GdjYmgy1fiyr0sdyepg308i0511kx.gif", 
+                    "title": "热刺的打门被扑出了!!!"
+                }, 
+                {
+                    "dateTime": "2017-08-28 00:32:03", 
+                    "href": "http://wx2.sinaimg.cn/mw690/005GdjYmgy1fiyr1qhlpkg308i051h34.gif", 
+                    "title": "埃里克森禁区内抽射，被门将扑出"
+                }, 
+                {
+                    "dateTime": "2017-08-28 00:40:47", 
+                    "href": "http://wx3.sinaimg.cn/mw690/005GdjYmgy1fiyrarokm8g308i051b29.gif", 
+                    "title": "洛里斯出击扑出了伯恩利的单刀，裁判并没有理会这个动作"
+                }, 
+                {
+                    "dateTime": "2017-08-28 00:49:49", 
+                    "href": "http://wx1.sinaimg.cn/mw690/005GdjYmgy1fiyrk51533g308i051e81.gif", 
+                    "title": "伍德终场前破门！！！！绝平热刺！！！"
+                }
+            ], 
+            "gifObj": {
+                "href": "https://aiwx.html5.qq.com/sports/livegif?params=lWLhJwibDWTfpYlTvTS1q5mFC8xDTGIaW4ZuLyQNUI0%3D", 
+                "name": "精彩集锦"
+            }, 
+            "groupName": "", 
+            "homeTeam": {
+                "teamGoal": 1, 
+                "teamLogo": "http://mat1.gtimg.com/sports/logo/yingchao/rc.png", 
+                "teamName": "托特纳姆热刺"
+            }, 
+            "matchId": "918920", 
+            "period": "已结束", 
+            "roundNumber": "3", 
+            "roundType": "第3轮", 
+            "sportsStartTime": "08月27日 23:00", 
+            "sportsType": 2
+        }, 
+        {
+            "awayTeam": {
+                "teamGoal": 0, 
+                "teamLogo": "http://mat1.gtimg.com/sports/logo/yingchao/afd.png", 
+                "teamName": "埃弗顿"
+            }, 
+            "competition": "英超", 
+            "detailObj": {
+                "href": "http://sports.qq.com/kbsweb/game.htm?mid=8:918914", 
+                "name": "查看详情"
+            }, 
+            "gifLinks": [
+                {
+                    "dateTime": "2017-08-27 20:41:28", 
+                    "href": "http://wx4.sinaimg.cn/mw690/005BUxg5gy1fiykdvdwemg30a3054x6s.gif", 
+                    "title": "佩德罗挑球倒钩射门！打偏了！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 20:44:15", 
+                    "href": "http://wx3.sinaimg.cn/mw690/005BUxg5gy1fiykgepjy5g30a3054qv6.gif", 
+                    "title": "路易斯禁区线上一脚低射！皮克福德稳稳没收！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 20:52:01", 
+                    "href": "http://wx2.sinaimg.cn/mw690/005BUxg5gy1fiykocmgzlg30a3051e83.gif", 
+                    "title": "鲁尼被放倒，裁判没有表示。这让鲁尼很不满，起身后立即找裁判理论"
+                }, 
+                {
+                    "dateTime": "2017-08-27 20:58:39", 
+                    "href": "http://wx4.sinaimg.cn/mw690/784fda03gy1fiykuqrnisg20a30521kz.gif", 
+                    "title": "小法首开纪录！莫拉塔的助攻！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 21:06:20", 
+                    "href": "http://wx1.sinaimg.cn/mw690/005BUxg5gy1fiyl3wp4wig30a3052npg.gif", 
+                    "title": "威廉争抢和盖耶撞在一起"
+                }, 
+                {
+                    "dateTime": "2017-08-27 21:04:30", 
+                    "href": "http://wx3.sinaimg.cn/mw690/005BUxg5gy1fiyl1yxmo8g30a30524qr.gif", 
+                    "title": "慢镜头回放小法进球，相当精彩的配合。"
+                }, 
+                {
+                    "dateTime": "2017-08-27 21:12:16", 
+                    "href": "http://wx3.sinaimg.cn/mw690/005BUxg5gy1fiyl9afmz5g30a3052b2a.gif", 
+                    "title": "慢镜头回放莫拉塔进球，AZP斜45°精准传中！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 21:11:13", 
+                    "href": "http://wx3.sinaimg.cn/mw690/784fda03gy1fiyl8cwb22g20a3052e82.gif", 
+                    "title": "莫拉塔头球破门扩大比分！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 21:35:50", 
+                    "href": "http://wx3.sinaimg.cn/mw690/005BUxg5gy1fiylyjfzgng30a3052u0z.gif", 
+                    "title": "佩德罗左脚远射打偏！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 21:38:25", 
+                    "href": "http://wx4.sinaimg.cn/mw690/005BUxg5gy1fiym0ku9fxg30a3052npe.gif", 
+                    "title": "埃弗顿反击！鲁尼直塞禁区、桑德罗扫射！被吕迪格挡出！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 21:41:56", 
+                    "href": "http://wx2.sinaimg.cn/mw690/005BUxg5gy1fiym4q3f8ag30a3052hdu.gif", 
+                    "title": "摩西杀入禁区小角度射门！击中边网！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 21:47:37", 
+                    "href": "http://wx3.sinaimg.cn/mw690/005BUxg5gy1fiyma6hf3dg30a3052qv6.gif", 
+                    "title": "佩刀精彩穿裆过人！杀入禁区右脚低射！稍稍偏出！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 21:57:50", 
+                    "href": "http://wx4.sinaimg.cn/mw690/005BUxg5gy1fiyml801xgg30a30501kz.gif", 
+                    "title": "鲁尼禁区弧顶凌空抽射！踢跐了！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 22:05:00", 
+                    "href": "http://wx4.sinaimg.cn/mw690/005BUxg5gy1fiymsqcoadg30a3050b2a.gif", 
+                    "title": "阿隆索左路传中直接被皮克福德没收！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 22:09:58", 
+                    "href": "http://wx1.sinaimg.cn/mw690/005BUxg5gy1fiymxgfdx1g30a3050hdv.gif", 
+                    "title": "威廉姆斯背身钩射！高出横梁！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 22:13:29", 
+                    "href": "http://wx3.sinaimg.cn/mw690/005BUxg5gy1fiyn1hjeeng30a3050qv6.gif", 
+                    "title": "威廉姆斯头球攻门！稍稍偏出！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 22:15:57", 
+                    "href": "http://wx2.sinaimg.cn/mw690/005BUxg5gy1fiyn4byn83g30a3050x6q.gif", 
+                    "title": "盖耶远射稍稍高出横梁！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 22:14:59", 
+                    "href": "http://wx1.sinaimg.cn/mw690/005BUxg5gy1fiyn3b5fd1g30a3050kjl.gif", 
+                    "title": "莫拉塔头上顶了一个冰袋"
+                }
+            ], 
+            "gifObj": {
+                "href": "https://aiwx.html5.qq.com/sports/livegif?params=lWLhJwibDWTfpYlTvTS1q%2B9XYcr%2F0oJpW4ZuLyQNUI0%3D", 
+                "name": "精彩集锦"
+            }, 
+            "groupName": "", 
+            "homeTeam": {
+                "teamGoal": 2, 
+                "teamLogo": "http://mat1.gtimg.com/sports/logo/yingchao/qrx.png", 
+                "teamName": "切尔西"
+            }, 
+            "matchId": "918914", 
+            "period": "已结束", 
+            "roundNumber": "3", 
+            "roundType": "第3轮", 
+            "sportsStartTime": "08月27日 20:30", 
+            "sportsType": 2
+        }, 
+        {
+            "awayTeam": {
+                "teamGoal": 1, 
+                "teamLogo": "http://mat1.gtimg.com/sports/logo/yingchao/stkc.png", 
+                "teamName": "斯托克城"
+            }, 
+            "competition": "英超", 
+            "detailObj": {
+                "href": "http://sports.qq.com/kbsweb/game.htm?mid=8:918922", 
+                "name": "查看详情"
+            }, 
+            "gifLinks": [ ], 
+            "gifObj": {
+                "href": "", 
+                "name": ""
+            }, 
+            "groupName": "", 
+            "homeTeam": {
+                "teamGoal": 1, 
+                "teamLogo": "http://mat1.gtimg.com/sports/logo/yingchao/xblwq.png", 
+                "teamName": "西布朗维奇"
+            }, 
+            "matchId": "918922", 
+            "period": "已结束", 
+            "roundNumber": "3", 
+            "roundType": "第3轮", 
+            "sportsStartTime": "08月27日 20:30", 
+            "sportsType": 2
+        }, 
+        {
+            "awayTeam": {
+                "teamGoal": 0, 
+                "teamLogo": "http://mat1.gtimg.com/sports/logo/yingchao/lst.png", 
+                "teamName": "莱斯特"
+            }, 
+            "competition": "英超", 
+            "detailObj": {
+                "href": "http://sports.qq.com/kbsweb/game.htm?mid=8:918918", 
+                "name": "查看详情"
+            }, 
+            "gifLinks": [
+                {
+                    "dateTime": "2017-08-27 00:34:58", 
+                    "href": "http://wx1.sinaimg.cn/mw690/005BUxg5gy1fixlid1x57g30b90657wi.gif", 
+                    "title": "詹姆斯外围一脚远射！偏出底线！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 00:43:45", 
+                    "href": "http://wx1.sinaimg.cn/mw690/005BUxg5gy1fixlr32ppgg30b9065kjm.gif", 
+                    "title": "姆希塔良禁区外远射！被后卫挡了一下！小舒梅切尔将球拿到！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 00:47:39", 
+                    "href": "http://wx2.sinaimg.cn/mw690/005BUxg5gy1fixlv3z5rgg30b9065e83.gif", 
+                    "title": "著名曼联球迷博尔特现场观战"
+                }, 
+                {
+                    "dateTime": "2017-08-27 00:51:57", 
+                    "href": "http://wx1.sinaimg.cn/mw690/005BUxg5gy1fixlzadqkqg309o05ab2b.gif", 
+                    "title": "博格巴后点铲射打偏！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 00:50:36", 
+                    "href": "http://wx4.sinaimg.cn/mw690/784fda03gy1fixlxs7fabg20b9065e83.gif", 
+                    "title": "此前马塔被判越位的进球。"
+                }, 
+                {
+                    "dateTime": "2017-08-27 00:56:43", 
+                    "href": "http://wx3.sinaimg.cn/mw690/005BUxg5gy1fixm4rkmqrg309o05aqv6.gif", 
+                    "title": "导播再次回放了马塔被吹越位的进球。"
+                }, 
+                {
+                    "dateTime": "2017-08-27 00:59:05", 
+                    "href": "http://wx3.sinaimg.cn/mw690/005BUxg5gy1fixm75xjufg309o05au0x.gif", 
+                    "title": "博格巴禁区外尝试一脚！没有威胁"
+                }, 
+                {
+                    "dateTime": "2017-08-27 01:03:12", 
+                    "href": "http://wx2.sinaimg.cn/mw690/005BUxg5gy1fixmbgsnchg309o05akjl.gif", 
+                    "title": "琼斯倒地裁判没吹，穆帅很不满啊"
+                }, 
+                {
+                    "dateTime": "2017-08-27 01:08:09", 
+                    "href": "http://wx3.sinaimg.cn/mw690/005BUxg5gy1fixmgvy2fug309o05ahdu.gif", 
+                    "title": "博格巴任意球直接射门！人墙挡了一下！小舒梅切尔将球拿到！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 01:06:44", 
+                    "href": "http://wx2.sinaimg.cn/mw690/005BUxg5gy1fixmfkr794g309o05anpe.gif", 
+                    "title": "博格巴又是一脚远射！只偏了一点点！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 01:41:04", 
+                    "href": "http://wx4.sinaimg.cn/mw690/784fda03gy1fixneyajrdg209o05ab2b.gif", 
+                    "title": "卢卡库点球被小舒梅切尔扑出！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 01:54:44", 
+                    "href": "http://wx4.sinaimg.cn/mw690/005BUxg5gy1fixnt72srrg309m05a4qr.gif", 
+                    "title": "马赫雷斯假射真过！相当精彩！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 01:58:55", 
+                    "href": "http://wx2.sinaimg.cn/mw690/784fda03gy1fixnwokq59g209m05aqv6.gif", 
+                    "title": "穆帅神换人！替补出场的拉什福德破门！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 02:12:24", 
+                    "href": "http://wx1.sinaimg.cn/mw690/784fda03gy1fixo9x9p41g209m0597wi.gif", 
+                    "title": "慢镜头：费莱尼膝盖破门"
+                }, 
+                {
+                    "dateTime": "2017-08-27 02:11:15", 
+                    "href": "http://wx2.sinaimg.cn/mw690/784fda03gy1fixo97ae7og209m059x6r.gif", 
+                    "title": "林加德射门！门前费莱尼膝盖一碰！皮球落入球网！"
+                }, 
+                {
+                    "dateTime": "2017-08-27 02:21:31", 
+                    "href": "http://wx1.sinaimg.cn/mw690/005BUxg5gy1fixol8s7wsg309m050hdu.gif", 
+                    "title": "金近距离推射被德赫亚扑出！"
+                }
+            ], 
+            "gifObj": {
+                "href": "https://aiwx.html5.qq.com/sports/livegif?params=lWLhJwibDWTfpYlTvTS1q63ZT3k%2FW2owW4ZuLyQNUI0%3D", 
+                "name": "精彩集锦"
+            }, 
+            "groupName": "", 
+            "homeTeam": {
+                "teamGoal": 2, 
+                "teamLogo": "http://mat1.gtimg.com/sports/logo/yingchao/ml.png", 
+                "teamName": "曼联"
+            }, 
+            "matchId": "918918", 
+            "period": "已结束", 
+            "roundNumber": "3", 
+            "roundType": "第3轮", 
+            "sportsStartTime": "08月27日 00:30", 
+            "sportsType": 2
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+"data": {
+		"semantic": {
+			"domain": "alarm",
+			"intent": "new",
+			"query": "定一个晚上8点的闹钟",
+			"session_complete": true,
+			"slots": [{
+				"name": "alarm",                  // 表明是闹钟数据
+				"prompt": {
+					"prompt_type": 0,
+					"show_text": "",
+					"slot_name": "",
+					"slot_type": "",
+					"speak_text": ""
+				},
+				"slot_string": "{ \"original_text\": \"闹钟\", \"text\": \"闹钟\" }",
+				"slot_struct": 1,
+				"type": "usr.reminder.alarm"
+			},
+			{
+				"name": "date",                   // 用于提取日期字段 例如: 1987-10-11   同类实体名：src_date   des_date
+				"prompt": {
+					"prompt_type": 0,
+					"show_text": "",
+					"slot_name": "",
+					"slot_type": "",
+					"speak_text": ""
+				},
+				"slot_string": "{ \"datetime\": { \"calendar_type_of_text\": 1, \"date\": \"2017-09-05\", \"day\": 5, \"express_type\": 1, \"hour\": -1, \"min\": -1, \"mon\": 9, \"original_text\": \"\",
+				\"period_of_day\": 7, \"sec\": -1, \"time\": \"\",
+				\"week\": 37, \"year\": 2017 }, \"interval\": { \"end\": { \"calendar_type_of_text\": 1, \"date\": \"\",
+				\"day\": -1, \"express_type\": 1, \"hour\": -1, \"min\": -1, \"mon\": -1, \"original_text\": \"\",
+				\"period_of_day\": 0, \"sec\": -1, \"time\": \"\",
+				\"week\": -1, \"year\": -1 }, \"start\": { \"calendar_type_of_text\": 1, \"date\": \"\",
+				\"day\": -1, \"express_type\": 1, \"hour\": -1, \"min\": -1, \"mon\": -1, \"original_text\": \"\",
+				\"period_of_day\": 0, \"sec\": -1, \"time\": \"\",
+				\"week\": -1, \"year\": -1 } }, \"is_valid\": true, \"old_json\": \"{\\\"entity\\\":\\\"晚上\\\",\\\"value\\\":\\\"2017-09-05#evening\\\",\\\"calendar_type\\\":\\\"solar\\\",\\\"express_type\\\":\\\"normal_time\\\",\\\"is_valid\\\":1}\", \"original_text\": \"晚上\", \"repeat\": { \"interval\": { \"end\": { \"calendar_type_of_text\": 1, \"date\": \"\",
+				\"day\": -1, \"express_type\": 1, \"hour\": -1, \"min\": -1, \"mon\": -1, \"original_text\": \"\",
+				\"period_of_day\": 0, \"sec\": -1, \"time\": \"\",
+				\"week\": -1, \"year\": -1 }, \"start\": { \"calendar_type_of_text\": 1, \"date\": \"\",
+				\"day\": -1, \"express_type\": 1, \"hour\": -1, \"min\": -1, \"mon\": -1, \"original_text\": \"\",
+				\"period_of_day\": 0, \"sec\": -1, \"time\": \"\",
+				\"week\": -1, \"year\": -1 } }, \"repeat_datetime_type\": 1 }, \"type\": 1 }",
+				"slot_struct": 0,
+				"type": "sys.date.freq"
+			},
+			{
+				"name": "time",             // 用于提取时间字段 例如：01:10:11   同类实体名：src_time   des_time
+				"prompt": {
+					"prompt_type": 0,
+					"show_text": "",
+					"slot_name": "",
+					"slot_type": "",
+					"speak_text": ""
+				},
+				"slot_string": "{ \"datetime\": { \"calendar_type_of_text\": 1, \"date\": \"\",
+				\"day\": -1, \"express_type\": 1, \"hour\": 20, \"min\": 0, \"mon\": -1, \"original_text\": \"\",
+				\"period_of_day\": 0, \"sec\": 0, \"time\": \"20:00:00\", \"week\": 37, \"year\": -1 }, \"interval\": { \"end\": { \"calendar_type_of_text\": 1, \"date\": \"\",
+				\"day\": -1, \"express_type\": 1, \"hour\": -1, \"min\": -1, \"mon\": -1, \"original_text\": \"\",
+				\"period_of_day\": 0, \"sec\": -1, \"time\": \"\",
+				\"week\": -1, \"year\": -1 }, \"start\": { \"calendar_type_of_text\": 1, \"date\": \"\",
+				\"day\": -1, \"express_type\": 1, \"hour\": -1, \"min\": -1, \"mon\": -1, \"original_text\": \"\",
+				\"period_of_day\": 0, \"sec\": -1, \"time\": \"\",
+				\"week\": -1, \"year\": -1 } }, \"is_valid\": true, \"old_json\": \"{\\\"entity\\\":\\\"8点\\\",\\\"value\\\":\\\"08:00:00\\\",\\\"calendar_type\\\":\\\"solar\\\",\\\"express_type\\\":\\\"normal_time\\\",\\\"is_valid\\\":1}\", \"original_text\": \"8点\", \"repeat\": { \"interval\": { \"end\": { \"calendar_type_of_text\": 1, \"date\": \"\",
+				\"day\": -1, \"express_type\": 1, \"hour\": -1, \"min\": -1, \"mon\": -1, \"original_text\": \"\",
+				\"period_of_day\": 0, \"sec\": -1, \"time\": \"\",
+				\"week\": -1, \"year\": -1 }, \"start\": { \"calendar_type_of_text\": 1, \"date\": \"\",
+				\"day\": -1, \"express_type\": 1, \"hour\": -1, \"min\": -1, \"mon\": -1, \"original_text\": \"\",
+				\"period_of_day\": 0, \"sec\": -1, \"time\": \"\",
+				\"week\": -1, \"year\": -1 } }, \"repeat_datetime_type\": 1 }, \"type\": 1 }",
+				"slot_struct": 0,
+				"type": "sys.time.freq"
+			}
+      // 其他实体名：
+        note 用于记录闹钟的备忘数据 例如:“吃饭”，“开会”等
+        ordinal 用于指代操作第几个闹钟数据（配合多轮使用） 示例如下：
+          []表示全部
+          [-1]表示倒数第一个 
+          [1,2] 表示第一个 & 第二个
+          [0] 表示刚才那个
+      ]
+		},
+		"terminal_operation": 0               // 表示是否需要解析 semantic 对象 0 表示需要 其他表示不需要
+	},

@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Tencent TVS Device SDK: include/aisdk_voice_online.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Tencent TVS Device SDK
+   </div>
+   <div id="projectbrief">提供腾讯唤醒、语音、语义、TTS能力的SDk</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">aisdk_voice_online.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="aisdk__voice__online_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef PACKAGE_TMS_AISDK_AISDK_VOICE_ONLINE_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PACKAGE_TMS_AISDK_AISDK_VOICE_ONLINE_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AISDK_API_EXPORTS __declspec(dllexport)</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AISDK_CALL_CONV __stdcall</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">   16</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AISDK_API_EXPORTS</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#a0c7aae0784c0a9b2d261cc305621cd68">   17</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AISDK_CALL_CONV</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#a2b380f523cb714dc6649552d0f06d510">   28</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#a2b380f523cb714dc6649552d0f06d510">AISDK_CMD_ONLINE_RECO_START</a> = 6000;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#ac00b8bbc55502e3e9e447746b230ba10">   34</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#ac00b8bbc55502e3e9e447746b230ba10">AISDK_CMD_ONLINE_RECO_SPEECH_START</a> = AISDK_CMD_ONLINE_RECO_START + 1;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#a72d001f6bf5a5686442124d9c3bb9c6d">   40</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#a72d001f6bf5a5686442124d9c3bb9c6d">AISDK_CMD_ONLINE_RECO_SPEECH_END</a> = AISDK_CMD_ONLINE_RECO_START + 2;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#afc73406d2a45d2cb0fc26b377d4f9802">   45</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#afc73406d2a45d2cb0fc26b377d4f9802">AISDK_CMD_ONLINE_RECO_RESULT</a> = AISDK_CMD_ONLINE_RECO_START + 3;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#a427550b74016b3711b371c8d5db03103">   50</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#a427550b74016b3711b371c8d5db03103">AISDK_CMD_ONLINE_RECO_INTERMEDIATE_RESULT</a> = AISDK_CMD_ONLINE_RECO_START + 4;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#ae1282d0b138772c8ff038ec9388cafd1">   55</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#ae1282d0b138772c8ff038ec9388cafd1">AISDK_CMD_ONLINE_RECO_DATA_VOLUME</a> = AISDK_CMD_ONLINE_RECO_START + 5;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#a6660752a351f93ced6badc63e4230a35">   60</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#a6660752a351f93ced6badc63e4230a35">AISDK_CMD_ONLINE_RECO_CANCELED</a> = AISDK_CMD_ONLINE_RECO_START + 6;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#ab07f0ff48d194c4e2a7ea4018219e8e4">   65</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#ab07f0ff48d194c4e2a7ea4018219e8e4">AISDK_CMD_ONLINE_RECO_TIMEOUT</a> = AISDK_CMD_ONLINE_RECO_START + 7;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#a4ebb031c7f076cc48dcb3627f074e316">   70</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#a4ebb031c7f076cc48dcb3627f074e316">AISDK_CMD_ONLINE_RECO_ERROR</a> = AISDK_CMD_ONLINE_RECO_START + 8;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#ae70e06db18d416f16d1fa18150a8e432">   77</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#ae70e06db18d416f16d1fa18150a8e432">AISDK_ERROR_ONLINE_RECO_NOT_STARTED</a> = 6000;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#ae5a6287d0185ca72b4f1fa49d4eb8301">   84</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#ae5a6287d0185ca72b4f1fa49d4eb8301">AISDK_ERROR_ONLINE_RECO_CREATE_HANDLE_FAILED</a> = AISDK_ERROR_ONLINE_RECO_NOT_STARTED + 1;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">// 配置项，key的起始值</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#a9f3b78dda5d5545a5dd2b247cfb7dd98">   90</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#a9f3b78dda5d5545a5dd2b247cfb7dd98">AISDK_CONFIG_VOICE_ONLINE_BEGIN</a> = 6000;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#ad371c2aba791601279c4b7ec17fefa87">  108</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#ad371c2aba791601279c4b7ec17fefa87">AISDK_CONFIG_VOICE_ONLINE_TIMEOUT</a> = AISDK_CONFIG_VOICE_ONLINE_BEGIN + 1;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">// *</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">// * @see aisdkSetConfig()</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">// *</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">// * @brief 配置连续对话超时时间</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">// *</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">// * 配置项关键字。</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">// * ## 功能</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">// * 配置连续对话超时时间，单位ms</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">// * ## 值</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">// * 超时时长</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">// * ## 示例：</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">// * ```</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">// * // 设置连续对话超时时长为10s</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">// * aisdkSetConfig(AISDK_CONFIG_VOICE_ONLINE_MORESPEECH_TIMEOUT,&quot;10000&quot;)</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">// * ```</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">// */</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#ada0a833439acd5d3c848f77aa5c6cd03">  148</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#ada0a833439acd5d3c848f77aa5c6cd03">AISDK_CONFIG_VOICE_ONLINE_ENABLE_CLOUDVAD</a> = AISDK_CONFIG_VOICE_ONLINE_BEGIN + 3;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#aeb7159a195c0a8ceef6b0a9fc33089f6">  171</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#aeb7159a195c0a8ceef6b0a9fc33089f6">AISDK_CONFIG_VOICE_ONLINE_ENABLE_CALCULATE_VOLUME</a> = AISDK_CONFIG_VOICE_ONLINE_BEGIN + 4;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">//const int AISDK_CONFIG_VOICE_VAD_SILENT_MAX = AISDK_CONFIG_VOICE_ONLINE_BEGIN + 5;</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment">// 配置项，key的结束值</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#a3d432cb3110e782c824496faa6f9c5de">  194</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#a3d432cb3110e782c824496faa6f9c5de">AISDK_CONFIG_VOICE_ONLINE_END</a> = 6999;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#a8566a40467be62a1c74cbdb40d4eac39">  200</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#a8566a40467be62a1c74cbdb40d4eac39">AISDK_FLAG_ONLINE_RECO_CLEAR_PREV_SESSION</a> = 0x01;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#a0a813f14d33b2ceb490198e2abe5f9a8">  205</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#a0a813f14d33b2ceb490198e2abe5f9a8">AISDK_FLAG_ONLINE_RECO_MANUAL_MODE</a> = 0x02;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="aisdk__voice__online_8h.html#a5d91fb18f40996f0cd732588255ee8ff">  213</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#a5d91fb18f40996f0cd732588255ee8ff">AISDK_RESULT_CODE_ONLINE_OK</a> = 0;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<a class="code" href="aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#a75d8b28126acc7b66b60a3c6e58818ec">aisdkStartOnlineVoice2Text</a>(<span class="keywordtype">void</span>* userData, <span class="keywordtype">int</span> len, <span class="keywordtype">int</span> flags);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<a class="code" href="aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#ac4655e3b401c9ed426acdf3f8c6303f5">aisdkInputOnlineVoice2TextAudioData</a>(<span class="keywordtype">char</span>* data, <span class="keywordtype">int</span> dataLen);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<a class="code" href="aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#a0a4f8ac882ffb8815e74b067735dc7d0">aisdkCancelOnlineVoice2Text</a>();</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<a class="code" href="aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">int</span> <a class="code" href="aisdk__voice__online_8h.html#a77c971645a14f0ebd16bbbc5511afa07">aisdkStopOnlineVoice2Text</a>();</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor">#endif //PACKAGE_TMS_AISDK_AISDK_VOICE_ONLINE_H</span></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_ac4655e3b401c9ed426acdf3f8c6303f5"><div class="ttname"><a href="aisdk__voice__online_8h.html#ac4655e3b401c9ed426acdf3f8c6303f5">aisdkInputOnlineVoice2TextAudioData</a></div><div class="ttdeci">AISDK_API_EXPORTS int aisdkInputOnlineVoice2TextAudioData(char *data, int dataLen)</div><div class="ttdoc">输入在线录音数据 </div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_a427550b74016b3711b371c8d5db03103"><div class="ttname"><a href="aisdk__voice__online_8h.html#a427550b74016b3711b371c8d5db03103">AISDK_CMD_ONLINE_RECO_INTERMEDIATE_RESULT</a></div><div class="ttdeci">const int AISDK_CMD_ONLINE_RECO_INTERMEDIATE_RESULT</div><div class="ttdoc">回调接口命令定义,上报在线识别的中间结果 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__voice__online_8h_source.html#l00050">aisdk_voice_online.h:50</a></div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_a2b380f523cb714dc6649552d0f06d510"><div class="ttname"><a href="aisdk__voice__online_8h.html#a2b380f523cb714dc6649552d0f06d510">AISDK_CMD_ONLINE_RECO_START</a></div><div class="ttdeci">const int AISDK_CMD_ONLINE_RECO_START</div><div class="ttdoc">回调接口命令定义,在线识别开始，接受录音数据 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__voice__online_8h_source.html#l00028">aisdk_voice_online.h:28</a></div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_a72d001f6bf5a5686442124d9c3bb9c6d"><div class="ttname"><a href="aisdk__voice__online_8h.html#a72d001f6bf5a5686442124d9c3bb9c6d">AISDK_CMD_ONLINE_RECO_SPEECH_END</a></div><div class="ttdeci">const int AISDK_CMD_ONLINE_RECO_SPEECH_END</div><div class="ttdoc">回调接口命令定义,在线语音vad检测完成，可以停止输入录音数据 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__voice__online_8h_source.html#l00040">aisdk_voice_online.h:40</a></div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_a5d91fb18f40996f0cd732588255ee8ff"><div class="ttname"><a href="aisdk__voice__online_8h.html#a5d91fb18f40996f0cd732588255ee8ff">AISDK_RESULT_CODE_ONLINE_OK</a></div><div class="ttdeci">const int AISDK_RESULT_CODE_ONLINE_OK</div><div class="ttdef"><b>Definition:</b> <a href="aisdk__voice__online_8h_source.html#l00213">aisdk_voice_online.h:213</a></div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_ad371c2aba791601279c4b7ec17fefa87"><div class="ttname"><a href="aisdk__voice__online_8h.html#ad371c2aba791601279c4b7ec17fefa87">AISDK_CONFIG_VOICE_ONLINE_TIMEOUT</a></div><div class="ttdeci">const int AISDK_CONFIG_VOICE_ONLINE_TIMEOUT</div><div class="ttdoc">配置在线语音超时时间 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__voice__online_8h_source.html#l00108">aisdk_voice_online.h:108</a></div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_ab07f0ff48d194c4e2a7ea4018219e8e4"><div class="ttname"><a href="aisdk__voice__online_8h.html#ab07f0ff48d194c4e2a7ea4018219e8e4">AISDK_CMD_ONLINE_RECO_TIMEOUT</a></div><div class="ttdeci">const int AISDK_CMD_ONLINE_RECO_TIMEOUT</div><div class="ttdoc">回调接口命令定义,在线识别超时，没有识别到有效输入 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__voice__online_8h_source.html#l00065">aisdk_voice_online.h:65</a></div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_a4ebb031c7f076cc48dcb3627f074e316"><div class="ttname"><a href="aisdk__voice__online_8h.html#a4ebb031c7f076cc48dcb3627f074e316">AISDK_CMD_ONLINE_RECO_ERROR</a></div><div class="ttdeci">const int AISDK_CMD_ONLINE_RECO_ERROR</div><div class="ttdoc">回调接口命令定义,在线识别出错，返回错误信息 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__voice__online_8h_source.html#l00070">aisdk_voice_online.h:70</a></div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_a0a4f8ac882ffb8815e74b067735dc7d0"><div class="ttname"><a href="aisdk__voice__online_8h.html#a0a4f8ac882ffb8815e74b067735dc7d0">aisdkCancelOnlineVoice2Text</a></div><div class="ttdeci">AISDK_API_EXPORTS int aisdkCancelOnlineVoice2Text()</div><div class="ttdoc">取消本次语音识别 </div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_ae70e06db18d416f16d1fa18150a8e432"><div class="ttname"><a href="aisdk__voice__online_8h.html#ae70e06db18d416f16d1fa18150a8e432">AISDK_ERROR_ONLINE_RECO_NOT_STARTED</a></div><div class="ttdeci">const int AISDK_ERROR_ONLINE_RECO_NOT_STARTED</div><div class="ttdef"><b>Definition:</b> <a href="aisdk__voice__online_8h_source.html#l00077">aisdk_voice_online.h:77</a></div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_ae5a6287d0185ca72b4f1fa49d4eb8301"><div class="ttname"><a href="aisdk__voice__online_8h.html#ae5a6287d0185ca72b4f1fa49d4eb8301">AISDK_ERROR_ONLINE_RECO_CREATE_HANDLE_FAILED</a></div><div class="ttdeci">const int AISDK_ERROR_ONLINE_RECO_CREATE_HANDLE_FAILED</div><div class="ttdef"><b>Definition:</b> <a href="aisdk__voice__online_8h_source.html#l00084">aisdk_voice_online.h:84</a></div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_ada0a833439acd5d3c848f77aa5c6cd03"><div class="ttname"><a href="aisdk__voice__online_8h.html#ada0a833439acd5d3c848f77aa5c6cd03">AISDK_CONFIG_VOICE_ONLINE_ENABLE_CLOUDVAD</a></div><div class="ttdeci">const int AISDK_CONFIG_VOICE_ONLINE_ENABLE_CLOUDVAD</div><div class="ttdoc">配置连续对话超时时间 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__voice__online_8h_source.html#l00148">aisdk_voice_online.h:148</a></div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_ae1282d0b138772c8ff038ec9388cafd1"><div class="ttname"><a href="aisdk__voice__online_8h.html#ae1282d0b138772c8ff038ec9388cafd1">AISDK_CMD_ONLINE_RECO_DATA_VOLUME</a></div><div class="ttdeci">const int AISDK_CMD_ONLINE_RECO_DATA_VOLUME</div><div class="ttdoc">回调接口命令定义,上报输入音频数据的音量值 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__voice__online_8h_source.html#l00055">aisdk_voice_online.h:55</a></div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_a0a813f14d33b2ceb490198e2abe5f9a8"><div class="ttname"><a href="aisdk__voice__online_8h.html#a0a813f14d33b2ceb490198e2abe5f9a8">AISDK_FLAG_ONLINE_RECO_MANUAL_MODE</a></div><div class="ttdeci">const int AISDK_FLAG_ONLINE_RECO_MANUAL_MODE</div><div class="ttdoc">flags标志取值定义:语音识别改为手动模式。 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__voice__online_8h_source.html#l00205">aisdk_voice_online.h:205</a></div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_afc73406d2a45d2cb0fc26b377d4f9802"><div class="ttname"><a href="aisdk__voice__online_8h.html#afc73406d2a45d2cb0fc26b377d4f9802">AISDK_CMD_ONLINE_RECO_RESULT</a></div><div class="ttdeci">const int AISDK_CMD_ONLINE_RECO_RESULT</div><div class="ttdoc">回调接口命令定义,返回在线识别结果 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__voice__online_8h_source.html#l00045">aisdk_voice_online.h:45</a></div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_a6660752a351f93ced6badc63e4230a35"><div class="ttname"><a href="aisdk__voice__online_8h.html#a6660752a351f93ced6badc63e4230a35">AISDK_CMD_ONLINE_RECO_CANCELED</a></div><div class="ttdeci">const int AISDK_CMD_ONLINE_RECO_CANCELED</div><div class="ttdoc">回调接口命令定义,已取消在线识别 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__voice__online_8h_source.html#l00060">aisdk_voice_online.h:60</a></div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_a8566a40467be62a1c74cbdb40d4eac39"><div class="ttname"><a href="aisdk__voice__online_8h.html#a8566a40467be62a1c74cbdb40d4eac39">AISDK_FLAG_ONLINE_RECO_CLEAR_PREV_SESSION</a></div><div class="ttdeci">const int AISDK_FLAG_ONLINE_RECO_CLEAR_PREV_SESSION</div><div class="ttdoc">flags标志取值定义:清除上一次上下文  </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__voice__online_8h_source.html#l00200">aisdk_voice_online.h:200</a></div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_ac00b8bbc55502e3e9e447746b230ba10"><div class="ttname"><a href="aisdk__voice__online_8h.html#ac00b8bbc55502e3e9e447746b230ba10">AISDK_CMD_ONLINE_RECO_SPEECH_START</a></div><div class="ttdeci">const int AISDK_CMD_ONLINE_RECO_SPEECH_START</div><div class="ttdoc">回调接口命令定义,在线语音VAD检测到开始 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__voice__online_8h_source.html#l00034">aisdk_voice_online.h:34</a></div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_aeb7159a195c0a8ceef6b0a9fc33089f6"><div class="ttname"><a href="aisdk__voice__online_8h.html#aeb7159a195c0a8ceef6b0a9fc33089f6">AISDK_CONFIG_VOICE_ONLINE_ENABLE_CALCULATE_VOLUME</a></div><div class="ttdeci">const int AISDK_CONFIG_VOICE_ONLINE_ENABLE_CALCULATE_VOLUME</div><div class="ttdoc">配置是否开启计算音量 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__voice__online_8h_source.html#l00171">aisdk_voice_online.h:171</a></div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_a9f3b78dda5d5545a5dd2b247cfb7dd98"><div class="ttname"><a href="aisdk__voice__online_8h.html#a9f3b78dda5d5545a5dd2b247cfb7dd98">AISDK_CONFIG_VOICE_ONLINE_BEGIN</a></div><div class="ttdeci">const int AISDK_CONFIG_VOICE_ONLINE_BEGIN</div><div class="ttdef"><b>Definition:</b> <a href="aisdk__voice__online_8h_source.html#l00090">aisdk_voice_online.h:90</a></div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_a75d8b28126acc7b66b60a3c6e58818ec"><div class="ttname"><a href="aisdk__voice__online_8h.html#a75d8b28126acc7b66b60a3c6e58818ec">aisdkStartOnlineVoice2Text</a></div><div class="ttdeci">AISDK_API_EXPORTS int aisdkStartOnlineVoice2Text(void *userData, int len, int flags)</div><div class="ttdoc">开始一次语音识别流程 </div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_a8269a58560feaa0a9776a5b3d8de2fc9"><div class="ttname"><a href="aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a></div><div class="ttdeci">#define AISDK_API_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="aisdk__voice__online_8h_source.html#l00016">aisdk_voice_online.h:16</a></div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_a3d432cb3110e782c824496faa6f9c5de"><div class="ttname"><a href="aisdk__voice__online_8h.html#a3d432cb3110e782c824496faa6f9c5de">AISDK_CONFIG_VOICE_ONLINE_END</a></div><div class="ttdeci">const int AISDK_CONFIG_VOICE_ONLINE_END</div><div class="ttdoc">配置vad静音超时时间，默认500ms </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__voice__online_8h_source.html#l00194">aisdk_voice_online.h:194</a></div></div>
+<div class="ttc" id="aisdk__voice__online_8h_html_a77c971645a14f0ebd16bbbc5511afa07"><div class="ttname"><a href="aisdk__voice__online_8h.html#a77c971645a14f0ebd16bbbc5511afa07">aisdkStopOnlineVoice2Text</a></div><div class="ttdeci">AISDK_API_EXPORTS int aisdkStopOnlineVoice2Text()</div><div class="ttdoc">停止本次语音识别，获取语音识别结果。 </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.14-->
+<!-- start footer part-->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.qq.com/">Tencent
+</a> 
+</small></address>
+</body>
+</html>

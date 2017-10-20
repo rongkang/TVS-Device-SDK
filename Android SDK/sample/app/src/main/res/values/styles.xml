@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+    </style>
+    <style name="AppTheme.NoActionBar" parent="android:Theme.Holo.Light.NoActionBar">
+    </style>
+
+</resources>

@@ -1,0 +1,156 @@
+﻿{
+    "eDisplayFormat": 1,//终端展示形式
+    "eRetCode": 0,//返回码
+    "eSubService": 1,//music子服务 音乐服务返回都是1
+    "exstr": "",//回带终端请求时上报的预留字段
+    "sSpeak": "为你找到刘德华的这些歌",//语音语句
+    "sText": "为你找到刘德华的这些歌",//显示语句
+    "stMedia": {//音乐相关数据
+        "vActionList": [
+            {//当前播放
+                "eActionType": 3,//执行的动作 3播放
+                "vMediaDataList": [
+                    {
+                        "sAlbum": "Unforgettable 中国巡回演唱会2011",//专辑
+                        "sAlbumPic": "http://y.gtimg.cn/music/photo_new/T002R120x120M000000b79wf3pGa96.jpg",//专辑封面图片的url
+                        "sAlbumPubTime": "",//专辑发行时间
+                        "sH5Url": "http://i.y.qq.com/v8/playsong.html?songid=1136752",//音乐的H5页面
+                        "sMedia": "忘情水",//歌曲名称
+                        "sMediaId": "1136752",//歌曲id
+                        "sMediaRichname": "",//音乐richname（带有live标识） 终端不需关注
+                        "sPerson": "刘德华",//歌手名称
+                        "sSource": "QQ音乐",//媒体来源
+                        "sUrl": "http://isure.stream.qqmusic.qq.com/C600003bBcS60NhwdR.m4a?vkey=153A7090C6D18CD7201290ADB9323DD4B7AEC097F05CCA0E0A51805A7CA2801829DE7EF0D199903BB49E02A9AE604D8E2CFD4B6D89FD9079&guid=1234727204&fromtag=50&uin=1152921504732322084"//播放地址
+                    }
+                ]
+            },
+            {//当前播放列表
+                "eActionType": 4,//执行的动作 3播放列表
+                "vMediaDataList": [
+                    {
+                        "sAlbum": "Unforgettable 中国巡回演唱会2011",
+                        "sAlbumPic": "http://y.gtimg.cn/music/photo_new/T002R120x120M000000b79wf3pGa96.jpg",
+                        "sAlbumPubTime": "",
+                        "sH5Url": "http://i.y.qq.com/v8/playsong.html?songid=1136752",
+                        "sMedia": "忘情水",
+                        "sMediaId": "1136752",
+                        "sMediaRichname": "",
+                        "sPerson": "刘德华",
+                        "sSource": "QQ音乐",
+                        "sUrl": "http://isure.stream.qqmusic.qq.com/C600003bBcS60NhwdR.m4a?vkey=153A7090C6D18CD7201290ADB9323DD4B7AEC097F05CCA0E0A51805A7CA2801829DE7EF0D199903BB49E02A9AE604D8E2CFD4B6D89FD9079&guid=1234727204&fromtag=50&uin=1152921504732322084"
+                    },
+                    {
+                        "sAlbum": "Wonderful World 2007香港演唱会",
+                        "sAlbumPic": "http://y.gtimg.cn/music/photo_new/T002R120x120M00000045jMv2hcbmO.jpg",
+                        "sAlbumPubTime": "",
+                        "sH5Url": "http://i.y.qq.com/v8/playsong.html?songid=874875",
+                        "sMedia": "我恨我痴心",
+                        "sMediaId": "874875",
+                        "sMediaRichname": "",
+                        "sPerson": "刘德华",
+                        "sSource": "QQ音乐",
+                        "sUrl": "http://isure.stream.qqmusic.qq.com/C600000Z3kB94fUtX9.m4a?vkey=FB3F273854C6C251C7CF5A90ED9850B43A0AAC30019B31CD18FB839D5B4741805633A62F7195895999CBBF07687A36F7CDFF1B1058DD5D3E&guid=1234727204&fromtag=50&uin=1152921504732322084"
+                    },
+                    {
+                        "sAlbum": "幻影中国巡回演唱会Live",
+                        "sAlbumPic": "http://y.gtimg.cn/music/photo_new/T002R120x120M000004UpCFj3kyano.jpg",
+                        "sAlbumPubTime": "",
+                        "sH5Url": "http://i.y.qq.com/v8/playsong.html?songid=179990",
+                        "sMedia": "练习",
+                        "sMediaId": "179990",
+                        "sMediaRichname": "",
+                        "sPerson": "刘德华",
+                        "sSource": "QQ音乐",
+                        "sUrl": "http://isure.stream.qqmusic.qq.com/C400002Ly1Xh1pwBGt.m4a?vkey=8574108A198D052EAAD8892651BE321C3DBDE6F87086C4781D3F6C0A64752B7C7A64D0D8AE3BFB455B48F7FD9C4B3096AE21990E6F70EC7E&guid=1234727204&fromtag=50&uin=1152921504732322084"
+                    },
+                    {
+                        "sAlbum": "幻影中国巡回演唱会Live",
+                        "sAlbumPic": "http://y.gtimg.cn/music/photo_new/T002R120x120M000004UpCFj3kyano.jpg",
+                        "sAlbumPubTime": "",
+                        "sH5Url": "http://i.y.qq.com/v8/playsong.html?songid=180000",
+                        "sMedia": "假装",
+                        "sMediaId": "180000",
+                        "sMediaRichname": "",
+                        "sPerson": "刘德华",
+                        "sSource": "QQ音乐",
+                        "sUrl": "http://isure.stream.qqmusic.qq.com/C600001uRmHN3MDPkf.m4a?vkey=49BFE6884183FB03AD99704B9B2161C184E08DC39F67D4EA322A049A9615BC1AB24F87A863DEFD54F8B14B2298CBA156E98383A598B552FF&guid=1234727204&fromtag=50&uin=1152921504732322084"
+                    },
+                    {
+                        "sAlbum": "刘德华 Unforgettable Concert 2010",
+                        "sAlbumPic": "http://y.gtimg.cn/music/photo_new/T002R120x120M000000IloZ71on1Iu.jpg",
+                        "sAlbumPubTime": "",
+                        "sH5Url": "http://i.y.qq.com/v8/playsong.html?songid=831588",
+                        "sMedia": "十年",
+                        "sMediaId": "831588",
+                        "sMediaRichname": "",
+                        "sPerson": "刘德华",
+                        "sSource": "QQ音乐",
+                        "sUrl": "http://isure.stream.qqmusic.qq.com/C600002oX74u0VBZo2.m4a?vkey=F42916ABD33AC5178935A73F79F69B6384FE1A634064AABAC4D805021F5891CE1E9832AF3DAE0A360F3828C4DD636CA117A247D2273409C7&guid=1234727204&fromtag=50&uin=1152921504732322084"
+                    },
+                    {
+                        "sAlbum": "刘德华 Unforgettable Concert 2010",
+                        "sAlbumPic": "http://y.gtimg.cn/music/photo_new/T002R120x120M000000IloZ71on1Iu.jpg",
+                        "sAlbumPubTime": "",
+                        "sH5Url": "http://i.y.qq.com/v8/playsong.html?songid=831635",
+                        "sMedia": "心只有你",
+                        "sMediaId": "831635",
+                        "sMediaRichname": "",
+                        "sPerson": "刘德华",
+                        "sSource": "QQ音乐",
+                        "sUrl": "http://isure.stream.qqmusic.qq.com/C6000049SK0W33Ibul.m4a?vkey=2BD0A470DCA09AE5D9319C0A96DF80B853E0133143CD5D92AB54D0A0DD710F4B30D12D8DAC893427F375A07B5ACA94FDE4448AFFB416E6C7&guid=1234727204&fromtag=50&uin=1152921504732322084"
+                    },
+                    {
+                        "sAlbum": "刘德华 99演唱会",
+                        "sAlbumPic": "http://y.gtimg.cn/music/photo_new/T002R120x120M0000025XbZA3KoRzY.jpg",
+                        "sAlbumPubTime": "",
+                        "sH5Url": "http://i.y.qq.com/v8/playsong.html?songid=5355817",
+                        "sMedia": "倒转地球",
+                        "sMediaId": "5355817",
+                        "sMediaRichname": "",
+                        "sPerson": "刘德华",
+                        "sSource": "QQ音乐",
+                        "sUrl": "http://isure.stream.qqmusic.qq.com/C600000C7eaD1ZIGiu.m4a?vkey=38E66D7F4E7B7C0B748396E925A1346F534D294802FF37183C4BE9064C6CDE491F9226BF2B0B5B9F0F8DB81663B6EF6A94962A336AEC292D&guid=1234727204&fromtag=50&uin=1152921504732322084"
+                    },
+                    {
+                        "sAlbum": "Unforgettable 中国巡回演唱会2011",
+                        "sAlbumPic": "http://y.gtimg.cn/music/photo_new/T002R120x120M000000b79wf3pGa96.jpg",
+                        "sAlbumPubTime": "",
+                        "sH5Url": "http://i.y.qq.com/v8/playsong.html?songid=1136760",
+                        "sMedia": "信自己",
+                        "sMediaId": "1136760",
+                        "sMediaRichname": "",
+                        "sPerson": "刘德华",
+                        "sSource": "QQ音乐",
+                        "sUrl": "http://isure.stream.qqmusic.qq.com/C600002qy42o3uoe3Q.m4a?vkey=156818143EF47CB07AFF0A0F91779401F0A596C25B3AC51796FD2C045AA166D3CBCE99D13AE68B193C00F3F625663AB1FFEDA90D7F602C00&guid=1234727204&fromtag=50&uin=1152921504732322084"
+                    },
+                    {
+                        "sAlbum": "刘德华 Unforgettable Concert 2010",
+                        "sAlbumPic": "http://y.gtimg.cn/music/photo_new/T002R120x120M000000IloZ71on1Iu.jpg",
+                        "sAlbumPubTime": "",
+                        "sH5Url": "http://i.y.qq.com/v8/playsong.html?songid=831633",
+                        "sMedia": "流浪",
+                        "sMediaId": "831633",
+                        "sMediaRichname": "",
+                        "sPerson": "刘德华",
+                        "sSource": "QQ音乐",
+                        "sUrl": "http://isure.stream.qqmusic.qq.com/C600002sIFbl2EF1MC.m4a?vkey=C7D9970ADEBDEE76EE42BA1A86BE020702F2BDB74A1DF2D6EDD4DD6582B53F11009AED638100976E5C0EDBB149EEFE2656D5CC4BDFACD46B&guid=1234727204&fromtag=50&uin=1152921504732322084"
+                    },
+                    {
+                        "sAlbum": "Unforgettable 中国巡回演唱会2011",
+                        "sAlbumPic": "http://y.gtimg.cn/music/photo_new/T002R120x120M000000b79wf3pGa96.jpg",
+                        "sAlbumPubTime": "",
+                        "sH5Url": "http://i.y.qq.com/v8/playsong.html?songid=1136761",
+                        "sMedia": "凭什么",
+                        "sMediaId": "1136761",
+                        "sMediaRichname": "",
+                        "sPerson": "刘德华",
+                        "sSource": "QQ音乐",
+                        "sUrl": "http://isure.stream.qqmusic.qq.com/C600001oC8vq2jowhf.m4a?vkey=34819D39A907A9A1E1ABE275D640E3087A942D1420E888C2EC375804075B7FEC280F24B0408B45012B9DF48496964D4E27B6FC751F5BD511&guid=1234727204&fromtag=50&uin=1152921504732322084"
+                    }
+                ]
+            }
+        ]
+    },
+    //strJsonToSemantic 为给语义的数据终端不需要关注
+    "strJsonToSemantic": "{\"params\":[{\"entity_type\":\"sys.music.singer\",\"name\":\"singer\",\"values\":[\"刘德华\"]},{\"entity_type\":\"sys.music.song\",\"name\":\"song\",\"values\":[\"忘情水\"]},{\"entity_type\":\"sys.music.album\",\"name\":\"album\",\"values\":[\"Unforgettable 中国巡回演唱会2011\"]}]}\n"
+}
