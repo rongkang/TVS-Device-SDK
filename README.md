@@ -7,8 +7,8 @@ TVS Device SDK为客户端提供了腾讯语音唤醒、语音识别、语义识
 * github上没有放置唤醒库和唤醒模型。如有需要，请联系腾讯叮当团队。
 
 #### Linux API文档
-链接：[Linux 基础 SDK](https://tencenttvsteam.github.io/TVS-Device-SDK/linux_index.html "Linux 基础SDK") 
+链接：[Linux 基础 SDK](https://tencenttvsteam.github.io/TVS-Device-SDK/api/linux/index.html "Linux 基础SDK") 
 
 #### Android API文档
 
-链接：[Android 基础 SDK](https://tencenttvsteam.github.io/TVS-Device-SDK/android_index.html "Android 基础 SDK") 
+链接：[Android 基础 SDK](https://tencenttvsteam.github.io/TVS-Device-SDK/api/android/index.html "Android 基础 SDK") 
