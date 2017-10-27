@@ -11,4 +11,4 @@ TVS Device SDK为客户端提供了腾讯语音唤醒、语音识别、语义识
 
 #### Android API文档
 
-链接：[Android 基础 SDK]https://tencenttvsteam.github.io/TVS-Device-SDK/android_index.html "Android 基础 SDK") 
+链接：[Android 基础 SDK](https://tencenttvsteam.github.io/TVS-Device-SDK/android_index.html "Android 基础 SDK") 
