@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['aisdkcancelonlinevoice2text',['aisdkCancelOnlineVoice2Text',['../aisdk__voice__online_8h.html#a0a4f8ac882ffb8815e74b067735dc7d0',1,'aisdk_voice_online.h']]],
+  ['aisdkcancelsemanticbytype',['aisdkCancelSemanticByType',['../aisdk__semantic__online_8h.html#af82339aeb9682b30d578b4e44854e2d4',1,'aisdk_semantic_online.h']]],
+  ['aisdkcancelsemanticbyuserdata',['aisdkCancelSemanticByUserData',['../aisdk__semantic__online_8h.html#a743e4908cfd388d8e2e6d42308c45032',1,'aisdk_semantic_online.h']]],
+  ['aisdkcanceltext2semantic',['aisdkCancelText2Semantic',['../aisdk__semantic__online_8h.html#a6966b405ad6f49f5979c10de79bd79b2',1,'aisdk_semantic_online.h']]],
+  ['aisdkcanceltext2speech',['aisdkCancelText2Speech',['../aisdk__tts__online_8h.html#ac8d5e25be11e70685a167235203547b4',1,'aisdk_tts_online.h']]],
+  ['aisdkcomplexsemantic2semantic',['aisdkComplexSemantic2Semantic',['../aisdk__semantic__online_8h.html#a45e4114add8f92c9a897cd895f8b141f',1,'aisdk_semantic_online.h']]],
+  ['aisdkfullinit',['aisdkFullInit',['../aisdk__common__api_8h.html#a9d3165659fc3802a22933a9719c60e2c',1,'aisdk_common_api.h']]],
+  ['aisdkgetconfig',['aisdkGetConfig',['../aisdk__common__api_8h.html#a98872b86879e215351ccb4e2743ca432',1,'aisdk_common_api.h']]],
+  ['aisdkgetversion',['aisdkGetVersion',['../aisdk__common__api_8h.html#a4b5b32f1c4ad3d1ecdb0b13c6ebcf8a3',1,'aisdk_common_api.h']]],
+  ['aisdkinit',['aisdkInit',['../aisdk__common__api_8h.html#a994aa73ed1eca035be757ec35a27f855',1,'aisdk_common_api.h']]],
+  ['aisdkinputonlinevoice2textaudiodata',['aisdkInputOnlineVoice2TextAudioData',['../aisdk__voice__online_8h.html#ac4655e3b401c9ed426acdf3f8c6303f5',1,'aisdk_voice_online.h']]],
+  ['aisdkonlinetext2semantic',['aisdkOnlineText2Semantic',['../aisdk__semantic__online_8h.html#a7c549eaff66a4ce81c0ea1e219e850a7',1,'aisdk_semantic_online.h']]],
+  ['aisdkrelease',['aisdkRelease',['../aisdk__common__api_8h.html#acdae2ad85b715820ea53b1ccd0e781b0',1,'aisdk_common_api.h']]],
+  ['aisdkreportmediafinished',['aisdkReportMediaFinished',['../aisdk__report__online_8h.html#a5873fc2a8b30d53cc3de192361c145c9',1,'aisdk_report_online.h']]],
+  ['aisdkreportmediastarted',['aisdkReportMediaStarted',['../aisdk__report__online_8h.html#acd09e838c660f9695c21793b1d9a451c',1,'aisdk_report_online.h']]],
+  ['aisdkreportmediastopped',['aisdkReportMediaStopped',['../aisdk__report__online_8h.html#a5a58be533670a3b2a4b01d9496af3f19',1,'aisdk_report_online.h']]],
+  ['aisdkreqfm',['aisdkReqFM',['../aisdk__semantic__online_8h.html#a8e05c0e4de27a27abaa27126916a6023',1,'aisdk_semantic_online.h']]],
+  ['aisdkreqmusic',['aisdkReqMusic',['../aisdk__semantic__online_8h.html#ad922c256c19c80018506f029a4e15e27',1,'aisdk_semantic_online.h']]],
+  ['aisdksetcallback',['aisdkSetCallback',['../aisdk__common__api_8h.html#a2f5d4d4faebe65da75546c08fd1ec63c',1,'aisdk_common_api.h']]],
+  ['aisdksetconfig',['aisdkSetConfig',['../aisdk__common__api_8h.html#a7b2f03b49a4e3818bb11589e684149f4',1,'aisdk_common_api.h']]],
+  ['aisdksetqua',['aisdkSetQUA',['../aisdk__common__api_8h.html#afc8fa88e1869edf5439ef4f22ba8ce01',1,'aisdk_common_api.h']]],
+  ['aisdkstartonlinevoice2text',['aisdkStartOnlineVoice2Text',['../aisdk__voice__online_8h.html#a75d8b28126acc7b66b60a3c6e58818ec',1,'aisdk_voice_online.h']]],
+  ['aisdkstoponlinevoice2text',['aisdkStopOnlineVoice2Text',['../aisdk__voice__online_8h.html#a77c971645a14f0ebd16bbbc5511afa07',1,'aisdk_voice_online.h']]],
+  ['aisdktext2speech',['aisdkText2Speech',['../aisdk__tts__online_8h.html#aaaa590954f9a166907c5d31cd10566fa',1,'aisdk_tts_online.h']]]
+];

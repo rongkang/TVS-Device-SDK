@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Tencent TVS Device SDK: include/aisdk_semantic_online.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Tencent TVS Device SDK
+   </div>
+   <div id="projectbrief">提供腾讯唤醒、语音、语义、TTS能力的SDk</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">aisdk_semantic_online.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="aisdk__semantic__online_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef PACKAGE_TMS_AISDK_AISDK_TEXT_ONLINE_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PACKAGE_TMS_AISDK_AISDK_TEXT_ONLINE_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AISDK_API_EXPORTS __declspec(dllexport)</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AISDK_CALL_CONV __stdcall</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="aisdk__semantic__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">   15</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AISDK_API_EXPORTS</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="aisdk__semantic__online_8h.html#a0c7aae0784c0a9b2d261cc305621cd68">   16</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AISDK_CALL_CONV</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="aisdk__semantic__online_8h.html#a7281a4b87f37444675a71a13ca6b82e9">   29</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__semantic__online_8h.html#a7281a4b87f37444675a71a13ca6b82e9">AISDK_CMD_SEMANTIC_RESULT</a> = 2000;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="aisdk__semantic__online_8h.html#a8a304b957e8a83bcdbdf1a2f9953bccd">   36</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__semantic__online_8h.html#a8a304b957e8a83bcdbdf1a2f9953bccd">AISDK_CMD_MEDIA_SEMANTIC_RESULT</a> = AISDK_CMD_SEMANTIC_RESULT + 1;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="aisdk__semantic__online_8h.html#aafe4f33c946abeef42943e02853b0238">   44</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__semantic__online_8h.html#aafe4f33c946abeef42943e02853b0238">AISDK_CMD_SEMANTIC_ERROR</a> = AISDK_CMD_SEMANTIC_RESULT + 2;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="aisdk__semantic__online_8h.html#a00eb055dfcdd87627752b43a0a3df918">   50</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__semantic__online_8h.html#a00eb055dfcdd87627752b43a0a3df918">AISDK_CMD_MEDIA_SEMANTIC_ERROR</a> = AISDK_CMD_SEMANTIC_RESULT + 3;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="aisdk__semantic__online_8h.html#a4948508f6c077446b69206614af6d008">   59</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__semantic__online_8h.html#a4948508f6c077446b69206614af6d008">AISDK_CMD_COMPLEX_SEMANTIC_RESULT</a> = AISDK_CMD_SEMANTIC_RESULT + 4;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="aisdk__semantic__online_8h.html#a0120e6ce5109ef66a3612fa0bdd75363">   65</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__semantic__online_8h.html#a0120e6ce5109ef66a3612fa0bdd75363">AISDK_CMD_COMPLEX_SEMANTIC_ERROR</a> = AISDK_CMD_SEMANTIC_RESULT + 5;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">// 配置项，key的起始值</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="aisdk__semantic__online_8h.html#a364bf0a74affcad3c70b9c87dd04ab99">   69</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__semantic__online_8h.html#a364bf0a74affcad3c70b9c87dd04ab99">AISDK_CONFIG_SEMANTIC_ONLINE_BEGIN</a> = 2000;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">// 配置项，key的结束值</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="aisdk__semantic__online_8h.html#af4d7bd6a91ae289c92f7007855735393">   71</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__semantic__online_8h.html#af4d7bd6a91ae289c92f7007855735393">AISDK_CONFIG_SEMANTIC_ONLINE_END</a> = 2999;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="aisdk__semantic__online_8h.html#a30b1d5cb360b2157d2a6d7dcf2bac8c9">   77</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__semantic__online_8h.html#a30b1d5cb360b2157d2a6d7dcf2bac8c9">AISDK_SEMANTIC_REQ_TYPE_TEXT</a> = 1;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="aisdk__semantic__online_8h.html#a4921876a33bace44e25dc5bf49d42954">   82</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__semantic__online_8h.html#a4921876a33bace44e25dc5bf49d42954">AISDK_SEMANTIC_REQ_TYPE_SEMANTIC</a> = 2;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="aisdk__semantic__online_8h.html#acb97def8bf84fd758a56c6af3dc7e724">   87</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__semantic__online_8h.html#acb97def8bf84fd758a56c6af3dc7e724">AISDK_SEMANTIC_REQ_TYPE_COMPLEX_SEMANTIC</a> = 3;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">//flags标志取值定义</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="aisdk__semantic__online_8h.html#a932c522cbb8e7f717f2f44c321eca2b8">   93</a></span>&#160;<span class="comment"></span><span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__semantic__online_8h.html#a932c522cbb8e7f717f2f44c321eca2b8">AISDK_FLAG_SEMANTIC_CLEAR_PREV_SESSION</a> = 0x01;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="aisdk__semantic__online_8h.html#a25cfb45b03c9efd219fb37006a7c3ab7">   98</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__semantic__online_8h.html#a25cfb45b03c9efd219fb37006a7c3ab7">AISDK_FLAG_SEMANTIC_EXIT_CUR_SESSION</a> = 0x02;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<a class="code" href="aisdk__semantic__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">int</span> <a class="code" href="aisdk__semantic__online_8h.html#a7c549eaff66a4ce81c0ea1e219e850a7">aisdkOnlineText2Semantic</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* text, <span class="keywordtype">int</span> textLen, <span class="keywordtype">void</span>* userData, <span class="keywordtype">int</span> len, <span class="keywordtype">int</span> flags);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<a class="code" href="aisdk__semantic__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">int</span> <a class="code" href="aisdk__semantic__online_8h.html#a45e4114add8f92c9a897cd895f8b141f">aisdkComplexSemantic2Semantic</a>(<span class="keywordtype">char</span> * semanticJson, <span class="keywordtype">int</span> len,<span class="keywordtype">void</span>* userData, <span class="keywordtype">int</span> userDataLen);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<a class="code" href="aisdk__semantic__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">int</span> <a class="code" href="aisdk__semantic__online_8h.html#ad922c256c19c80018506f029a4e15e27">aisdkReqMusic</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* mediaId, <span class="keywordtype">int</span> mediaIdLength, <span class="keywordtype">void</span>* userData, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<a class="code" href="aisdk__semantic__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">int</span> <a class="code" href="aisdk__semantic__online_8h.html#a8e05c0e4de27a27abaa27126916a6023">aisdkReqFM</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* showId, <span class="keywordtype">int</span> showIdLength, <span class="keywordtype">int</span> showType, <span class="keywordtype">void</span>* userData, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<a class="code" href="aisdk__semantic__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">int</span> <a class="code" href="aisdk__semantic__online_8h.html#a6966b405ad6f49f5979c10de79bd79b2">aisdkCancelText2Semantic</a>();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<a class="code" href="aisdk__semantic__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">int</span> <a class="code" href="aisdk__semantic__online_8h.html#a743e4908cfd388d8e2e6d42308c45032">aisdkCancelSemanticByUserData</a>(<span class="keywordtype">void</span>* userData);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<a class="code" href="aisdk__semantic__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">int</span> <a class="code" href="aisdk__semantic__online_8h.html#af82339aeb9682b30d578b4e44854e2d4">aisdkCancelSemanticByType</a>(<span class="keywordtype">int</span> iReqType);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#endif //PACKAGE_TMS_AISDK_AISDK_TEXT_ONLINE_H</span></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_a743e4908cfd388d8e2e6d42308c45032"><div class="ttname"><a href="aisdk__semantic__online_8h.html#a743e4908cfd388d8e2e6d42308c45032">aisdkCancelSemanticByUserData</a></div><div class="ttdeci">AISDK_API_EXPORTS int aisdkCancelSemanticByUserData(void *userData)</div><div class="ttdoc">根据外部传入数据，取消特定语义请求 </div></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_a8a304b957e8a83bcdbdf1a2f9953bccd"><div class="ttname"><a href="aisdk__semantic__online_8h.html#a8a304b957e8a83bcdbdf1a2f9953bccd">AISDK_CMD_MEDIA_SEMANTIC_RESULT</a></div><div class="ttdeci">const int AISDK_CMD_MEDIA_SEMANTIC_RESULT</div><div class="ttdoc">回调接口命令定义,独立请求媒体的接口结果返回 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__semantic__online_8h_source.html#l00036">aisdk_semantic_online.h:36</a></div></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_a30b1d5cb360b2157d2a6d7dcf2bac8c9"><div class="ttname"><a href="aisdk__semantic__online_8h.html#a30b1d5cb360b2157d2a6d7dcf2bac8c9">AISDK_SEMANTIC_REQ_TYPE_TEXT</a></div><div class="ttdeci">const int AISDK_SEMANTIC_REQ_TYPE_TEXT</div><div class="ttdoc">请求类型：文本请求 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__semantic__online_8h_source.html#l00077">aisdk_semantic_online.h:77</a></div></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_a364bf0a74affcad3c70b9c87dd04ab99"><div class="ttname"><a href="aisdk__semantic__online_8h.html#a364bf0a74affcad3c70b9c87dd04ab99">AISDK_CONFIG_SEMANTIC_ONLINE_BEGIN</a></div><div class="ttdeci">const int AISDK_CONFIG_SEMANTIC_ONLINE_BEGIN</div><div class="ttdef"><b>Definition:</b> <a href="aisdk__semantic__online_8h_source.html#l00069">aisdk_semantic_online.h:69</a></div></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_ad922c256c19c80018506f029a4e15e27"><div class="ttname"><a href="aisdk__semantic__online_8h.html#ad922c256c19c80018506f029a4e15e27">aisdkReqMusic</a></div><div class="ttdeci">AISDK_API_EXPORTS int aisdkReqMusic(const char *mediaId, int mediaIdLength, void *userData, int len)</div><div class="ttdoc">请求单首音乐的详细信息 </div></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_af4d7bd6a91ae289c92f7007855735393"><div class="ttname"><a href="aisdk__semantic__online_8h.html#af4d7bd6a91ae289c92f7007855735393">AISDK_CONFIG_SEMANTIC_ONLINE_END</a></div><div class="ttdeci">const int AISDK_CONFIG_SEMANTIC_ONLINE_END</div><div class="ttdef"><b>Definition:</b> <a href="aisdk__semantic__online_8h_source.html#l00071">aisdk_semantic_online.h:71</a></div></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_a7281a4b87f37444675a71a13ca6b82e9"><div class="ttname"><a href="aisdk__semantic__online_8h.html#a7281a4b87f37444675a71a13ca6b82e9">AISDK_CMD_SEMANTIC_RESULT</a></div><div class="ttdeci">const int AISDK_CMD_SEMANTIC_RESULT</div><div class="ttdoc">回调接口命令定义,语义返回的回调 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__semantic__online_8h_source.html#l00029">aisdk_semantic_online.h:29</a></div></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_a00eb055dfcdd87627752b43a0a3df918"><div class="ttname"><a href="aisdk__semantic__online_8h.html#a00eb055dfcdd87627752b43a0a3df918">AISDK_CMD_MEDIA_SEMANTIC_ERROR</a></div><div class="ttdeci">const int AISDK_CMD_MEDIA_SEMANTIC_ERROR</div><div class="ttdoc">回调接口命令定义,独立请求媒体出错 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__semantic__online_8h_source.html#l00050">aisdk_semantic_online.h:50</a></div></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_a8e05c0e4de27a27abaa27126916a6023"><div class="ttname"><a href="aisdk__semantic__online_8h.html#a8e05c0e4de27a27abaa27126916a6023">aisdkReqFM</a></div><div class="ttdeci">AISDK_API_EXPORTS int aisdkReqFM(const char *showId, int showIdLength, int showType, void *userData, int len)</div><div class="ttdoc">请求单个FM的详细信息 </div></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_af82339aeb9682b30d578b4e44854e2d4"><div class="ttname"><a href="aisdk__semantic__online_8h.html#af82339aeb9682b30d578b4e44854e2d4">aisdkCancelSemanticByType</a></div><div class="ttdeci">AISDK_API_EXPORTS int aisdkCancelSemanticByType(int iReqType)</div><div class="ttdoc">根据请求类型，取消特定语义请求，请求类型见AISDK_SEMANTIC_REQ_TYPE_*常量 </div></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_a0120e6ce5109ef66a3612fa0bdd75363"><div class="ttname"><a href="aisdk__semantic__online_8h.html#a0120e6ce5109ef66a3612fa0bdd75363">AISDK_CMD_COMPLEX_SEMANTIC_ERROR</a></div><div class="ttdeci">const int AISDK_CMD_COMPLEX_SEMANTIC_ERROR</div><div class="ttdoc">回调接口命令定义,复合语义请求出错 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__semantic__online_8h_source.html#l00065">aisdk_semantic_online.h:65</a></div></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_a45e4114add8f92c9a897cd895f8b141f"><div class="ttname"><a href="aisdk__semantic__online_8h.html#a45e4114add8f92c9a897cd895f8b141f">aisdkComplexSemantic2Semantic</a></div><div class="ttdeci">AISDK_API_EXPORTS int aisdkComplexSemantic2Semantic(char *semanticJson, int len, void *userData, int userDataLen)</div><div class="ttdoc">特殊功能性接口。复合语义 </div></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_acb97def8bf84fd758a56c6af3dc7e724"><div class="ttname"><a href="aisdk__semantic__online_8h.html#acb97def8bf84fd758a56c6af3dc7e724">AISDK_SEMANTIC_REQ_TYPE_COMPLEX_SEMANTIC</a></div><div class="ttdeci">const int AISDK_SEMANTIC_REQ_TYPE_COMPLEX_SEMANTIC</div><div class="ttdoc">请求类型：复合语义请求 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__semantic__online_8h_source.html#l00087">aisdk_semantic_online.h:87</a></div></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_a6966b405ad6f49f5979c10de79bd79b2"><div class="ttname"><a href="aisdk__semantic__online_8h.html#a6966b405ad6f49f5979c10de79bd79b2">aisdkCancelText2Semantic</a></div><div class="ttdeci">AISDK_API_EXPORTS int aisdkCancelText2Semantic()</div><div class="ttdoc">取消全部语义请求 </div></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_a4921876a33bace44e25dc5bf49d42954"><div class="ttname"><a href="aisdk__semantic__online_8h.html#a4921876a33bace44e25dc5bf49d42954">AISDK_SEMANTIC_REQ_TYPE_SEMANTIC</a></div><div class="ttdeci">const int AISDK_SEMANTIC_REQ_TYPE_SEMANTIC</div><div class="ttdoc">请求类型：复合语义请求 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__semantic__online_8h_source.html#l00082">aisdk_semantic_online.h:82</a></div></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_a8269a58560feaa0a9776a5b3d8de2fc9"><div class="ttname"><a href="aisdk__semantic__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a></div><div class="ttdeci">#define AISDK_API_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="aisdk__semantic__online_8h_source.html#l00015">aisdk_semantic_online.h:15</a></div></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_a25cfb45b03c9efd219fb37006a7c3ab7"><div class="ttname"><a href="aisdk__semantic__online_8h.html#a25cfb45b03c9efd219fb37006a7c3ab7">AISDK_FLAG_SEMANTIC_EXIT_CUR_SESSION</a></div><div class="ttdeci">const int AISDK_FLAG_SEMANTIC_EXIT_CUR_SESSION</div><div class="ttdef"><b>Definition:</b> <a href="aisdk__semantic__online_8h_source.html#l00098">aisdk_semantic_online.h:98</a></div></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_a4948508f6c077446b69206614af6d008"><div class="ttname"><a href="aisdk__semantic__online_8h.html#a4948508f6c077446b69206614af6d008">AISDK_CMD_COMPLEX_SEMANTIC_RESULT</a></div><div class="ttdeci">const int AISDK_CMD_COMPLEX_SEMANTIC_RESULT</div><div class="ttdoc">回调接口命令定义,复合语义的接口结果返回 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__semantic__online_8h_source.html#l00059">aisdk_semantic_online.h:59</a></div></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_a7c549eaff66a4ce81c0ea1e219e850a7"><div class="ttname"><a href="aisdk__semantic__online_8h.html#a7c549eaff66a4ce81c0ea1e219e850a7">aisdkOnlineText2Semantic</a></div><div class="ttdeci">AISDK_API_EXPORTS int aisdkOnlineText2Semantic(const char *text, int textLen, void *userData, int len, int flags)</div><div class="ttdoc">在线语义识别接口， 结果通过回调异步回调返回 </div></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_a932c522cbb8e7f717f2f44c321eca2b8"><div class="ttname"><a href="aisdk__semantic__online_8h.html#a932c522cbb8e7f717f2f44c321eca2b8">AISDK_FLAG_SEMANTIC_CLEAR_PREV_SESSION</a></div><div class="ttdeci">const int AISDK_FLAG_SEMANTIC_CLEAR_PREV_SESSION</div><div class="ttdef"><b>Definition:</b> <a href="aisdk__semantic__online_8h_source.html#l00093">aisdk_semantic_online.h:93</a></div></div>
+<div class="ttc" id="aisdk__semantic__online_8h_html_aafe4f33c946abeef42943e02853b0238"><div class="ttname"><a href="aisdk__semantic__online_8h.html#aafe4f33c946abeef42943e02853b0238">AISDK_CMD_SEMANTIC_ERROR</a></div><div class="ttdeci">const int AISDK_CMD_SEMANTIC_ERROR</div><div class="ttdoc">回调接口命令定义,语义返回出错 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__semantic__online_8h_source.html#l00044">aisdk_semantic_online.h:44</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.14-->
+<!-- start footer part-->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.qq.com/">Tencent
+</a> 
+</small></address>
+</body>
+</html>
