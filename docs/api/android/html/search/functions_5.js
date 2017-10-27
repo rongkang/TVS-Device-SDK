@@ -1,19 +1,7 @@
 var searchData=
 [
-  ['onatwinited',['onAtwInited',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1atw_1_1_i_atw_listener.html#a3987519f43de27d0b40abd0b411c46cb',1,'com::tencent::ai::sdk::atw::IAtwListener']]],
-  ['onatwwakeup',['onAtwWakeup',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1atw_1_1_i_atw_listener.html#aa0c37d5873785b0fbc0aeaf71e75e0d6',1,'com::tencent::ai::sdk::atw::IAtwListener']]],
-  ['ongeterror',['onGetError',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#a22d5c2de2bd81ee1e56010659ec0ee57',1,'com::tencent::ai::sdk::tr::TrSession']]],
-  ['ongetrecorddata',['onGetRecordData',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#a7b58f043f1454ebb56c31b91bd723782',1,'com::tencent::ai::sdk::tr::TrSession']]],
-  ['ongetrecordstate',['onGetRecordState',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#a4af220e797e435d7e12fe9c955845c54',1,'com::tencent::ai::sdk::tr::TrSession']]],
-  ['onplaybegin',['onPlayBegin',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_i_tts_listener.html#aeb1878fee7418d9298e14aba9ffee6da',1,'com::tencent::ai::sdk::tts::ITtsListener']]],
-  ['onplaycompleted',['onPlayCompleted',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_i_tts_listener.html#a2e176250db2cf2e13baec8de3f31c107',1,'com::tencent::ai::sdk::tts::ITtsListener']]],
-  ['onplayinterrupted',['onPlayInterrupted',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_i_tts_listener.html#ad06c7238833b1ff08dfc158b588c0d7b',1,'com::tencent::ai::sdk::tts::ITtsListener']]],
-  ['onprogressreturn',['onProgressReturn',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_i_tts_listener.html#a6290b51aafc4f0ce4d730bcea9d3b2b7',1,'com::tencent::ai::sdk::tts::ITtsListener']]],
-  ['onprogressruturndata',['onProgressRuturnData',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_i_tts_listener.html#ac06cc75a5f70b5965e82322837f79ff8',1,'com::tencent::ai::sdk::tts::ITtsListener']]],
-  ['ontrinited',['onTrInited',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_i_tr_listener.html#aca44e1cc3b4be647c99cf42ad8701f3a',1,'com::tencent::ai::sdk::tr::ITrListener']]],
-  ['ontrsemanticerrmsgproc',['onTrSemanticErrMsgProc',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_i_tr_listener.html#a0d9fc23005c2cc947ae52574bf35d71e',1,'com::tencent::ai::sdk::tr::ITrListener']]],
-  ['ontrsemanticmsgproc',['onTrSemanticMsgProc',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_i_tr_listener.html#a4f691438c729e32995656c8cb609a3ce',1,'com::tencent::ai::sdk::tr::ITrListener']]],
-  ['ontrvoiceerrmsgproc',['onTrVoiceErrMsgProc',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_i_tr_listener.html#a258242f5c2119811172e50e91cc2ebb1',1,'com::tencent::ai::sdk::tr::ITrListener']]],
-  ['ontrvoicemsgproc',['onTrVoiceMsgProc',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_i_tr_listener.html#a97bbddbe8cefbcd83aac14274f464a89',1,'com::tencent::ai::sdk::tr::ITrListener']]],
-  ['onttsinited',['onTtsInited',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_i_tts_init_listener.html#a1d634097e3155f00f6c26e1bb971c5b1',1,'com::tencent::ai::sdk::tts::ITtsInitListener']]]
+  ['initservice',['initService',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#ac31b2f56413d890f0ecdc2ec5ca16c7d',1,'com.tencent.ai.sdk.tr.TrSession.initService()'],['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_tts_session.html#a2b9e40e48cbe66910d479ae09ebc285c',1,'com.tencent.ai.sdk.tts.TtsSession.initService()'],['../classcom_1_1tencent_1_1ai_1_1sdk_1_1atw_1_1_atw_session.html#aa4a438610fd2651c4886ea4358899b55',1,'com.tencent.ai.sdk.atw.AtwSession.initService()']]],
+  ['initserviceex',['initServiceEx',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#ace2fa5adcd5cde6c31efbcd1f724e557',1,'com::tencent::ai::sdk::tr::TrSession']]],
+  ['ispcm',['isPcm',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1control_1_1_speech_manager.html#aaef6e4e5f57153db2955d12417019cec',1,'com::tencent::ai::sdk::control::SpeechManager']]],
+  ['issavepcm',['isSavePcm',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1control_1_1_speech_manager.html#ae0a7793f6716c81597a1523bb53c242d',1,'com::tencent::ai::sdk::control::SpeechManager']]]
 ];
