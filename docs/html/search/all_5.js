@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['getactivekey',['getActiveKey',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#ab29f7b4c23a15687f317888dc15c4823',1,'com::tencent::ai::sdk::tr::TrSession']]],
+  ['getinstance',['getInstance',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#adf4701c087d4abd80d3753cd736f57c6',1,'com.tencent.ai.sdk.tr.TrSession.getInstance(Context context, ITrListener nlpListener, int iAcousLang, String resDir, String imei)'],['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#a9709de3afe908ecf5dcf8befe22e9a18',1,'com.tencent.ai.sdk.tr.TrSession.getInstance(Context context, ITrListener srListener, int iAcousLang, String resDir, String imei, String serialNumber)'],['../classcom_1_1tencent_1_1ai_1_1sdk_1_1control_1_1_speech_manager.html#ac8ee46cb2d52e4641ef9890fd6153dc9',1,'com.tencent.ai.sdk.control.SpeechManager.getInstance()'],['../classcom_1_1tencent_1_1ai_1_1sdk_1_1atw_1_1_atw_session.html#a83ebdf7a9bf293ded201e82b9bf11ccc',1,'com.tencent.ai.sdk.atw.AtwSession.getInstance()']]]
+];
