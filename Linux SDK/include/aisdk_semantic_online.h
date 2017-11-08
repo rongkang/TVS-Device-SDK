@@ -4,6 +4,7 @@
  * @date 2017/8/1
  * @brief 在线语义相关接口
  * @note
+ * @copyright © 2017 TENCENT. All rights reserved.
  */
 #ifndef PACKAGE_TMS_AISDK_AISDK_TEXT_ONLINE_H
 #define PACKAGE_TMS_AISDK_AISDK_TEXT_ONLINE_H
@@ -104,7 +105,7 @@ const int AISDK_FLAG_SEMANTIC_EXIT_CUR_SESSION = 0x02;
  * @param textLen 文本串长度
  * @param userData 自定义信息，callback时带回。
  * @param len 自定义信息长度
- * @param flags 控制标志，参考AISDK_FLAG_SEMANTIC_*常量定义。默认设置为0即可。
+ * @param flags 控制标志，参考AISDK_FLAG_SEMANTIC_*常量定义，支持多flag或运算。默认设置为0即可。
  * @return 0：ok，other：fail。 错误码定义见AISDK_ERROR_*常量
  * @note
  * 获取"上一首/下一首"等.
@@ -149,6 +150,7 @@ AISDK_API_EXPORTS int aisdkReqFM(const char* showId, int showIdLength, int showT
 AISDK_API_EXPORTS int aisdkCancelText2Semantic();
 /**
  * @brief 根据外部传入数据，取消特定语义请求
+ * @param userData 自定义信息，跟请求的时候传入的值一致
  * @return 0:success other:fail。 错误码定义见AISDK_ERROR_*常量
  */
 AISDK_API_EXPORTS int aisdkCancelSemanticByUserData(void* userData);

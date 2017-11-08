@@ -60,7 +60,6 @@ var searchData=
   ['aisdk_5ferror_5fcommon_5funknown_5ferror',['AISDK_ERROR_COMMON_UNKNOWN_ERROR',['../aisdk__common__api_8h.html#a8fadd2f52f32c37086669438e9637867',1,'aisdk_common_api.h']]],
   ['aisdk_5ferror_5fonline_5freco_5fcreate_5fhandle_5ffailed',['AISDK_ERROR_ONLINE_RECO_CREATE_HANDLE_FAILED',['../aisdk__voice__online_8h.html#ae5a6287d0185ca72b4f1fa49d4eb8301',1,'aisdk_voice_online.h']]],
   ['aisdk_5ferror_5fonline_5freco_5fnot_5fstarted',['AISDK_ERROR_ONLINE_RECO_NOT_STARTED',['../aisdk__voice__online_8h.html#ae70e06db18d416f16d1fa18150a8e432',1,'aisdk_voice_online.h']]],
-  ['aisdk_5fflag_5fonline_5freco_5fclear_5fprev_5fsession',['AISDK_FLAG_ONLINE_RECO_CLEAR_PREV_SESSION',['../aisdk__voice__online_8h.html#a8566a40467be62a1c74cbdb40d4eac39',1,'aisdk_voice_online.h']]],
   ['aisdk_5fflag_5fonline_5freco_5fmanual_5fmode',['AISDK_FLAG_ONLINE_RECO_MANUAL_MODE',['../aisdk__voice__online_8h.html#a0a813f14d33b2ceb490198e2abe5f9a8',1,'aisdk_voice_online.h']]],
   ['aisdk_5fflag_5fsemantic_5fclear_5fprev_5fsession',['AISDK_FLAG_SEMANTIC_CLEAR_PREV_SESSION',['../aisdk__semantic__online_8h.html#a932c522cbb8e7f717f2f44c321eca2b8',1,'aisdk_semantic_online.h']]],
   ['aisdk_5fflag_5fsemantic_5fexit_5fcur_5fsession',['AISDK_FLAG_SEMANTIC_EXIT_CUR_SESSION',['../aisdk__semantic__online_8h.html#a25cfb45b03c9efd219fb37006a7c3ab7',1,'aisdk_semantic_online.h']]],

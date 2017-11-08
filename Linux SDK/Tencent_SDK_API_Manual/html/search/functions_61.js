@@ -5,6 +5,7 @@ var searchData=
   ['aisdkcancelsemanticbyuserdata',['aisdkCancelSemanticByUserData',['../aisdk__semantic__online_8h.html#a743e4908cfd388d8e2e6d42308c45032',1,'aisdk_semantic_online.h']]],
   ['aisdkcanceltext2semantic',['aisdkCancelText2Semantic',['../aisdk__semantic__online_8h.html#a6966b405ad6f49f5979c10de79bd79b2',1,'aisdk_semantic_online.h']]],
   ['aisdkcanceltext2speech',['aisdkCancelText2Speech',['../aisdk__tts__online_8h.html#ac8d5e25be11e70685a167235203547b4',1,'aisdk_tts_online.h']]],
+  ['aisdkcanceltext2speechbyuserdata',['aisdkCancelText2SpeechByUserData',['../aisdk__tts__online_8h.html#aac435ba7719882df4efdf2be82c20ee0',1,'aisdk_tts_online.h']]],
   ['aisdkcomplexsemantic2semantic',['aisdkComplexSemantic2Semantic',['../aisdk__semantic__online_8h.html#a45e4114add8f92c9a897cd895f8b141f',1,'aisdk_semantic_online.h']]],
   ['aisdkfullinit',['aisdkFullInit',['../aisdk__common__api_8h.html#a9d3165659fc3802a22933a9719c60e2c',1,'aisdk_common_api.h']]],
   ['aisdkgetconfig',['aisdkGetConfig',['../aisdk__common__api_8h.html#a98872b86879e215351ccb4e2743ca432',1,'aisdk_common_api.h']]],

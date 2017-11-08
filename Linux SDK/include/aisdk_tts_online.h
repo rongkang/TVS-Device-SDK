@@ -4,6 +4,7 @@
  * @date 2017/8/1
  * @brief 在线TTS相关接口
  * @note
+ * @copyright © 2017 TENCENT. All rights reserved.
  */
 
 #ifndef PACKAGE_TMS_AISDK_AISDK_TTS_ONLINE_H
@@ -65,11 +66,19 @@ const int AISDK_RESULT_CODE_TTS_LAST_DATA = 1;
  */
 AISDK_API_EXPORTS int aisdkText2Speech(const char* text, int textLen, void* userData, int len);
 /**
- * @brief 取消此次的TTS请求
- * @warning 取消后， 这一次的tts请求结果不再返回。
+ * @brief 取消所有的TTS请求
+ * @warning 取消后， 所有的tts请求结果不再返回。
  * @return 0:ok other:fail。 错误码定义见AISDK_ERROR_*常量
  */
 AISDK_API_EXPORTS int aisdkCancelText2Speech();
+
+/**
+ * @brief 根据外部传入数据，取消特定TTS请求
+ * @warning 取消后， 这一次的tts请求结果不再返回。
+ * @param userData 自定义信息，跟请求的时候传入的值一致
+ * @return 0:ok other:fail。 错误码定义见AISDK_ERROR_*常量
+ */
+AISDK_API_EXPORTS int aisdkCancelText2SpeechByUserData(void* userData);
 
 #ifdef __cplusplus
 }

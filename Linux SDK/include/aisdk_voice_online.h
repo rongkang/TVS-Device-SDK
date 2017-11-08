@@ -5,6 +5,7 @@
  * @date 2017/8/1
  * @brief 在线语音识别相关接口
  * @note
+ * @copyright © 2017 TENCENT. All rights reserved.
  */
 #ifndef PACKAGE_TMS_AISDK_AISDK_VOICE_ONLINE_H
 #define PACKAGE_TMS_AISDK_AISDK_VOICE_ONLINE_H
@@ -193,11 +194,6 @@ const int AISDK_CONFIG_VOICE_ONLINE_ENABLE_CALCULATE_VOLUME = AISDK_CONFIG_VOICE
 // 配置项，key的结束值
 const int AISDK_CONFIG_VOICE_ONLINE_END = 6999;
 
-/**
- * @brief flags标志取值定义:清除上一次上下文
- * @deprecatede
- */
-const int AISDK_FLAG_ONLINE_RECO_CLEAR_PREV_SESSION = 0x01;
 
 /**
  * @brief flags标志取值定义:语音识别改为手动模式。
@@ -216,7 +212,7 @@ const int AISDK_RESULT_CODE_ONLINE_OK = 0;
  * @brief 开始一次语音识别流程
  * @param userData 自定义数据指针。callback时带回。
  * @param len 自定义数据长度。
- * @param flags 控制标志，参考AISDK_FLAG_ONLINE_RECO_*常量定义。如果不设置，传0即可。
+ * @param flags 控制标志，参考AISDK_FLAG_ONLINE_RECO_*常量定义，支持多flag或运算。如果不设置，传0即可。
  * @return 0：ok，other：fail。 错误码定义见AISDK_ERROR_*常量
  */
 AISDK_API_EXPORTS int aisdkStartOnlineVoice2Text(void* userData, int len, int flags);

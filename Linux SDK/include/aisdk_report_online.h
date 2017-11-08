@@ -4,6 +4,7 @@
  * @date 2017/9/14
  * @brief 上报相关接口
  * @note 为了获得更精准的语义和服务结果，开发者需要调用使用该函数库，上报状态。
+ * @copyright © 2017 TENCENT. All rights reserved.
  */
 #ifndef PACKAGE_TMS_AISDK_AISDK_REPORT_H
 #define PACKAGE_TMS_AISDK_AISDK_REPORT_H

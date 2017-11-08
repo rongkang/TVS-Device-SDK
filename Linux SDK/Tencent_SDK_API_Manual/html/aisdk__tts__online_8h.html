@@ -110,8 +110,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <tr class="memdesc:aaaa590954f9a166907c5d31cd10566fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">TTS识别接口， TTS结果通过回调异步回调返回  <a href="#aaaa590954f9a166907c5d31cd10566fa">更多...</a><br/></td></tr>
 <tr class="separator:aaaa590954f9a166907c5d31cd10566fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8d5e25be11e70685a167235203547b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tts__online_8h.html#ac8d5e25be11e70685a167235203547b4">aisdkCancelText2Speech</a> ()</td></tr>
-<tr class="memdesc:ac8d5e25be11e70685a167235203547b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消此次的TTS请求  <a href="#ac8d5e25be11e70685a167235203547b4">更多...</a><br/></td></tr>
+<tr class="memdesc:ac8d5e25be11e70685a167235203547b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消所有的TTS请求  <a href="#ac8d5e25be11e70685a167235203547b4">更多...</a><br/></td></tr>
 <tr class="separator:ac8d5e25be11e70685a167235203547b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac435ba7719882df4efdf2be82c20ee0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tts__online_8h.html#aac435ba7719882df4efdf2be82c20ee0">aisdkCancelText2SpeechByUserData</a> (void *userData)</td></tr>
+<tr class="memdesc:aac435ba7719882df4efdf2be82c20ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据外部传入数据，取消特定TTS请求  <a href="#aac435ba7719882df4efdf2be82c20ee0">更多...</a><br/></td></tr>
+<tr class="separator:aac435ba7719882df4efdf2be82c20ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 变量</h2></td></tr>
@@ -137,6 +140,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <dl class="section author"><dt>作者</dt><dd>shengyujin </dd></dl>
 <dl class="section date"><dt>日期</dt><dd>2017/8/1 </dd></dl>
 <dl class="section note"><dt>注解</dt><dd></dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>© 2017 TENCENT. All rights reserved. </dd></dl>
 
 <p>在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 中定义.</p>
 </div><h2 class="groupheader">宏定义说明</h2>
@@ -150,7 +154,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00016">16</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00017">17</a> 行定义.</p>
 
 </div>
 </div>
@@ -164,7 +168,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00017">17</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00018">18</a> 行定义.</p>
 
 </div>
 </div>
@@ -182,8 +186,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       </table>
 </div><div class="memdoc">
 
-<p>取消此次的TTS请求 </p>
+<p>取消所有的TTS请求 </p>
+<dl class="section warning"><dt>警告</dt><dd>取消后， 所有的tts请求结果不再返回。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>0:ok other:fail。 错误码定义见AISDK_ERROR_*常量 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aac435ba7719882df4efdf2be82c20ee0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> int aisdkCancelText2SpeechByUserData </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据外部传入数据，取消特定TTS请求 </p>
 <dl class="section warning"><dt>警告</dt><dd>取消后， 这一次的tts请求结果不再返回。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userData</td><td>自定义信息，跟请求的时候传入的值一致 </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>返回</dt><dd>0:ok other:fail。 错误码定义见AISDK_ERROR_*常量 </dd></dl>
 
 </div>
@@ -252,7 +282,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>回调接口命令定义，当TTS返回出错时发出 </p>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__common__api_8h.html#a3b87dab38ec3dd2e3e69d187c8dbf11a">AISDK_CALLBACK</a> </dd></dl>
 
-<p>在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00035">35</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00036">36</a> 行定义.</p>
 
 </div>
 </div>
@@ -269,7 +299,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>回调接口命令定义，当TTS返回结果时发出 </p>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__common__api_8h.html#a3b87dab38ec3dd2e3e69d187c8dbf11a">AISDK_CALLBACK</a> </dd></dl>
 
-<p>在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00029">29</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00030">30</a> 行定义.</p>
 
 </div>
 </div>
@@ -283,7 +313,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00038">38</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00039">39</a> 行定义.</p>
 
 </div>
 </div>
@@ -297,7 +327,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00040">40</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00041">41</a> 行定义.</p>
 
 </div>
 </div>
@@ -315,7 +345,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>返回的json数据中的code定义 </p>
 <dl class="section note"><dt>注解</dt><dd></dd></dl>
 
-<p>在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00050">50</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00051">51</a> 行定义.</p>
 
 </div>
 </div>
@@ -332,7 +362,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>TTS的最后一个语音包返回code，标识最后一个语音数据包。 </p>
 <dl class="section note"><dt>注解</dt><dd>与AISDK_RESULT_CODE_TTS_DATA的不同在于:当文本较短时，tts语音包较短，只会有AISDK_RESULT_CODE_TTS_LAST_DATA </dd></dl>
 
-<p>在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00056">56</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00057">57</a> 行定义.</p>
 
 </div>
 </div>

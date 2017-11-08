@@ -4,6 +4,7 @@
  * @date 2017/8/1
  * @brief AISDK通用接口
  * @note
+ * @copyright © 2017 TENCENT. All rights reserved.
  */
 #ifndef PACKAGE_TMS_AISDK_AISDK_COMMON_API_H
 #define PACKAGE_TMS_AISDK_AISDK_COMMON_API_H
