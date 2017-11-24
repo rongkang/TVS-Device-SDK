@@ -179,8 +179,26 @@ Public 成员函数</h2></td></tr>
 <p>语义识别出现错误 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uMsg</td><td>消息标示符 </td></tr>
-    <tr><td class="paramname">errCode</td><td>错误码 </td></tr>
+    <tr><td class="paramname">uMsg</td><td>消息标示符 <table class="doxtable">
+<tr>
+<th>uMsg </th><th>说明  </th></tr>
+<tr>
+<td><a class="el" href="classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#a79662110b410b8fb2c8c39ac1ea14172">TrSession#ISS_TR_MSG_Error</a> </td><td>请求语义错误 </td></tr>
+<tr>
+<td><a class="el" href="classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#a7765ab8d33306cc4bdf93c68554c6044">TrSession#ISS_TR_MSG_SpeechTimeout</a> </td><td>当语音识别结果为空时 </td></tr>
+</table>
+</td></tr>
+    <tr><td class="paramname">errCode</td><td>错误码 <table class="doxtable">
+<tr>
+<th>errCode </th><th>说明  </th></tr>
+<tr>
+<td>5 </td><td>网络请求发送失败 </td></tr>
+<tr>
+<td>6 </td><td>网络请求回包失败。 </td></tr>
+<tr>
+<td>7 </td><td>网络请求超时。 </td></tr>
+</table>
+</td></tr>
     <tr><td class="paramname">cmd</td><td>语义结果类型 </td></tr>
     <tr><td class="paramname">lParam</td><td>错误信息 </td></tr>
     <tr><td class="paramname">extraMsg</td><td>自定义信息。 </td></tr>
@@ -289,8 +307,26 @@ Public 成员函数</h2></td></tr>
 <p>语音识别出现错误 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uMsg</td><td>消息标示符 </td></tr>
-    <tr><td class="paramname">errCode</td><td>错误码 </td></tr>
+    <tr><td class="paramname">uMsg</td><td>消息标示符 <table class="doxtable">
+<tr>
+<th>uMsg </th><th>说明  </th></tr>
+<tr>
+<td><a class="el" href="classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#a79662110b410b8fb2c8c39ac1ea14172">TrSession#ISS_TR_MSG_Error</a> </td><td>语音识别发生错误 </td></tr>
+<tr>
+<td><a class="el" href="classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#a7765ab8d33306cc4bdf93c68554c6044">在线识别超时，没有识别到有效输入 </a> </td></tr>
+</table>
+</td></tr>
+    <tr><td class="paramname">errCode</td><td>错误码 <table class="doxtable">
+<tr>
+<th>errCode </th><th>说明  </th></tr>
+<tr>
+<td>5 </td><td>网络请求发送失败 </td></tr>
+<tr>
+<td>6 </td><td>网络请求回包失败。 </td></tr>
+<tr>
+<td>7 </td><td>网络请求超时。 </td></tr>
+</table>
+</td></tr>
     <tr><td class="paramname">lParam</td><td>错误信息 </td></tr>
   </table>
   </dd>

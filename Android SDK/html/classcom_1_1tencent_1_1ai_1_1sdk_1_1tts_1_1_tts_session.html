@@ -101,6 +101,11 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a843bb53a515d149ba525876bc72cdd61"><td class="memItemLeft" align="right" valign="top">synchronized int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_tts_session.html#a843bb53a515d149ba525876bc72cdd61">startSpeak</a> (String text, <a class="el" href="interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_i_tts_listener.html">ITtsListener</a> listener)</td></tr>
 <tr class="memdesc:a843bb53a515d149ba525876bc72cdd61"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始语音合成（以TTS_MODE_MIX模式）  <a href="#a843bb53a515d149ba525876bc72cdd61">更多...</a><br /></td></tr>
 <tr class="separator:a843bb53a515d149ba525876bc72cdd61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac905e82763794485a64831f8fdb68bb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_tts_session.html#ac905e82763794485a64831f8fdb68bb0">setAudioFocusType</a> (int type)</td></tr>
+<tr class="memdesc:ac905e82763794485a64831f8fdb68bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置音频播放时获取焦点的类型。  <a href="#ac905e82763794485a64831f8fdb68bb0">更多...</a><br /></td></tr>
+<tr class="separator:ac905e82763794485a64831f8fdb68bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cbda55833d6af96dc95777e06c16248"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_tts_session.html#a9cbda55833d6af96dc95777e06c16248">setStreamType</a> (int type)</td></tr>
+<tr class="separator:a9cbda55833d6af96dc95777e06c16248"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a589ec0d42bc33ddd2531c04479361ea0"><td class="memItemLeft" align="right" valign="top">synchronized int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_tts_session.html#a589ec0d42bc33ddd2531c04479361ea0">startSpeak</a> (int modeType, String text, <a class="el" href="interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_i_tts_listener.html">ITtsListener</a> listener)</td></tr>
 <tr class="memdesc:a589ec0d42bc33ddd2531c04479361ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始语音合成  <a href="#a589ec0d42bc33ddd2531c04479361ea0">更多...</a><br /></td></tr>
 <tr class="separator:a589ec0d42bc33ddd2531c04479361ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -327,6 +332,29 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
+<a id="ac905e82763794485a64831f8fdb68bb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac905e82763794485a64831f8fdb68bb0">&#9670;&nbsp;</a></span>setAudioFocusType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.tencent.ai.sdk.tts.TtsSession.setAudioFocusType </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置音频播放时获取焦点的类型。 </p>
+<dl class="section note"><dt>注解</dt><dd>默认为<a class="el" href="">android.media.AudioManager#AUDIOFOCUS_GAIN</a> 支持以下两种： <a class="el" href="">android.media.AudioManager#AUDIOFOCUS_GAIN</a> 和<a class="el" href="">android.media.AudioManager#AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK</a> <br />
+下一次TTS播报生效 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>0:success </dd></dl>
+
+</div>
+</div>
 <a id="a4d690efaa47c446cfdf14ce063eb029c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d690efaa47c446cfdf14ce063eb029c">&#9670;&nbsp;</a></span>setParam()</h2>
 
@@ -406,6 +434,30 @@ Public 成员函数</h2></td></tr>
 </dl>
 <dl class="section note"><dt>注解</dt><dd>参考<a class="el" href="classcom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_tts_session.html#a4d690efaa47c446cfdf14ce063eb029c">setParam</a> </dd></dl>
 <dl class="section return"><dt>返回</dt><dd><a class="el" href="interfacecom_1_1tencent_1_1ai_1_1sdk_1_1utils_1_1_i_s_s_errors.html#a1798fae8b7652c307dab723d1f2fab2e">ISSErrors#TTS_PLAYER_SUCCESS</a>:success，other:fail。错误码见<a class="el" href="">ISSErrors</a>内常量 </dd></dl>
+
+</div>
+</div>
+<a id="a9cbda55833d6af96dc95777e06c16248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cbda55833d6af96dc95777e06c16248">&#9670;&nbsp;</a></span>setStreamType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.tencent.ai.sdk.tts.TtsSession.setStreamType </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>设置TTS播放时的stream type </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

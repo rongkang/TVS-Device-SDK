@@ -30,7 +30,7 @@ TVS Device SDK为客户端提供了腾讯语音唤醒、语音识别、语义识
 
 链接：[iOS SDK所有资料](./iOS%20SDK/  "所有资料") 
 
-### Android SDK文档(version 1.1.171108)
+### Android SDK文档(version 1.2.171122)
 
 链接：[Android 基础 SDK  API文档](https://tvsteam.github.io/TVS-Device-SDK/api/android/index.html "Android 基础 SDK") 
 
