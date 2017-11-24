@@ -2,6 +2,7 @@ var searchData=
 [
   ['onatwinited',['onAtwInited',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1atw_1_1_i_atw_listener.html#a3987519f43de27d0b40abd0b411c46cb',1,'com::tencent::ai::sdk::atw::IAtwListener']]],
   ['onatwwakeup',['onAtwWakeup',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1atw_1_1_i_atw_listener.html#aa0c37d5873785b0fbc0aeaf71e75e0d6',1,'com::tencent::ai::sdk::atw::IAtwListener']]],
+  ['onerror',['onError',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_i_tts_listener.html#a402db98dfe65afdd2fc88643b9ff9662',1,'com::tencent::ai::sdk::tts::ITtsListener']]],
   ['ongeterror',['onGetError',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#a22d5c2de2bd81ee1e56010659ec0ee57',1,'com::tencent::ai::sdk::tr::TrSession']]],
   ['ongetrecorddata',['onGetRecordData',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#a7b58f043f1454ebb56c31b91bd723782',1,'com::tencent::ai::sdk::tr::TrSession']]],
   ['ongetrecordstate',['onGetRecordState',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#a4af220e797e435d7e12fe9c955845c54',1,'com::tencent::ai::sdk::tr::TrSession']]],

@@ -112,7 +112,12 @@ public class TTSActivity extends BaseSampleActivity implements View.OnClickListe
             Log.i(TAG, msg);
             printLog(msg);
         }
-
+        @Override
+        public void onError(int errorCode, String errorMsg){
+            String msg = "播报出现错误：onError code="+errorCode+" errorMsg="+errorMsg;
+            Log.i(TAG, msg);
+            printLog(msg);
+        }
         @Override
         public void onProgressReturn(int textindex, int textlen) {
             String msg = "播放进度 - textindex ：" +  textindex + ", textlen : " + textlen;

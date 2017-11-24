@@ -88,6 +88,9 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:ac06cc75a5f70b5965e82322837f79ff8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_i_tts_listener.html#ac06cc75a5f70b5965e82322837f79ff8">onProgressRuturnData</a> (byte[] data, boolean end)</td></tr>
 <tr class="memdesc:ac06cc75a5f70b5965e82322837f79ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回流式音频语音流。 对于长文本，可能多次回调。  <a href="#ac06cc75a5f70b5965e82322837f79ff8">更多...</a><br /></td></tr>
 <tr class="separator:ac06cc75a5f70b5965e82322837f79ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a402db98dfe65afdd2fc88643b9ff9662"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_i_tts_listener.html#a402db98dfe65afdd2fc88643b9ff9662">onError</a> (int errorCode, String msg)</td></tr>
+<tr class="memdesc:a402db98dfe65afdd2fc88643b9ff9662"><td class="mdescLeft">&#160;</td><td class="mdescRight">语音合成出现错误。  <a href="#a402db98dfe65afdd2fc88643b9ff9662">更多...</a><br /></td></tr>
+<tr class="separator:a402db98dfe65afdd2fc88643b9ff9662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6290b51aafc4f0ce4d730bcea9d3b2b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_i_tts_listener.html#a6290b51aafc4f0ce4d730bcea9d3b2b7">onProgressReturn</a> (int textindex, int textlen)</td></tr>
 <tr class="memdesc:a6290b51aafc4f0ce4d730bcea9d3b2b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">播报进度。现在是流式的，没有实现该功能。  <a href="#a6290b51aafc4f0ce4d730bcea9d3b2b7">更多...</a><br /></td></tr>
 <tr class="separator:a6290b51aafc4f0ce4d730bcea9d3b2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -95,6 +98,58 @@ Public 成员函数</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>TTS播报状态回调。 </p>
 </div><h2 class="groupheader">成员函数说明</h2>
+<a id="a402db98dfe65afdd2fc88643b9ff9662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a402db98dfe65afdd2fc88643b9ff9662">&#9670;&nbsp;</a></span>onError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.tencent.ai.sdk.tts.ITtsListener.onError </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>errorCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>语音合成出现错误。 </p>
+<dl class="section note"><dt>注解</dt><dd>如果发生错误,不仅会调用onPlayInterrupted,也会调用onError</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorCode</td><td>错误码 <table class="doxtable">
+<tr>
+<th>errorCode </th><th>说明  </th></tr>
+<tr>
+<td><a class="el" href="interfacecom_1_1tencent_1_1ai_1_1sdk_1_1utils_1_1_i_s_s_errors.html#a67f39b164f3072f189ffd5757b909895">com.tencent.ai.sdk.utils.ISSErrors#ISS_ERROR_NETWORK_FAIL</a> </td><td>网络请求发送失败 </td></tr>
+<tr>
+<td><a class="el" href="interfacecom_1_1tencent_1_1ai_1_1sdk_1_1utils_1_1_i_s_s_errors.html#a828ed91aa177bfabab29ce82db6cfd07">com.tencent.ai.sdk.utils.ISSErrors#ISS_ERROR_NETWORK_RESPONSE_FAIL</a> </td><td>网络请求回包失败。 </td></tr>
+<tr>
+<td><a class="el" href="interfacecom_1_1tencent_1_1ai_1_1sdk_1_1utils_1_1_i_s_s_errors.html#ac48578d78f3d824a1e593f6da01d3e52">com.tencent.ai.sdk.utils.ISSErrors#ISS_ERROR_NETWORK_TIMEOUT</a> </td><td>网络请求超时。 </td></tr>
+<tr>
+<td><a class="el" href="interfacecom_1_1tencent_1_1ai_1_1sdk_1_1utils_1_1_i_s_s_errors.html#ae48b01cd2fa61c9d2c7798cb56d96e4a">com.tencent.ai.sdk.utils.ISSErrors#TTS_PLAYER_UNINIT</a> </td><td>播放器未初始化成功 </td></tr>
+<tr>
+<td><a class="el" href="interfacecom_1_1tencent_1_1ai_1_1sdk_1_1utils_1_1_i_s_s_errors.html#ad23260d5ce16ed0cac94d0bc9e0cd42f">com.tencent.ai.sdk.utils.ISSErrors#ISS_ERROR_SERVICE_ERROR</a> </td><td>TTS服务异常 </td></tr>
+</table>
+</td></tr>
+    <tr><td class="paramname">msg</td><td>错误信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aeb1878fee7418d9298e14aba9ffee6da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeb1878fee7418d9298e14aba9ffee6da">&#9670;&nbsp;</a></span>onPlayBegin()</h2>
 

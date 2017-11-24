@@ -19,6 +19,7 @@ var searchData=
   ['iss_5ferror_5fnot_5finit',['ISS_ERROR_NOT_INIT',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1utils_1_1_i_s_s_errors.html#a73e335266d3b670e1da2469fe1df1785',1,'com::tencent::ai::sdk::utils::ISSErrors']]],
   ['iss_5ferror_5fnot_5finitialized',['ISS_ERROR_NOT_INITIALIZED',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1utils_1_1_i_s_s_errors.html#a17f22c8b313d1d505a31241c242b5dd3',1,'com::tencent::ai::sdk::utils::ISSErrors']]],
   ['iss_5ferror_5fout_5fof_5fmemory',['ISS_ERROR_OUT_OF_MEMORY',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1utils_1_1_i_s_s_errors.html#af75f4070d0304d423da39897548a076b',1,'com::tencent::ai::sdk::utils::ISSErrors']]],
+  ['iss_5ferror_5fservice_5ferror',['ISS_ERROR_SERVICE_ERROR',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1utils_1_1_i_s_s_errors.html#ad23260d5ce16ed0cac94d0bc9e0cd42f',1,'com::tencent::ai::sdk::utils::ISSErrors']]],
   ['iss_5ferror_5funknown_5ferror',['ISS_ERROR_UNKNOWN_ERROR',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1utils_1_1_i_s_s_errors.html#aab644ebf1d4e74fb8adb773e583b6260',1,'com::tencent::ai::sdk::utils::ISSErrors']]],
   ['iss_5ferror_5fvoice_5ftimeout',['ISS_ERROR_VOICE_TIMEOUT',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1utils_1_1_i_s_s_errors.html#a142eab45514d7b74316d40a5aeecb1e6',1,'com::tencent::ai::sdk::utils::ISSErrors']]],
   ['iss_5fsuccess',['ISS_SUCCESS',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1utils_1_1_i_s_s_errors.html#ae468269f2a84cf97e9c0b12cc753b57c',1,'com::tencent::ai::sdk::utils::ISSErrors']]],
