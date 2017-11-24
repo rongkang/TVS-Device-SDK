@@ -121,9 +121,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <tr class="memitem:a9d3165659fc3802a22933a9719c60e2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__common__api_8h.html#a9d3165659fc3802a22933a9719c60e2c">aisdkFullInit</a> (const char *folderPath, const char *sharedFilePath, const char *appKey, const char *accessToken)</td></tr>
 <tr class="memdesc:a9d3165659fc3802a22933a9719c60e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化函数  <a href="#a9d3165659fc3802a22933a9719c60e2c">更多...</a><br/></td></tr>
 <tr class="separator:a9d3165659fc3802a22933a9719c60e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc8fa88e1869edf5439ef4f22ba8ce01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__common__api_8h.html#afc8fa88e1869edf5439ef4f22ba8ce01">aisdkSetQUA</a> (const char *quaVersion, const char *platform, const char *vendor, const char *product, const char *version, const char *versionNum, const char *package, const char *device)</td></tr>
-<tr class="memdesc:afc8fa88e1869edf5439ef4f22ba8ce01"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置QUA  <a href="#afc8fa88e1869edf5439ef4f22ba8ce01">更多...</a><br/></td></tr>
-<tr class="separator:afc8fa88e1869edf5439ef4f22ba8ce01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34231709d7221520059c675a0eb7f190"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__common__api_8h.html#a34231709d7221520059c675a0eb7f190">aisdkSetQUA</a> (const char *quaVersion, const char *platform, const char *vendor, const char *product, const char *version, const char *versionNum, const char *package, const char *device, int sp)</td></tr>
+<tr class="memdesc:a34231709d7221520059c675a0eb7f190"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置QUA  <a href="#a34231709d7221520059c675a0eb7f190">更多...</a><br/></td></tr>
+<tr class="separator:a34231709d7221520059c675a0eb7f190"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b2f03b49a4e3818bb11589e684149f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__common__api_8h.html#a7b2f03b49a4e3818bb11589e684149f4">aisdkSetConfig</a> (int key, const char *value)</td></tr>
 <tr class="memdesc:a7b2f03b49a4e3818bb11589e684149f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置配置项  <a href="#a7b2f03b49a4e3818bb11589e684149f4">更多...</a><br/></td></tr>
 <tr class="separator:a7b2f03b49a4e3818bb11589e684149f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,6 +198,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <tr class="memitem:ac160b7f3fa6cfd52e8aad93782c93aec"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__common__api_8h.html#ac160b7f3fa6cfd52e8aad93782c93aec">AISDK_CONFIG_CHAT_BOT</a> = <a class="el" href="aisdk__common__api_8h.html#a8cc4665b54f7b72c61bef90ccf42cd8a">AISDK_CONFIG_COMMON_BEGIN</a> + 11</td></tr>
 <tr class="memdesc:ac160b7f3fa6cfd52e8aad93782c93aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置聊天机器人  <a href="#ac160b7f3fa6cfd52e8aad93782c93aec">更多...</a><br/></td></tr>
 <tr class="separator:ac160b7f3fa6cfd52e8aad93782c93aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5cce993594d29b7add3fdd097ed2c97"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__common__api_8h.html#ad5cce993594d29b7add3fdd097ed2c97">AISDK_CONFIG_APP_KEY_AND_TOKEN</a> = <a class="el" href="aisdk__common__api_8h.html#a8cc4665b54f7b72c61bef90ccf42cd8a">AISDK_CONFIG_COMMON_BEGIN</a> + 12</td></tr>
+<tr class="memdesc:ad5cce993594d29b7add3fdd097ed2c97"><td class="mdescLeft">&#160;</td><td class="mdescRight">单独配置app key和access token。  <a href="#ad5cce993594d29b7add3fdd097ed2c97">更多...</a><br/></td></tr>
+<tr class="separator:ad5cce993594d29b7add3fdd097ed2c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3d3acfbb3b0b3ffac57b08758856b90"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__common__api_8h.html#ab3d3acfbb3b0b3ffac57b08758856b90">AISDK_CONFIG_DEVICE_SHOW_INFO</a> = <a class="el" href="aisdk__common__api_8h.html#a8cc4665b54f7b72c61bef90ccf42cd8a">AISDK_CONFIG_COMMON_BEGIN</a> + 13</td></tr>
+<tr class="memdesc:ab3d3acfbb3b0b3ffac57b08758856b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置设备信息  <a href="#ab3d3acfbb3b0b3ffac57b08758856b90">更多...</a><br/></td></tr>
+<tr class="separator:ab3d3acfbb3b0b3ffac57b08758856b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba1944dad27da747f47f7c9a92371dd"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__common__api_8h.html#a9ba1944dad27da747f47f7c9a92371dd">AISDK_CONFIG_LOG_SYNC</a> = <a class="el" href="aisdk__common__api_8h.html#a8cc4665b54f7b72c61bef90ccf42cd8a">AISDK_CONFIG_COMMON_BEGIN</a> + 14</td></tr>
+<tr class="memdesc:a9ba1944dad27da747f47f7c9a92371dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置LOG是否同步打印  <a href="#a9ba1944dad27da747f47f7c9a92371dd">更多...</a><br/></td></tr>
+<tr class="separator:a9ba1944dad27da747f47f7c9a92371dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf183c4d08b9b44b124b285b5b6a260"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__common__api_8h.html#a5bf183c4d08b9b44b124b285b5b6a260">AISDK_CONFIG_GUID</a> = <a class="el" href="aisdk__common__api_8h.html#a8cc4665b54f7b72c61bef90ccf42cd8a">AISDK_CONFIG_COMMON_BEGIN</a> + 15</td></tr>
+<tr class="memdesc:a5bf183c4d08b9b44b124b285b5b6a260"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得设备当前GUID  <a href="#a5bf183c4d08b9b44b124b285b5b6a260">更多...</a><br/></td></tr>
+<tr class="separator:a5bf183c4d08b9b44b124b285b5b6a260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9734e3193fb686275aa378ee19b3c268"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__common__api_8h.html#a9734e3193fb686275aa378ee19b3c268">AISDK_CONFIG_QUA</a> = <a class="el" href="aisdk__common__api_8h.html#a8cc4665b54f7b72c61bef90ccf42cd8a">AISDK_CONFIG_COMMON_BEGIN</a> + 16</td></tr>
+<tr class="memdesc:a9734e3193fb686275aa378ee19b3c268"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得设备当前QUA  <a href="#a9734e3193fb686275aa378ee19b3c268">更多...</a><br/></td></tr>
+<tr class="separator:a9734e3193fb686275aa378ee19b3c268"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29c991c3ef37f0437ca8490fd08d845a"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__common__api_8h.html#a29c991c3ef37f0437ca8490fd08d845a">AISDK_CONFIG_COMMON_END</a> = 999</td></tr>
 <tr class="separator:a29c991c3ef37f0437ca8490fd08d845a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae09dc736d3c87ee655198b32e45acfd4"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__common__api_8h.html#ae09dc736d3c87ee655198b32e45acfd4">AISDK_CONFIG_VALUE_ENABLE</a> = &quot;1&quot;</td></tr>
@@ -289,7 +304,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>回调命令 </p>
 <dl class="section see"><dt>参见</dt><dd>参见各接口头文件的AISDK_CMD_*常量定义 </dd></dl>
 
-<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00394">394</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00497">497</a> 行定义.</p>
 
 </div>
 </div>
@@ -520,7 +535,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 </div>
 </div>
-<a class="anchor" id="afc8fa88e1869edf5439ef4f22ba8ce01"></a>
+<a class="anchor" id="a34231709d7221520059c675a0eb7f190"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -570,7 +585,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>device</em>&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sp</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -583,14 +604,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>设置QUA </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">in</td><td>quaVersion qua版本号 </td></tr>
-    <tr><td class="paramname">in</td><td>platform 平台 </td></tr>
-    <tr><td class="paramname">in</td><td>vendor 厂商 </td></tr>
-    <tr><td class="paramname">in</td><td>product 产品名称 </td></tr>
-    <tr><td class="paramname">in</td><td>version 版本名称 </td></tr>
-    <tr><td class="paramname">in</td><td>versionNum 版本序列号 </td></tr>
-    <tr><td class="paramname">in</td><td>package 包名 </td></tr>
-    <tr><td class="paramname">in</td><td>device 设备类型 </td></tr>
+    <tr><td class="paramname">quaVersion</td><td>qua版本号 </td></tr>
+    <tr><td class="paramname">platform</td><td>平台 </td></tr>
+    <tr><td class="paramname">vendor</td><td>厂商 </td></tr>
+    <tr><td class="paramname">product</td><td>产品名称 </td></tr>
+    <tr><td class="paramname">version</td><td>版本名称 </td></tr>
+    <tr><td class="paramname">versionNum</td><td>版本序列号 </td></tr>
+    <tr><td class="paramname">package</td><td>包名 </td></tr>
+    <tr><td class="paramname">device</td><td>设备类型 </td></tr>
+    <tr><td class="paramname">sp</td><td>回复语规范，1或者2 </td></tr>
   </table>
   </dd>
 </dl>
@@ -599,6 +621,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div>
 </div>
 <h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="ad5cce993594d29b7add3fdd097ed2c97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int AISDK_CONFIG_APP_KEY_AND_TOKEN = <a class="el" href="aisdk__common__api_8h.html#a8cc4665b54f7b72c61bef90ccf42cd8a">AISDK_CONFIG_COMMON_BEGIN</a> + 12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>单独配置app key和access token。 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__common__api_8h.html#a7b2f03b49a4e3818bb11589e684149f4" title="设置配置项 ">aisdkSetConfig()</a></dd></dl>
+<p>配置项关键字。 </p>
+<h2>功能</h2>
+<h2>值</h2>
+<p>字符串类型，包括appkey和access token，以"|"隔开</p>
+<h2>示例：</h2>
+<p>```</p>
+<p>aisdkSetConfig(AISDK_CONFIG_APP_KEY_AND_TOKEN,"ABC|123") ``` </p>
+
+<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00332">332</a> 行定义.</p>
+
+</div>
+</div>
 <a class="anchor" id="aff794302c1c7891d1b76fc6556da4796"></a>
 <div class="memitem">
 <div class="memproto">
@@ -707,7 +753,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00315">315</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00418">418</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab3d3acfbb3b0b3ffac57b08758856b90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int AISDK_CONFIG_DEVICE_SHOW_INFO = <a class="el" href="aisdk__common__api_8h.html#a8cc4665b54f7b72c61bef90ccf42cd8a">AISDK_CONFIG_COMMON_BEGIN</a> + 13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置设备信息 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__common__api_8h.html#a7b2f03b49a4e3818bb11589e684149f4" title="设置配置项 ">aisdkSetConfig()</a></dd></dl>
+<p>配置项关键字。 </p>
+<h2>功能</h2>
+<h2>值</h2>
+<p>json格式数据 static const char* json = "{\
+    \"manufacturer": "LENOVO",\ "deviceName": "MOTO G",\ "brandIconUrl" "<a href="https://rinc.xyz/img/favicon.png">https://rinc.xyz/img/favicon.png</a>",\ "productId": "TVS9876543210",\ "DSN": "9876543210",\ "MAC": "a0:b1:c2:d3:e4:f6",\ "OS": "Android 5.1"\ }";</p>
+<h2>示例：</h2>
+<p>``` |manufacturer=| aisdkSetConfig(AISDK_CONFIG_DEVICE_INFO,"ABC|123") ``` </p>
+
+<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00363">363</a> 行定义.</p>
 
 </div>
 </div>
@@ -733,6 +803,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>``` //设置环境为测试环境 aisdkSetConfig(AISDK_CONFIG_ENV_TYPE,AISDK_CONFIG_VALUE_ENV_TYPE_TEST) //设置环境为正式环境 aisdkSetConfig(AISDK_CONFIG_ENV_TYPE,AISDK_CONFIG_VALUE_ENV_TYPE_FORMAL) ``` </p>
 
 <p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00093">93</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5bf183c4d08b9b44b124b285b5b6a260"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int AISDK_CONFIG_GUID = <a class="el" href="aisdk__common__api_8h.html#a8cc4665b54f7b72c61bef90ccf42cd8a">AISDK_CONFIG_COMMON_BEGIN</a> + 15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获得设备当前GUID </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__common__api_8h.html#a98872b86879e215351ccb4e2743ca432" title="获得相应配置项的值 ">aisdkGetConfig()</a></dd></dl>
+<h2>功能</h2>
+<p>获得设备当前GUID </p>
+<h2>示例：</h2>
+<p>``` aisdkGetConfig(AISDK_CONFIG_GUID) ``` </p>
+
+<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00401">401</a> 行定义.</p>
 
 </div>
 </div>
@@ -794,6 +885,58 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>``` // 设置打印日志级别为debug aisdkSetConfig(AISDK_CONFIG_LOG_LEVEL,AISDK_CONFIG_VALUE_LOG_LEVEL_DEBUG) ``` </p>
 
 <p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00205">205</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ba1944dad27da747f47f7c9a92371dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int AISDK_CONFIG_LOG_SYNC = <a class="el" href="aisdk__common__api_8h.html#a8cc4665b54f7b72c61bef90ccf42cd8a">AISDK_CONFIG_COMMON_BEGIN</a> + 14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置LOG是否同步打印 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__common__api_8h.html#a7b2f03b49a4e3818bb11589e684149f4" title="设置配置项 ">aisdkSetConfig()</a></dd></dl>
+<p>配置项关键字。 </p>
+<h2>功能</h2>
+<p>配置LOG是否同步打印，默认异步打印。 </p>
+<h2>值</h2>
+<table class="doxtable">
+<tr>
+<th>值</th><th>说明  </th></tr>
+<tr>
+<td>AISDK_CONFIG_VALUE_ENABLE</td><td>开启同步打印日志。 </td></tr>
+<tr>
+<td>AISDK_CONFIG_VALUE_DISABLE</td><td>异步打印日志。 </td></tr>
+</table>
+<h2>示例：</h2>
+<p>``` // 设置同步打印日志 aisdkSetConfig(AISDK_CONFIG_LOG_SYNC,AISDK_CONFIG_VALUE_ENABLE) ``` </p>
+
+<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00386">386</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9734e3193fb686275aa378ee19b3c268"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int AISDK_CONFIG_QUA = <a class="el" href="aisdk__common__api_8h.html#a8cc4665b54f7b72c61bef90ccf42cd8a">AISDK_CONFIG_COMMON_BEGIN</a> + 16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获得设备当前QUA </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__common__api_8h.html#a98872b86879e215351ccb4e2743ca432" title="获得相应配置项的值 ">aisdkGetConfig()</a></dd></dl>
+<h2>功能</h2>
+<p>获得设备当前QUA </p>
+<h2>示例：</h2>
+<p>``` aisdkGetConfig(AISDK_CONFIG_QUA) ``` </p>
+
+<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00416">416</a> 行定义.</p>
 
 </div>
 </div>
@@ -921,7 +1064,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 <p>禁用 </p>
 
-<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00328">328</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00431">431</a> 行定义.</p>
 
 </div>
 </div>
@@ -936,7 +1079,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 <p>开启 </p>
 
-<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00323">323</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00426">426</a> 行定义.</p>
 
 </div>
 </div>
@@ -951,7 +1094,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 <p>网络环境：正式环境 </p>
 
-<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00333">333</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00436">436</a> 行定义.</p>
 
 </div>
 </div>
@@ -966,7 +1109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 <p>网络环境：测试环境 </p>
 
-<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00338">338</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00441">441</a> 行定义.</p>
 
 </div>
 </div>
@@ -981,7 +1124,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 <p>日志级别，debug </p>
 
-<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00358">358</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00461">461</a> 行定义.</p>
 
 </div>
 </div>
@@ -996,7 +1139,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 <p>日志级别，error </p>
 
-<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00370">370</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00473">473</a> 行定义.</p>
 
 </div>
 </div>
@@ -1011,7 +1154,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 <p>日志级别，info </p>
 
-<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00362">362</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00465">465</a> 行定义.</p>
 
 </div>
 </div>
@@ -1026,7 +1169,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 <p>日志级别，none </p>
 
-<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00374">374</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00477">477</a> 行定义.</p>
 
 </div>
 </div>
@@ -1041,7 +1184,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 <p>日志级别，warn </p>
 
-<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00366">366</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00469">469</a> 行定义.</p>
 
 </div>
 </div>
@@ -1056,7 +1199,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 <p>TTS格式：AMR </p>
 
-<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00353">353</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00456">456</a> 行定义.</p>
 
 </div>
 </div>
@@ -1071,7 +1214,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 <p>TTS格式：MP3 </p>
 
-<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00343">343</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00446">446</a> 行定义.</p>
 
 </div>
 </div>
@@ -1086,7 +1229,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 <p>TTS格式：WAV </p>
 
-<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00348">348</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00451">451</a> 行定义.</p>
 
 </div>
 </div>

@@ -21,7 +21,7 @@ var searchData=
   ['aisdkreqmusic',['aisdkReqMusic',['../aisdk__semantic__online_8h.html#ad922c256c19c80018506f029a4e15e27',1,'aisdk_semantic_online.h']]],
   ['aisdksetcallback',['aisdkSetCallback',['../aisdk__common__api_8h.html#a2f5d4d4faebe65da75546c08fd1ec63c',1,'aisdk_common_api.h']]],
   ['aisdksetconfig',['aisdkSetConfig',['../aisdk__common__api_8h.html#a7b2f03b49a4e3818bb11589e684149f4',1,'aisdk_common_api.h']]],
-  ['aisdksetqua',['aisdkSetQUA',['../aisdk__common__api_8h.html#afc8fa88e1869edf5439ef4f22ba8ce01',1,'aisdk_common_api.h']]],
+  ['aisdksetqua',['aisdkSetQUA',['../aisdk__common__api_8h.html#a34231709d7221520059c675a0eb7f190',1,'aisdk_common_api.h']]],
   ['aisdkstartonlinevoice2text',['aisdkStartOnlineVoice2Text',['../aisdk__voice__online_8h.html#a75d8b28126acc7b66b60a3c6e58818ec',1,'aisdk_voice_online.h']]],
   ['aisdkstoponlinevoice2text',['aisdkStopOnlineVoice2Text',['../aisdk__voice__online_8h.html#a77c971645a14f0ebd16bbbc5511afa07',1,'aisdk_voice_online.h']]],
   ['aisdktext2speech',['aisdkText2Speech',['../aisdk__tts__online_8h.html#aaaa590954f9a166907c5d31cd10566fa',1,'aisdk_tts_online.h']]]

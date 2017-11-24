@@ -311,6 +311,109 @@ const int AISDK_CONFIG_ASR_DOMAIN = AISDK_CONFIG_COMMON_BEGIN + 10;
  */
 const int AISDK_CONFIG_CHAT_BOT = AISDK_CONFIG_COMMON_BEGIN + 11;
 
+/**
+* @see aisdkSetConfig()
+ *
+ * @brief 单独配置app key和access token。
+ *
+ * 配置项关键字。
+ * ## 功能
+ *
+ * ## 值
+ * 字符串类型，包括appkey和access token，以"|"隔开
+ *
+ * ## 示例：
+ *
+ * ```
+ *
+ * aisdkSetConfig(AISDK_CONFIG_APP_KEY_AND_TOKEN,"ABC|123")
+ * ```
+ */
+const int AISDK_CONFIG_APP_KEY_AND_TOKEN = AISDK_CONFIG_COMMON_BEGIN + 12;
+
+
+
+/**
+* @see aisdkSetConfig()
+ *
+ * @brief 配置设备信息
+ *
+ * 配置项关键字。
+ * ## 功能
+ *
+ * ## 值
+ * json格式数据
+static const char* json = "{\
+    \"manufacturer\": \"LENOVO\",\
+    \"deviceName\": \"MOTO G\",\
+    \"brandIconUrl\" \"https://rinc.xyz/img/favicon.png\",\
+    \"productId\": \"TVS9876543210\",\
+    \"DSN\": \"9876543210\",\
+    \"MAC\": \"a0:b1:c2:d3:e4:f6\",\
+    \"OS\": \"Android 5.1\"\
+  }";
+
+ * ## 示例：
+ *
+ * ```
+ * |manufacturer=|
+ * aisdkSetConfig(AISDK_CONFIG_DEVICE_INFO,"ABC|123")
+ * ```
+ */
+const int AISDK_CONFIG_DEVICE_SHOW_INFO = AISDK_CONFIG_COMMON_BEGIN + 13;
+
+
+
+/**
+ * @see aisdkSetConfig()
+ *
+ * @brief 配置LOG是否同步打印
+ *
+ * 配置项关键字。
+ * ## 功能
+ * 配置LOG是否同步打印，默认异步打印。
+ * ## 值
+ * 值|说明
+ * --|--
+ * AISDK_CONFIG_VALUE_ENABLE|开启同步打印日志。
+ * AISDK_CONFIG_VALUE_DISABLE|异步打印日志。
+ * ## 示例：
+ * ```
+ * // 设置同步打印日志
+ * aisdkSetConfig(AISDK_CONFIG_LOG_SYNC,AISDK_CONFIG_VALUE_ENABLE)
+ * ```
+ */
+const int AISDK_CONFIG_LOG_SYNC = AISDK_CONFIG_COMMON_BEGIN + 14;
+
+/**
+ * @see aisdkGetConfig()
+ *
+ * @brief 获得设备当前GUID
+ *
+ * ## 功能
+ * 获得设备当前GUID
+ * ## 示例：
+ *
+ * ```
+ * aisdkGetConfig(AISDK_CONFIG_GUID)
+ * ```
+ */
+const int AISDK_CONFIG_GUID = AISDK_CONFIG_COMMON_BEGIN + 15;
+
+/**
+ * @see aisdkGetConfig()
+ *
+ * @brief 获得设备当前QUA
+ *
+ * ## 功能
+ * 获得设备当前QUA
+ * ## 示例：
+ *
+ * ```
+ * aisdkGetConfig(AISDK_CONFIG_QUA)
+ * ```
+ */
+const int AISDK_CONFIG_QUA= AISDK_CONFIG_COMMON_BEGIN + 16;
 // 通用配置项，key的结束值
 const int AISDK_CONFIG_COMMON_END = 999;
 
@@ -425,14 +528,15 @@ AISDK_API_EXPORTS int aisdkInit(const char* folderPath, const char* appKey, cons
 AISDK_API_EXPORTS int aisdkFullInit(const char* folderPath, const char* sharedFilePath, const char* appKey, const char* accessToken);
 /**
  * @brief 设置QUA
- * @param in quaVersion qua版本号
- * @param in platform  平台
- * @param in vendor  厂商
- * @param in product 产品名称
- * @param in version 版本名称
- * @param in versionNum 版本序列号
- * @param in package 包名
- * @param in device 设备类型
+ * @param quaVersion qua版本号
+ * @param platform  平台
+ * @param vendor  厂商
+ * @param product 产品名称
+ * @param version 版本名称
+ * @param versionNum 版本序列号
+ * @param package 包名
+ * @param device 设备类型
+ * @param sp 回复语规范，1或者2
  * @note
  *
  */
@@ -443,7 +547,9 @@ AISDK_API_EXPORTS void aisdkSetQUA(const char* quaVersion,
                                    const char* version,
                                    const char* versionNum,
                                    const char* package,
-                                   const char* device);
+                                   const char* device,
+                                   int sp
+                                    );
 
 /**
  * @brief 设置配置项

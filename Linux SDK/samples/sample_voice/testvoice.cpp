@@ -35,7 +35,7 @@ void sendAudioData(){
         dataFile.read(pcm_buf, size);
         size = dataFile.gcount();
         count++;
-
+		usleep(100000);
         int res = aisdkInputOnlineVoice2TextAudioData(pcm_buf, size);
         //TODO handle res not zero, send data again
 

@@ -97,6 +97,11 @@ const int AISDK_FLAG_SEMANTIC_CLEAR_PREV_SESSION = 0x01;
  * 退出当前请求的上下文
  */
 const int AISDK_FLAG_SEMANTIC_EXIT_CUR_SESSION = 0x02;
+/**
+ * 标记当前语义请求的文本不是语音识别结果。
+ */
+const int AISDK_FLAG_SEMANTIC_NOT_ASR = 0x04;
+
 
 /**
  *
