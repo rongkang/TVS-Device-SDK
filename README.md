@@ -7,7 +7,6 @@ TVS Device SDK为客户端提供了腾讯语音唤醒、语音识别、语义识
 * github上没有放置唤醒库和唤醒模型。如有需要，请联系腾讯叮当团队。
 
 ### TODO
-* 内存占用优化
 * Android TTS焦点问题解决。
 * Android接口梳理。
 
