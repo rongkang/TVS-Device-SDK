@@ -57,7 +57,7 @@ const int AISDK_RESULT_CODE_TTS_DATA = 0;
 const int AISDK_RESULT_CODE_TTS_LAST_DATA = 1;
 
 /**
- * @brief TTS识别接口， TTS结果通过回调异步回调返回
+ * @brief TTS转换接口， TTS结果通过回调异步回调返回
  * @param text 需要转语音的文本，以utf8格式编码的文本串，以'\0'结尾
  * @param textLen  文本长度
  * @param userData 自定义数据
@@ -65,6 +65,18 @@ const int AISDK_RESULT_CODE_TTS_LAST_DATA = 1;
  * @return 0:ok, other：fail。 错误码定义见AISDK_ERROR_*常量
  */
 AISDK_API_EXPORTS int aisdkText2Speech(const char* text, int textLen, void* userData, int len);
+
+/**
+ * @brief TTS转换接口， TTS结果通过回调异步回调返回
+ * @param text 需要转语音的文本，以utf8格式编码的文本串，以'\0'结尾
+ * @param textLen  文本长度
+ * @param userData 自定义数据
+ * @param len 自定义数据长度
+ * @param languageType 语言类型，0：默认，1：中文，2：英文
+ * @return 0:ok, other：fail。 错误码定义见AISDK_ERROR_*常量
+ * @deprecated 不可用
+ */
+AISDK_API_EXPORTS int aisdkText2SpeechEx(int languageType, const char* text, int textLen, void* userData, int len);
 /**
  * @brief 取消所有的TTS请求
  * @warning 取消后， 所有的tts请求结果不再返回。

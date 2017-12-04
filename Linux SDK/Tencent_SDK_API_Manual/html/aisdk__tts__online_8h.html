@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
       <li class="current"><a href="files.html"><span>文件</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -68,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>页</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,8 +108,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 函数</h2></td></tr>
 <tr class="memitem:aaaa590954f9a166907c5d31cd10566fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tts__online_8h.html#aaaa590954f9a166907c5d31cd10566fa">aisdkText2Speech</a> (const char *text, int textLen, void *userData, int len)</td></tr>
-<tr class="memdesc:aaaa590954f9a166907c5d31cd10566fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">TTS识别接口， TTS结果通过回调异步回调返回  <a href="#aaaa590954f9a166907c5d31cd10566fa">更多...</a><br/></td></tr>
+<tr class="memdesc:aaaa590954f9a166907c5d31cd10566fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">TTS转换接口， TTS结果通过回调异步回调返回  <a href="#aaaa590954f9a166907c5d31cd10566fa">更多...</a><br/></td></tr>
 <tr class="separator:aaaa590954f9a166907c5d31cd10566fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64149cc9c28f7004fc39666455252d4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tts__online_8h.html#a64149cc9c28f7004fc39666455252d4a">aisdkText2SpeechEx</a> (int languageType, const char *text, int textLen, void *userData, int len)</td></tr>
+<tr class="memdesc:a64149cc9c28f7004fc39666455252d4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">TTS转换接口， TTS结果通过回调异步回调返回  <a href="#a64149cc9c28f7004fc39666455252d4a">更多...</a><br/></td></tr>
+<tr class="separator:a64149cc9c28f7004fc39666455252d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8d5e25be11e70685a167235203547b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tts__online_8h.html#ac8d5e25be11e70685a167235203547b4">aisdkCancelText2Speech</a> ()</td></tr>
 <tr class="memdesc:ac8d5e25be11e70685a167235203547b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消所有的TTS请求  <a href="#ac8d5e25be11e70685a167235203547b4">更多...</a><br/></td></tr>
 <tr class="separator:ac8d5e25be11e70685a167235203547b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,7 +258,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       </table>
 </div><div class="memdoc">
 
-<p>TTS识别接口， TTS结果通过回调异步回调返回 </p>
+<p>TTS转换接口， TTS结果通过回调异步回调返回 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">text</td><td>需要转语音的文本，以utf8格式编码的文本串，以'\0'结尾 </td></tr>
@@ -265,6 +269,64 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>0:ok, other：fail。 错误码定义见AISDK_ERROR_*常量 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a64149cc9c28f7004fc39666455252d4a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> int aisdkText2SpeechEx </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>languageType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>textLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TTS转换接口， TTS结果通过回调异步回调返回 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>需要转语音的文本，以utf8格式编码的文本串，以'\0'结尾 </td></tr>
+    <tr><td class="paramname">textLen</td><td>文本长度 </td></tr>
+    <tr><td class="paramname">userData</td><td>自定义数据 </td></tr>
+    <tr><td class="paramname">len</td><td>自定义数据长度 </td></tr>
+    <tr><td class="paramname">languageType</td><td>语言类型，0：默认，1：中文，2：英文 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0:ok, other：fail。 错误码定义见AISDK_ERROR_*常量 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">弃用:</a></b></dt><dd>不可用 </dd></dl>
 
 </div>
 </div>

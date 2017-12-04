@@ -3,6 +3,7 @@ var searchData=
   ['aisdk_5fapi_5fexports',['AISDK_API_EXPORTS',['../aisdk__common__api_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9',1,'AISDK_API_EXPORTS():&#160;aisdk_common_api.h'],['../aisdk__report__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9',1,'AISDK_API_EXPORTS():&#160;aisdk_report_online.h'],['../aisdk__semantic__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9',1,'AISDK_API_EXPORTS():&#160;aisdk_semantic_online.h'],['../aisdk__tts__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9',1,'AISDK_API_EXPORTS():&#160;aisdk_tts_online.h'],['../aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9',1,'AISDK_API_EXPORTS():&#160;aisdk_voice_online.h']]],
   ['aisdk_5fcall_5fconv',['AISDK_CALL_CONV',['../aisdk__common__api_8h.html#a0c7aae0784c0a9b2d261cc305621cd68',1,'AISDK_CALL_CONV():&#160;aisdk_common_api.h'],['../aisdk__report__online_8h.html#a0c7aae0784c0a9b2d261cc305621cd68',1,'AISDK_CALL_CONV():&#160;aisdk_report_online.h'],['../aisdk__semantic__online_8h.html#a0c7aae0784c0a9b2d261cc305621cd68',1,'AISDK_CALL_CONV():&#160;aisdk_semantic_online.h'],['../aisdk__tts__online_8h.html#a0c7aae0784c0a9b2d261cc305621cd68',1,'AISDK_CALL_CONV():&#160;aisdk_tts_online.h'],['../aisdk__voice__online_8h.html#a0c7aae0784c0a9b2d261cc305621cd68',1,'AISDK_CALL_CONV():&#160;aisdk_voice_online.h']]],
   ['aisdk_5fcallback',['AISDK_CALLBACK',['../aisdk__common__api_8h.html#a3b87dab38ec3dd2e3e69d187c8dbf11a',1,'aisdk_common_api.h']]],
+  ['aisdk_5fcmd_5fcommon_5fpush_5fmsg',['AISDK_CMD_COMMON_PUSH_MSG',['../aisdk__common__api_8h.html#abb3d9896141e8a808ea15eb9e62ba8ca',1,'aisdk_common_api.h']]],
   ['aisdk_5fcmd_5fcomplex_5fsemantic_5ferror',['AISDK_CMD_COMPLEX_SEMANTIC_ERROR',['../aisdk__semantic__online_8h.html#a0120e6ce5109ef66a3612fa0bdd75363',1,'aisdk_semantic_online.h']]],
   ['aisdk_5fcmd_5fcomplex_5fsemantic_5fresult',['AISDK_CMD_COMPLEX_SEMANTIC_RESULT',['../aisdk__semantic__online_8h.html#a4948508f6c077446b69206614af6d008',1,'aisdk_semantic_online.h']]],
   ['aisdk_5fcmd_5fmedia_5fsemantic_5ferror',['AISDK_CMD_MEDIA_SEMANTIC_ERROR',['../aisdk__semantic__online_8h.html#a00eb055dfcdd87627752b43a0a3df918',1,'aisdk_semantic_online.h']]],
@@ -59,7 +60,9 @@ var searchData=
   ['aisdk_5fconfig_5fvoice_5fonline_5fenable_5fcalculate_5fvolume',['AISDK_CONFIG_VOICE_ONLINE_ENABLE_CALCULATE_VOLUME',['../aisdk__voice__online_8h.html#aeb7159a195c0a8ceef6b0a9fc33089f6',1,'aisdk_voice_online.h']]],
   ['aisdk_5fconfig_5fvoice_5fonline_5fenable_5fcloudvad',['AISDK_CONFIG_VOICE_ONLINE_ENABLE_CLOUDVAD',['../aisdk__voice__online_8h.html#ada0a833439acd5d3c848f77aa5c6cd03',1,'aisdk_voice_online.h']]],
   ['aisdk_5fconfig_5fvoice_5fonline_5fend',['AISDK_CONFIG_VOICE_ONLINE_END',['../aisdk__voice__online_8h.html#a3d432cb3110e782c824496faa6f9c5de',1,'aisdk_voice_online.h']]],
+  ['aisdk_5fconfig_5fvoice_5fonline_5flanguage_5ftype',['AISDK_CONFIG_VOICE_ONLINE_LANGUAGE_TYPE',['../aisdk__voice__online_8h.html#a6e9684a2d50ccedcfc35a25685eeef36',1,'aisdk_voice_online.h']]],
   ['aisdk_5fconfig_5fvoice_5fonline_5ftimeout',['AISDK_CONFIG_VOICE_ONLINE_TIMEOUT',['../aisdk__voice__online_8h.html#ad371c2aba791601279c4b7ec17fefa87',1,'aisdk_voice_online.h']]],
+  ['aisdk_5ferror_5fcommom_5fservice_5fresp',['AISDK_ERROR_COMMOM_SERVICE_RESP',['../aisdk__common__api_8h.html#a75f066a639063a74ca2c048dc42dc02e',1,'aisdk_common_api.h']]],
   ['aisdk_5ferror_5fcommon_5finternal_5ferror',['AISDK_ERROR_COMMON_INTERNAL_ERROR',['../aisdk__common__api_8h.html#a2ad32f8b545db6b143aa7eb79f60c887',1,'aisdk_common_api.h']]],
   ['aisdk_5ferror_5fcommon_5fnetwork_5ffail',['AISDK_ERROR_COMMON_NETWORK_FAIL',['../aisdk__common__api_8h.html#a60b2522fd5fa5c2e1876565179aa2738',1,'aisdk_common_api.h']]],
   ['aisdk_5ferror_5fcommon_5fnetwork_5fresponse_5ffail',['AISDK_ERROR_COMMON_NETWORK_RESPONSE_FAIL',['../aisdk__common__api_8h.html#ab2e8cab4a0595418b043bb9257dbea19',1,'aisdk_common_api.h']]],
@@ -108,5 +111,6 @@ var searchData=
   ['aisdksetqua',['aisdkSetQUA',['../aisdk__common__api_8h.html#a34231709d7221520059c675a0eb7f190',1,'aisdk_common_api.h']]],
   ['aisdkstartonlinevoice2text',['aisdkStartOnlineVoice2Text',['../aisdk__voice__online_8h.html#a75d8b28126acc7b66b60a3c6e58818ec',1,'aisdk_voice_online.h']]],
   ['aisdkstoponlinevoice2text',['aisdkStopOnlineVoice2Text',['../aisdk__voice__online_8h.html#a77c971645a14f0ebd16bbbc5511afa07',1,'aisdk_voice_online.h']]],
-  ['aisdktext2speech',['aisdkText2Speech',['../aisdk__tts__online_8h.html#aaaa590954f9a166907c5d31cd10566fa',1,'aisdk_tts_online.h']]]
+  ['aisdktext2speech',['aisdkText2Speech',['../aisdk__tts__online_8h.html#aaaa590954f9a166907c5d31cd10566fa',1,'aisdk_tts_online.h']]],
+  ['aisdktext2speechex',['aisdkText2SpeechEx',['../aisdk__tts__online_8h.html#a64149cc9c28f7004fc39666455252d4a',1,'aisdk_tts_online.h']]]
 ];

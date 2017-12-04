@@ -24,5 +24,6 @@ var searchData=
   ['aisdksetqua',['aisdkSetQUA',['../aisdk__common__api_8h.html#a34231709d7221520059c675a0eb7f190',1,'aisdk_common_api.h']]],
   ['aisdkstartonlinevoice2text',['aisdkStartOnlineVoice2Text',['../aisdk__voice__online_8h.html#a75d8b28126acc7b66b60a3c6e58818ec',1,'aisdk_voice_online.h']]],
   ['aisdkstoponlinevoice2text',['aisdkStopOnlineVoice2Text',['../aisdk__voice__online_8h.html#a77c971645a14f0ebd16bbbc5511afa07',1,'aisdk_voice_online.h']]],
-  ['aisdktext2speech',['aisdkText2Speech',['../aisdk__tts__online_8h.html#aaaa590954f9a166907c5d31cd10566fa',1,'aisdk_tts_online.h']]]
+  ['aisdktext2speech',['aisdkText2Speech',['../aisdk__tts__online_8h.html#aaaa590954f9a166907c5d31cd10566fa',1,'aisdk_tts_online.h']]],
+  ['aisdktext2speechex',['aisdkText2SpeechEx',['../aisdk__tts__online_8h.html#a64149cc9c28f7004fc39666455252d4a',1,'aisdk_tts_online.h']]]
 ];

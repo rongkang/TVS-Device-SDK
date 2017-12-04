@@ -22,6 +22,12 @@ extern "C" {
 #endif
 
 /**
+ * @brief 回调接口命令定义，收到服务端的push消息
+ * @see AISDK_CALLBACK
+ */
+const int AISDK_CMD_COMMON_PUSH_MSG = 1;
+
+/**
  * @brief 通用错误码定义
  */
 /**
@@ -62,10 +68,16 @@ const int AISDK_ERROR_COMMON_NETWORK_TIMEOUT = 7;
 // SDK配置文件不存在
 // const int AISDK_ERROR_COMMON_CONFIG_DOES_NOT_EXIST = 8;
 
+
+
 /**
  * @brief 传入参数错误或不合法
  */
 const int AISDK_ERROR_COMMON_PARAM_INVALID = 9;
+/**
+ * @brief 服务返回异常
+ */
+const int AISDK_ERROR_COMMOM_SERVICE_RESP = 10;
 
 // 通用配置项，key的起始值
 const int AISDK_CONFIG_COMMON_BEGIN = 0;

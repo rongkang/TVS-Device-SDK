@@ -191,6 +191,31 @@ const int AISDK_CONFIG_VOICE_ONLINE_ENABLE_CALCULATE_VOLUME = AISDK_CONFIG_VOICE
  */
 //const int AISDK_CONFIG_VOICE_VAD_SILENT_MAX = AISDK_CONFIG_VOICE_ONLINE_BEGIN + 5;
 
+
+/**
+ *
+ * @see aisdkSetConfig()
+ *
+ * @brief 设置语音识别的语言类型
+ *
+ * 配置项关键字
+ * ## 功能
+ * 配置是
+ * 设置语音识别的语言类型（仅支持讯飞语音识别引擎）
+ * ## 值
+ * 值 |  说明
+ *---|---
+ * 0|默认(普通话)
+ * 1|普通话
+ * 2|英语
+ * ## 示例
+ * ```
+ * //设置语音类型为普通话
+ * aisdkSetConfig(AISDK_CONFIG_VOICE_ONLINE_LANGUAGE_TYPE,0)
+ * ```
+ */
+const int AISDK_CONFIG_VOICE_ONLINE_LANGUAGE_TYPE = AISDK_CONFIG_VOICE_ONLINE_BEGIN + 6;
+
 // 配置项，key的结束值
 const int AISDK_CONFIG_VOICE_ONLINE_END = 6999;
 
