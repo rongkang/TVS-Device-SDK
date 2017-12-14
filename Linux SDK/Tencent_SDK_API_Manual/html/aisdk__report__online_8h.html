@@ -86,7 +86,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="header">
   <div class="summary">
 <a href="#define-members">宏定义</a> &#124;
-<a href="#func-members">函数</a>  </div>
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
   <div class="headertitle">
 <div class="title">aisdk_report_online.h 文件参考</div>  </div>
 </div><!--header-->
@@ -115,6 +116,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <tr class="memitem:a5873fc2a8b30d53cc3de192361c145c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__report__online_8h.html#a5873fc2a8b30d53cc3de192361c145c9">aisdkReportMediaFinished</a> (const char *mediaId, long long duration)</td></tr>
 <tr class="memdesc:a5873fc2a8b30d53cc3de192361c145c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">统计媒体播放结束  <a href="#a5873fc2a8b30d53cc3de192361c145c9">更多...</a><br/></td></tr>
 <tr class="separator:a5873fc2a8b30d53cc3de192361c145c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf1be463aaba9f85d9fe00bff27cd42e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__report__online_8h.html#acf1be463aaba9f85d9fe00bff27cd42e">aisdkReportError</a> (const char *sbussinessName, const char *sVersion, const char *sModuleName, const char *sFunctionName, int exceptionLevel, int iErrorCode, const char *sErrorMessage, const char *sExtraData)</td></tr>
+<tr class="memdesc:acf1be463aaba9f85d9fe00bff27cd42e"><td class="mdescLeft">&#160;</td><td class="mdescRight">异常情况上报  <a href="#acf1be463aaba9f85d9fe00bff27cd42e">更多...</a><br/></td></tr>
+<tr class="separator:acf1be463aaba9f85d9fe00bff27cd42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:aca9b450e33fa0a7b88fb21b5fc2ec3ce"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__report__online_8h.html#aca9b450e33fa0a7b88fb21b5fc2ec3ce">EXCEPTION_LEVEL_REPORT</a> = 1</td></tr>
+<tr class="memdesc:aca9b450e33fa0a7b88fb21b5fc2ec3ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">上报，只是做记录  <a href="#aca9b450e33fa0a7b88fb21b5fc2ec3ce">更多...</a><br/></td></tr>
+<tr class="separator:aca9b450e33fa0a7b88fb21b5fc2ec3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa70d72917cfeebf41b61ce0950c1f9bb"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__report__online_8h.html#aa70d72917cfeebf41b61ce0950c1f9bb">EXCEPTION_LEVEL_WARNNING</a> = 2</td></tr>
+<tr class="memdesc:aa70d72917cfeebf41b61ce0950c1f9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">一般  <a href="#aa70d72917cfeebf41b61ce0950c1f9bb">更多...</a><br/></td></tr>
+<tr class="separator:aa70d72917cfeebf41b61ce0950c1f9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a906a984b880b97287a620d67e44413e0"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__report__online_8h.html#a906a984b880b97287a620d67e44413e0">EXCEPTION_LEVEL_MINOR</a> = 3</td></tr>
+<tr class="memdesc:a906a984b880b97287a620d67e44413e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">注意  <a href="#a906a984b880b97287a620d67e44413e0">更多...</a><br/></td></tr>
+<tr class="separator:a906a984b880b97287a620d67e44413e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add97ef5b4ba07b697e39a84445688842"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__report__online_8h.html#add97ef5b4ba07b697e39a84445688842">EXCEPTION_LEVEL_MAJOR</a> = 4</td></tr>
+<tr class="memdesc:add97ef5b4ba07b697e39a84445688842"><td class="mdescLeft">&#160;</td><td class="mdescRight">严重  <a href="#add97ef5b4ba07b697e39a84445688842">更多...</a><br/></td></tr>
+<tr class="separator:add97ef5b4ba07b697e39a84445688842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30b4d9782b602125fbc6d152fd62c8f5"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__report__online_8h.html#a30b4d9782b602125fbc6d152fd62c8f5">EXCEPTION_LEVEL_CRITICAL</a> = 5</td></tr>
+<tr class="memdesc:a30b4d9782b602125fbc6d152fd62c8f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">极其严重  <a href="#a30b4d9782b602125fbc6d152fd62c8f5">更多...</a><br/></td></tr>
+<tr class="separator:a30b4d9782b602125fbc6d152fd62c8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>上报相关接口 </p>
@@ -154,6 +176,85 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div>
 </div>
 <h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="acf1be463aaba9f85d9fe00bff27cd42e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="aisdk__voice__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> void aisdkReportError </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>sbussinessName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>sVersion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>sModuleName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>sFunctionName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>exceptionLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iErrorCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>sErrorMessage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>sExtraData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异常情况上报 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in</td><td>sbussinessName 业务名，如属于哪个上层SDK </td></tr>
+    <tr><td class="paramname">in</td><td>sVersion 业务的版本号 </td></tr>
+    <tr><td class="paramname">in</td><td>sModuleName 模块名 </td></tr>
+    <tr><td class="paramname">in</td><td>sFunctionName 方法名 </td></tr>
+    <tr><td class="paramname">in</td><td>exceptionLevel（详见 EXCEPTION_LEVEL_* 常量） </td></tr>
+    <tr><td class="paramname">in</td><td>iErrorCode（详见 aisdk_common_api.h：AISDK_ERROR_* 常量） </td></tr>
+    <tr><td class="paramname">in</td><td>sErrorMessage 错误信息说明 </td></tr>
+    <tr><td class="paramname">in</td><td>sExtraData 附加信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>仅限各层SDK使用 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a5873fc2a8b30d53cc3de192361c145c9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -251,6 +352,97 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </dl>
 <dl class="section return"><dt>返回</dt><dd></dd></dl>
 <dl class="section note"><dt>注解</dt><dd>当媒体被切换成其他媒体的时候调用 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="a30b4d9782b602125fbc6d152fd62c8f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int EXCEPTION_LEVEL_CRITICAL = 5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>极其严重 </p>
+<dl class="section note"><dt>注解</dt><dd>异常上报的Level </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__report__online_8h.html#acf1be463aaba9f85d9fe00bff27cd42e" title="异常情况上报 ">aisdkReportError</a> </dd></dl>
+
+<p>在文件 <a class="el" href="aisdk__report__online_8h_source.html">aisdk_report_online.h</a> 第 <a class="el" href="aisdk__report__online_8h_source.html#l00053">53</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="add97ef5b4ba07b697e39a84445688842"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int EXCEPTION_LEVEL_MAJOR = 4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>严重 </p>
+<dl class="section note"><dt>注解</dt><dd>异常上报的Level </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__report__online_8h.html#acf1be463aaba9f85d9fe00bff27cd42e" title="异常情况上报 ">aisdkReportError</a> </dd></dl>
+
+<p>在文件 <a class="el" href="aisdk__report__online_8h_source.html">aisdk_report_online.h</a> 第 <a class="el" href="aisdk__report__online_8h_source.html#l00047">47</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a906a984b880b97287a620d67e44413e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int EXCEPTION_LEVEL_MINOR = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>注意 </p>
+<dl class="section note"><dt>注解</dt><dd>异常上报的Level </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__report__online_8h.html#acf1be463aaba9f85d9fe00bff27cd42e" title="异常情况上报 ">aisdkReportError</a> </dd></dl>
+
+<p>在文件 <a class="el" href="aisdk__report__online_8h_source.html">aisdk_report_online.h</a> 第 <a class="el" href="aisdk__report__online_8h_source.html#l00041">41</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aca9b450e33fa0a7b88fb21b5fc2ec3ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int EXCEPTION_LEVEL_REPORT = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>上报，只是做记录 </p>
+<dl class="section note"><dt>注解</dt><dd>异常上报的Level </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__report__online_8h.html#acf1be463aaba9f85d9fe00bff27cd42e" title="异常情况上报 ">aisdkReportError</a> </dd></dl>
+
+<p>在文件 <a class="el" href="aisdk__report__online_8h_source.html">aisdk_report_online.h</a> 第 <a class="el" href="aisdk__report__online_8h_source.html#l00029">29</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa70d72917cfeebf41b61ce0950c1f9bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int EXCEPTION_LEVEL_WARNNING = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>一般 </p>
+<dl class="section note"><dt>注解</dt><dd>异常上报的Level </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__report__online_8h.html#acf1be463aaba9f85d9fe00bff27cd42e" title="异常情况上报 ">aisdkReportError</a> </dd></dl>
+
+<p>在文件 <a class="el" href="aisdk__report__online_8h_source.html">aisdk_report_online.h</a> 第 <a class="el" href="aisdk__report__online_8h_source.html#l00035">35</a> 行定义.</p>
 
 </div>
 </div>

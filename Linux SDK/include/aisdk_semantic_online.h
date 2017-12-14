@@ -64,7 +64,18 @@ const int AISDK_CMD_COMPLEX_SEMANTIC_RESULT = AISDK_CMD_SEMANTIC_RESULT + 4;
  * @see AISDK_CALLBACK
  */
 const int AISDK_CMD_COMPLEX_SEMANTIC_ERROR = AISDK_CMD_SEMANTIC_RESULT + 5;
-
+/**
+ * @brief 回调接口命令定义,请求资源URl接口结果返回
+ * @note aisdkReqResouceUrl结果回调
+ * @see AISDK_CALLBACK
+ */
+const int AISDK_CMD_RESOUCES_RESULT = AISDK_CMD_SEMANTIC_RESULT + 6;
+/**
+ * @brief 回调接口命令定义,请求资源URl接口结果返回出错
+ * @note aisdkReqResouceUrl结果回调
+ * @see AISDK_CALLBACK
+ */
+const int AISDK_CMD_RESOUCES_ERROR = AISDK_CMD_SEMANTIC_RESULT + 7;
 
 // 配置项，key的起始值
 const int AISDK_CONFIG_SEMANTIC_ONLINE_BEGIN = 2000;
@@ -86,6 +97,12 @@ const int AISDK_SEMANTIC_REQ_TYPE_SEMANTIC = 2;
  * @note 用于cancel(int)参数
  */
 const int AISDK_SEMANTIC_REQ_TYPE_COMPLEX_SEMANTIC = 3;
+
+/**
+ * @brief 请求类型：资源URL请求
+ * @note 用于cancel(int)参数
+ */
+const int AISDK_SEMANTIC_REQ_TYPE_RESOURCE_URL= 4;
 
 //flags标志取值定义
 /**
@@ -125,7 +142,7 @@ AISDK_API_EXPORTS int aisdkOnlineText2Semantic(const char* text, int textLen, vo
  *
  * @return 0:ok, other:fail。 错误码定义见AISDK_ERROR_*常量
  */
-AISDK_API_EXPORTS int aisdkComplexSemantic2Semantic(char * semanticJson, int len,void* userData, int userDataLen);
+AISDK_API_EXPORTS int aisdkComplexSemantic2Semantic(const char* semanticJson, int len, void *userData, int userDataLen);
 
 /**
  * @brief 请求单首音乐的详细信息
@@ -148,6 +165,19 @@ AISDK_API_EXPORTS int aisdkReqMusic(const char* mediaId, int mediaIdLength, void
  * @note 播放FM时，FM的地址可能会有变化，播放前应该用FM的ID请求一次新的url。
  */
 AISDK_API_EXPORTS int aisdkReqFM(const char* showId, int showIdLength, int showType, void* userData, int len);
+
+/**
+ * 请求资源地址
+ * @param resoucesIdsJson json字符串，字符串格式
+ * <pre>
+ * ["id1","id2"]
+ * <pre>
+ * @param len json字符串长度
+ * @param userData
+ * @param len
+ * @return 0:success other:fail。 错误码定义见AISDK_ERROR_*常量
+ */
+AISDK_API_EXPORTS int aisdkReqResouceUrl(const char* resoucesIdsJson,int len, void* userData, int userDataLen);
 /**
  * @brief 取消全部语义请求
  * @return 0:success other:fail。 错误码定义见AISDK_ERROR_*常量

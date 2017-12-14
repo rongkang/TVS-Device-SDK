@@ -215,7 +215,25 @@ const int AISDK_CONFIG_VOICE_ONLINE_ENABLE_CALCULATE_VOLUME = AISDK_CONFIG_VOICE
  * ```
  */
 const int AISDK_CONFIG_VOICE_ONLINE_LANGUAGE_TYPE = AISDK_CONFIG_VOICE_ONLINE_BEGIN + 6;
-
+/**
+ *
+ * @see aisdkSetConfig()
+ *
+ * @brief 配置是否保存录音
+ *
+ * 配置项关键字
+ * ## 功能
+ * 配置是否保存录音
+ * ## 值
+ * ## 示例
+ * ```
+ * //保存录音
+ * aisdkSetConfig(AISDK_CONFIG_VOICE_SAVE_SPEECH,"1")
+ * //不保存录音
+ * aisdkSetConfig(AISDK_CONFIG_VOICE_SAVE_SPEECH,"0")
+ * ```
+ */
+const int AISDK_CONFIG_VOICE_ONLINE_SAVE_SPEECH = AISDK_CONFIG_VOICE_ONLINE_BEGIN + 7;
 // 配置项，key的结束值
 const int AISDK_CONFIG_VOICE_ONLINE_END = 6999;
 

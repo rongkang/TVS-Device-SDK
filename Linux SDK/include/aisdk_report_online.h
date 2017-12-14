@@ -22,6 +22,37 @@ extern "C" {
 #endif
 
 /**
+ * @brief 上报，只是做记录
+ * @note 异常上报的Level
+ * @see aisdkReportError
+ */
+const int EXCEPTION_LEVEL_REPORT = 1;
+/**
+ * @brief 一般
+ * @note 异常上报的Level
+ * @see aisdkReportError
+ */
+const int EXCEPTION_LEVEL_WARNNING = 2;
+/**
+ * @brief 注意
+ * @note 异常上报的Level
+ * @see aisdkReportError
+ */
+const int EXCEPTION_LEVEL_MINOR = 3;
+/**
+ * @brief 严重
+ * @note 异常上报的Level
+ * @see aisdkReportError
+ */
+const int EXCEPTION_LEVEL_MAJOR = 4;
+/**
+ * @brief 极其严重
+ * @note 异常上报的Level
+ * @see aisdkReportError
+ */
+const int EXCEPTION_LEVEL_CRITICAL = 5;
+
+/**
  *
  * @brief 统计媒体播放开始
  * @param in mediaId 媒体的id，由服务器下发
@@ -52,6 +83,23 @@ AISDK_API_EXPORTS void aisdkReportMediaStopped(const char* mediaId, long long du
  * 当媒体播放完成后调用
  */
 AISDK_API_EXPORTS void aisdkReportMediaFinished(const char* mediaId, long long duration);
+
+/**
+ *
+ * @brief 异常情况上报
+ * @param in sbussinessName 业务名，如属于哪个上层SDK
+ * @param in sVersion 业务的版本号
+ * @param in sModuleName 模块名
+ * @param in sFunctionName 方法名
+ * @param in exceptionLevel（详见 EXCEPTION_LEVEL_* 常量）
+ * @param in iErrorCode（详见 aisdk_common_api.h：AISDK_ERROR_* 常量）
+ * @param in sErrorMessage 错误信息说明
+ * @param in sExtraData 附加信息
+ * @return
+ * @note 仅限各层SDK使用
+ */
+AISDK_API_EXPORTS void aisdkReportError(const char* sbussinessName, const char* sVersion, const char* sModuleName,const char* sFunctionName,
+                              int exceptionLevel, int iErrorCode, const char* sErrorMessage, const char* sExtraData);
 
 #ifdef __cplusplus
 }

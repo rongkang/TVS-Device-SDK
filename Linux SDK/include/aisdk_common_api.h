@@ -68,8 +68,6 @@ const int AISDK_ERROR_COMMON_NETWORK_TIMEOUT = 7;
 // SDK配置文件不存在
 // const int AISDK_ERROR_COMMON_CONFIG_DOES_NOT_EXIST = 8;
 
-
-
 /**
  * @brief 传入参数错误或不合法
  */
@@ -78,6 +76,11 @@ const int AISDK_ERROR_COMMON_PARAM_INVALID = 9;
  * @brief 服务返回异常
  */
 const int AISDK_ERROR_COMMOM_SERVICE_RESP = 10;
+
+/**
+ * @brief 运行不佳
+ */
+const int AISDK_ERROR_COMMOM_BAD_PERFORMANCE = 11;
 
 // 通用配置项，key的起始值
 const int AISDK_CONFIG_COMMON_BEGIN = 0;
@@ -426,6 +429,28 @@ const int AISDK_CONFIG_GUID = AISDK_CONFIG_COMMON_BEGIN + 15;
  * ```
  */
 const int AISDK_CONFIG_QUA= AISDK_CONFIG_COMMON_BEGIN + 16;
+
+
+/**
+ * @see aisdkSetConfig()
+ *
+ * @brief 配置LOG打印的时间格式
+ *
+ * 配置项关键字。
+ * ## 功能
+ * 配置LOG打印的时间格式
+ * ## 值
+ * 值|说明
+ * --|--
+ * "1"|打印日志的时间戳为秒级别。
+ * "2"|打印日志的时间戳为毫秒级别，慎用，有性能损耗。
+ * ## 示例：
+ * ```
+ * // 设置打印日志级别为debug
+ * aisdkSetConfig(AISDK_CONFIG_LOG_TIME_FORMAT,"1")
+ * ```
+ */
+const int AISDK_CONFIG_LOG_TIME_FORMAT = AISDK_CONFIG_COMMON_BEGIN + 17;
 // 通用配置项，key的结束值
 const int AISDK_CONFIG_COMMON_END = 999;
 

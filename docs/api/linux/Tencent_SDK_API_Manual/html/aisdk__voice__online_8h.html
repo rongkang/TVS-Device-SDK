@@ -167,6 +167,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <tr class="memitem:a6e9684a2d50ccedcfc35a25685eeef36"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__voice__online_8h.html#a6e9684a2d50ccedcfc35a25685eeef36">AISDK_CONFIG_VOICE_ONLINE_LANGUAGE_TYPE</a> = <a class="el" href="aisdk__voice__online_8h.html#a9f3b78dda5d5545a5dd2b247cfb7dd98">AISDK_CONFIG_VOICE_ONLINE_BEGIN</a> + 6</td></tr>
 <tr class="memdesc:a6e9684a2d50ccedcfc35a25685eeef36"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置vad静音超时时间，默认500ms  <a href="#a6e9684a2d50ccedcfc35a25685eeef36">更多...</a><br/></td></tr>
 <tr class="separator:a6e9684a2d50ccedcfc35a25685eeef36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3637f7186cf0a91a087f4ab2977f3db"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__voice__online_8h.html#aa3637f7186cf0a91a087f4ab2977f3db">AISDK_CONFIG_VOICE_ONLINE_SAVE_SPEECH</a> = <a class="el" href="aisdk__voice__online_8h.html#a9f3b78dda5d5545a5dd2b247cfb7dd98">AISDK_CONFIG_VOICE_ONLINE_BEGIN</a> + 7</td></tr>
+<tr class="memdesc:aa3637f7186cf0a91a087f4ab2977f3db"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置是否保存录音  <a href="#aa3637f7186cf0a91a087f4ab2977f3db">更多...</a><br/></td></tr>
+<tr class="separator:aa3637f7186cf0a91a087f4ab2977f3db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d432cb3110e782c824496faa6f9c5de"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__voice__online_8h.html#a3d432cb3110e782c824496faa6f9c5de">AISDK_CONFIG_VOICE_ONLINE_END</a> = 6999</td></tr>
 <tr class="separator:a3d432cb3110e782c824496faa6f9c5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a813f14d33b2ceb490198e2abe5f9a8"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__voice__online_8h.html#a0a813f14d33b2ceb490198e2abe5f9a8">AISDK_FLAG_ONLINE_RECO_MANUAL_MODE</a> = 0x02</td></tr>
@@ -580,7 +583,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="aisdk__voice__online_8h_source.html">aisdk_voice_online.h</a> 第 <a class="el" href="aisdk__voice__online_8h_source.html#l00220">220</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__voice__online_8h_source.html">aisdk_voice_online.h</a> 第 <a class="el" href="aisdk__voice__online_8h_source.html#l00238">238</a> 行定义.</p>
 
 </div>
 </div>
@@ -622,6 +625,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>``` //设置语音类型为普通话 aisdkSetConfig(AISDK_CONFIG_VOICE_ONLINE_LANGUAGE_TYPE,0) ``` </p>
 
 <p>在文件 <a class="el" href="aisdk__voice__online_8h_source.html">aisdk_voice_online.h</a> 第 <a class="el" href="aisdk__voice__online_8h_source.html#l00217">217</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3637f7186cf0a91a087f4ab2977f3db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int AISDK_CONFIG_VOICE_ONLINE_SAVE_SPEECH = <a class="el" href="aisdk__voice__online_8h.html#a9f3b78dda5d5545a5dd2b247cfb7dd98">AISDK_CONFIG_VOICE_ONLINE_BEGIN</a> + 7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置是否保存录音 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__common__api_8h.html#a7b2f03b49a4e3818bb11589e684149f4" title="设置配置项 ">aisdkSetConfig()</a></dd></dl>
+<p>配置项关键字 </p>
+<h2>功能</h2>
+<p>配置是否保存录音 </p>
+<h2>值</h2>
+<h2>示例</h2>
+<p>``` //保存录音 aisdkSetConfig(AISDK_CONFIG_VOICE_SAVE_SPEECH,"1") //不保存录音 aisdkSetConfig(AISDK_CONFIG_VOICE_SAVE_SPEECH,"0") ``` </p>
+
+<p>在文件 <a class="el" href="aisdk__voice__online_8h_source.html">aisdk_voice_online.h</a> 第 <a class="el" href="aisdk__voice__online_8h_source.html#l00236">236</a> 行定义.</p>
 
 </div>
 </div>
@@ -693,7 +719,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <p>flags标志取值定义:语音识别改为手动模式。 </p>
 
-<p>在文件 <a class="el" href="aisdk__voice__online_8h_source.html">aisdk_voice_online.h</a> 第 <a class="el" href="aisdk__voice__online_8h_source.html#l00226">226</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__voice__online_8h_source.html">aisdk_voice_online.h</a> 第 <a class="el" href="aisdk__voice__online_8h_source.html#l00244">244</a> 行定义.</p>
 
 </div>
 </div>
@@ -708,7 +734,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 <p>返回的json数据中的code定义 成功 </p>
 
-<p>在文件 <a class="el" href="aisdk__voice__online_8h_source.html">aisdk_voice_online.h</a> 第 <a class="el" href="aisdk__voice__online_8h_source.html#l00234">234</a> 行定义.</p>
+<p>在文件 <a class="el" href="aisdk__voice__online_8h_source.html">aisdk_voice_online.h</a> 第 <a class="el" href="aisdk__voice__online_8h_source.html#l00252">252</a> 行定义.</p>
 
 </div>
 </div>
