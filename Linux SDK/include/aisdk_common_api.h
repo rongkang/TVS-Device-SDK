@@ -430,7 +430,6 @@ const int AISDK_CONFIG_GUID = AISDK_CONFIG_COMMON_BEGIN + 15;
  */
 const int AISDK_CONFIG_QUA= AISDK_CONFIG_COMMON_BEGIN + 16;
 
-
 /**
  * @see aisdkSetConfig()
  *
@@ -451,6 +450,24 @@ const int AISDK_CONFIG_QUA= AISDK_CONFIG_COMMON_BEGIN + 16;
  * ```
  */
 const int AISDK_CONFIG_LOG_TIME_FORMAT = AISDK_CONFIG_COMMON_BEGIN + 17;
+
+/**
+ * @see aisdkSetConfig()
+ *
+ * @brief 配置当前网络类型
+ *
+ * ## 功能
+ * 配置当前网络类型
+ * ## 值
+ * 取值参考AISDK_CONFIG_VALUE_APN_XXX
+ * ## 示例：
+ *
+ * ```
+ * aisdkSetConfig(AISDK_CONFIG_APN_TYPE, XXX)
+ * ```
+ */
+const int AISDK_CONFIG_NETWORK_TYPE = AISDK_CONFIG_COMMON_BEGIN + 18;
+
 // 通用配置项，key的结束值
 const int AISDK_CONFIG_COMMON_END = 999;
 
@@ -514,6 +531,43 @@ const char* const AISDK_CONFIG_VALUE_LOG_LEVEL_ERROR = "2";
 const char* const AISDK_CONFIG_VALUE_LOG_LEVEL_NONE = "1";
 // Log info
 // 配置项的值 end
+
+/**
+ * APN类型：未知
+ */
+const char* const AISDK_CONFIG_VALUE_WIFI = "0";
+/**
+ * APN类型：CMWAP
+ */
+const char* const AISDK_CONFIG_VALUE_APN_CMWAP = "1";
+/**
+ * APN类型：CMNET
+ */
+const char* const AISDK_CONFIG_VALUE_APN_CMNET = "2";
+/**
+ * APN类型：UNWAP
+ */
+const char* const AISDK_CONFIG_VALUE_APN_UNWAP = "3";
+/**
+ * APN类型：UNNET
+ */
+const char* const AISDK_CONFIG_VALUE_APN_UNNET= "4";
+/**
+ * APN类型：CTWAP
+ */
+const char* const AISDK_CONFIG_VALUE_APN_CTWAP = "5";
+/**
+ * APN类型：CTNET
+ */
+const char* const AISDK_CONFIG_VALUE_APN_CTNET = "6";
+/**
+ * APN类型：3GWAP
+ */
+const char* const AISDK_CONFIG_VALUE_APN_3GWAP = "7";
+/**
+ * APN类型：3GNET
+ */
+const char* const AISDK_CONFIG_VALUE_APN_3GNET = "8";
 
 /**
  * @define 设置回调函数原型
