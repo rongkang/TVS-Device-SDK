@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tencent TVS Device SDK: include/aisdk_tool.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tencent TVS Device SDK
+   </div>
+   <div id="projectbrief">提供腾讯唤醒、语音、语义、TTS能力的SDK</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">aisdk_tool.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>设备扫描、配网相关接口  
+<a href="#details">更多...</a></p>
+
+<p><a href="aisdk__tool_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a8269a58560feaa0a9776a5b3d8de2fc9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tool_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a></td></tr>
+<tr class="separator:a8269a58560feaa0a9776a5b3d8de2fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c7aae0784c0a9b2d261cc305621cd68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tool_8h.html#a0c7aae0784c0a9b2d261cc305621cd68">AISDK_CALL_CONV</a></td></tr>
+<tr class="separator:a0c7aae0784c0a9b2d261cc305621cd68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ab82044863c41e455c524ef9d45ef6502"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aisdk__wakeup_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tool_8h.html#ab82044863c41e455c524ef9d45ef6502">aisdkSetDeviceShowInfo</a> (const char *manufacturer, const char *deviceName, const char *brandIcon, const char *productId, const char *dsn, const char *mac, const char *os, const char *package)</td></tr>
+<tr class="memdesc:ab82044863c41e455c524ef9d45ef6502"><td class="mdescLeft">&#160;</td><td class="mdescRight">当被扫描的时候，设置设备显示的数据。  <a href="#ab82044863c41e455c524ef9d45ef6502">更多...</a><br /></td></tr>
+<tr class="separator:ab82044863c41e455c524ef9d45ef6502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe5e88ced9f4ae757aa4e8627468a274"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aisdk__wakeup_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tool_8h.html#abe5e88ced9f4ae757aa4e8627468a274">aisdkStartUdpServer</a> ()</td></tr>
+<tr class="memdesc:abe5e88ced9f4ae757aa4e8627468a274"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启设备UDP 服务，等待被扫描  <a href="#abe5e88ced9f4ae757aa4e8627468a274">更多...</a><br /></td></tr>
+<tr class="separator:abe5e88ced9f4ae757aa4e8627468a274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e318c5d55a94f6b101b7292a0187746"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aisdk__wakeup_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tool_8h.html#a7e318c5d55a94f6b101b7292a0187746">aisdkStopUpdServer</a> ()</td></tr>
+<tr class="memdesc:a7e318c5d55a94f6b101b7292a0187746"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭设备UDP 服务，停止被扫描  <a href="#a7e318c5d55a94f6b101b7292a0187746">更多...</a><br /></td></tr>
+<tr class="separator:a7e318c5d55a94f6b101b7292a0187746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace7378db9f5c04d524b885d444886273"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aisdk__wakeup_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tool_8h.html#ace7378db9f5c04d524b885d444886273">aisdkSetNetworkPlugin</a> (int type, const char *soPath)</td></tr>
+<tr class="memdesc:ace7378db9f5c04d524b885d444886273"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置配网so和配网类型。  <a href="#ace7378db9f5c04d524b885d444886273">更多...</a><br /></td></tr>
+<tr class="separator:ace7378db9f5c04d524b885d444886273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:aa15c4a3d8a7b481a739710d26bb99537"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tool_8h.html#aa15c4a3d8a7b481a739710d26bb99537">AISDK_CMD_TOOL_BIND_SERVER_STARTED</a> = 8000</td></tr>
+<tr class="memdesc:aa15c4a3d8a7b481a739710d26bb99537"><td class="mdescLeft">&#160;</td><td class="mdescRight">回调接口命令定义,UDP Server开启成功  <a href="#aa15c4a3d8a7b481a739710d26bb99537">更多...</a><br /></td></tr>
+<tr class="separator:aa15c4a3d8a7b481a739710d26bb99537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12541fd69eff58b03d08f40ff0c2627c"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tool_8h.html#a12541fd69eff58b03d08f40ff0c2627c">AISDK_CMD_TOOL_BIND_RESULT</a> = <a class="el" href="aisdk__tool_8h.html#aa15c4a3d8a7b481a739710d26bb99537">AISDK_CMD_TOOL_BIND_SERVER_STARTED</a> + 1</td></tr>
+<tr class="memdesc:a12541fd69eff58b03d08f40ff0c2627c"><td class="mdescLeft">&#160;</td><td class="mdescRight">回调接口命令定义  <a href="#a12541fd69eff58b03d08f40ff0c2627c">更多...</a><br /></td></tr>
+<tr class="separator:a12541fd69eff58b03d08f40ff0c2627c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65103cbcda735e68738512a97cd639aa"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tool_8h.html#a65103cbcda735e68738512a97cd639aa">AISDK_CMD_TOOL_BIND_SERVER_STOPED</a> = <a class="el" href="aisdk__tool_8h.html#aa15c4a3d8a7b481a739710d26bb99537">AISDK_CMD_TOOL_BIND_SERVER_STARTED</a> + 2</td></tr>
+<tr class="memdesc:a65103cbcda735e68738512a97cd639aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">回调接口命令定义，UDP SERVER已经关闭。  <a href="#a65103cbcda735e68738512a97cd639aa">更多...</a><br /></td></tr>
+<tr class="separator:a65103cbcda735e68738512a97cd639aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1beed5b1e6d3ec2b68ad5a3382cec63a"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tool_8h.html#a1beed5b1e6d3ec2b68ad5a3382cec63a">AISDK_CMD_TOOL_BIND_NETWORK_CONNECTED</a> = <a class="el" href="aisdk__tool_8h.html#aa15c4a3d8a7b481a739710d26bb99537">AISDK_CMD_TOOL_BIND_SERVER_STARTED</a> + 3</td></tr>
+<tr class="memdesc:a1beed5b1e6d3ec2b68ad5a3382cec63a"><td class="mdescLeft">&#160;</td><td class="mdescRight">回调接口命令定。  <a href="#a1beed5b1e6d3ec2b68ad5a3382cec63a">更多...</a><br /></td></tr>
+<tr class="separator:a1beed5b1e6d3ec2b68ad5a3382cec63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc980d84ea988526658d44932fd4d624"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tool_8h.html#abc980d84ea988526658d44932fd4d624">AISDK_ERROR_TOOL_SO_INVALID</a> =8000</td></tr>
+<tr class="memdesc:abc980d84ea988526658d44932fd4d624"><td class="mdescLeft">&#160;</td><td class="mdescRight">错误码定义: 加载动态库错误  <a href="#abc980d84ea988526658d44932fd4d624">更多...</a><br /></td></tr>
+<tr class="separator:abc980d84ea988526658d44932fd4d624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>设备扫描、配网相关接口 </p>
+<dl class="section author"><dt>作者</dt><dd>kangrong </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2017/11/3 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd></dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>© 2017 TENCENT. All rights reserved. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="aisdk__tool_8h_source.html">aisdk_tool.h</a> 中定义.</p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a8269a58560feaa0a9776a5b3d8de2fc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8269a58560feaa0a9776a5b3d8de2fc9">&#9670;&nbsp;</a></span>AISDK_API_EXPORTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AISDK_API_EXPORTS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="aisdk__tool_8h_source.html">aisdk_tool.h</a> 第 <a class="el" href="aisdk__tool_8h_source.html#l00020">20</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0c7aae0784c0a9b2d261cc305621cd68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c7aae0784c0a9b2d261cc305621cd68">&#9670;&nbsp;</a></span>AISDK_CALL_CONV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AISDK_CALL_CONV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="aisdk__tool_8h_source.html">aisdk_tool.h</a> 第 <a class="el" href="aisdk__tool_8h_source.html#l00021">21</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="ab82044863c41e455c524ef9d45ef6502"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab82044863c41e455c524ef9d45ef6502">&#9670;&nbsp;</a></span>aisdkSetDeviceShowInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="aisdk__wakeup_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> int aisdkSetDeviceShowInfo </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>manufacturer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>deviceName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>brandIcon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>productId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dsn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>mac</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>package</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>当被扫描的时候，设置设备显示的数据。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">manufacturer</td><td>制造商 </td></tr>
+    <tr><td class="paramname">deviceName</td><td>设备名称 </td></tr>
+    <tr><td class="paramname">brandIcon</td><td>品牌图片标识 </td></tr>
+    <tr><td class="paramname">productId</td><td>设备唯一ID </td></tr>
+    <tr><td class="paramname">dsn</td><td></td></tr>
+    <tr><td class="paramname">mac</td><td>设备mac地址 </td></tr>
+    <tr><td class="paramname">os</td><td>设备操作系统 </td></tr>
+    <tr><td class="paramname">package</td><td>包名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ace7378db9f5c04d524b885d444886273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace7378db9f5c04d524b885d444886273">&#9670;&nbsp;</a></span>aisdkSetNetworkPlugin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="aisdk__wakeup_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> int aisdkSetNetworkPlugin </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>soPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置配网so和配网类型。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td><table class="doxtable">
+<tr>
+<th>type</th><th>说明  </th></tr>
+<tr>
+<td>1 </td><td>AP配网 </td></tr>
+</table>
+</td></tr>
+    <tr><td class="paramname">soPath</td><td>配网so路径。so应实现相应的接口。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 </dd></dl>
+
+</div>
+</div>
+<a id="abe5e88ced9f4ae757aa4e8627468a274"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe5e88ced9f4ae757aa4e8627468a274">&#9670;&nbsp;</a></span>aisdkStartUdpServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="aisdk__wakeup_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> void aisdkStartUdpServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>开启设备UDP 服务，等待被扫描 </p>
+
+</div>
+</div>
+<a id="a7e318c5d55a94f6b101b7292a0187746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e318c5d55a94f6b101b7292a0187746">&#9670;&nbsp;</a></span>aisdkStopUpdServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="aisdk__wakeup_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> void aisdkStopUpdServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>关闭设备UDP 服务，停止被扫描 </p>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="a1beed5b1e6d3ec2b68ad5a3382cec63a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1beed5b1e6d3ec2b68ad5a3382cec63a">&#9670;&nbsp;</a></span>AISDK_CMD_TOOL_BIND_NETWORK_CONNECTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int AISDK_CMD_TOOL_BIND_NETWORK_CONNECTED = <a class="el" href="aisdk__tool_8h.html#aa15c4a3d8a7b481a739710d26bb99537">AISDK_CMD_TOOL_BIND_SERVER_STARTED</a> + 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>回调接口命令定。 </p>
+<dl class="section note"><dt>注解</dt><dd>配网成功 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__common__api_8h.html#aa62f82e369072b2f917c45ea00112490">AISDK_CALLBACK</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="aisdk__tool_8h_source.html">aisdk_tool.h</a> 第 <a class="el" href="aisdk__tool_8h_source.html#l00053">53</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a12541fd69eff58b03d08f40ff0c2627c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12541fd69eff58b03d08f40ff0c2627c">&#9670;&nbsp;</a></span>AISDK_CMD_TOOL_BIND_RESULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int AISDK_CMD_TOOL_BIND_RESULT = <a class="el" href="aisdk__tool_8h.html#aa15c4a3d8a7b481a739710d26bb99537">AISDK_CMD_TOOL_BIND_SERVER_STARTED</a> + 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>回调接口命令定义 </p>
+<dl class="section note"><dt>注解</dt><dd>返回绑定结果 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__common__api_8h.html#aa62f82e369072b2f917c45ea00112490">AISDK_CALLBACK</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="aisdk__tool_8h_source.html">aisdk_tool.h</a> 第 <a class="el" href="aisdk__tool_8h_source.html#l00039">39</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa15c4a3d8a7b481a739710d26bb99537"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa15c4a3d8a7b481a739710d26bb99537">&#9670;&nbsp;</a></span>AISDK_CMD_TOOL_BIND_SERVER_STARTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int AISDK_CMD_TOOL_BIND_SERVER_STARTED = 8000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>回调接口命令定义,UDP Server开启成功 </p>
+<dl class="section note"><dt>注解</dt><dd>返回UDP Server启动成功 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__common__api_8h.html#aa62f82e369072b2f917c45ea00112490">AISDK_CALLBACK</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="aisdk__tool_8h_source.html">aisdk_tool.h</a> 第 <a class="el" href="aisdk__tool_8h_source.html#l00033">33</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a65103cbcda735e68738512a97cd639aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65103cbcda735e68738512a97cd639aa">&#9670;&nbsp;</a></span>AISDK_CMD_TOOL_BIND_SERVER_STOPED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int AISDK_CMD_TOOL_BIND_SERVER_STOPED = <a class="el" href="aisdk__tool_8h.html#aa15c4a3d8a7b481a739710d26bb99537">AISDK_CMD_TOOL_BIND_SERVER_STARTED</a> + 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>回调接口命令定义，UDP SERVER已经关闭。 </p>
+<dl class="section note"><dt>注解</dt><dd>SERVER关闭 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__common__api_8h.html#aa62f82e369072b2f917c45ea00112490">AISDK_CALLBACK</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="aisdk__tool_8h_source.html">aisdk_tool.h</a> 第 <a class="el" href="aisdk__tool_8h_source.html#l00045">45</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abc980d84ea988526658d44932fd4d624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc980d84ea988526658d44932fd4d624">&#9670;&nbsp;</a></span>AISDK_ERROR_TOOL_SO_INVALID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int AISDK_ERROR_TOOL_SO_INVALID =8000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>错误码定义: 加载动态库错误 </p>
+
+<p class="definition">在文件 <a class="el" href="aisdk__tool_8h_source.html">aisdk_tool.h</a> 第 <a class="el" href="aisdk__tool_8h_source.html#l00058">58</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.14-->
+<!-- start footer part-->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.qq.com/">Tencent
+</a> 
+</small></address>
+</body>
+</html>

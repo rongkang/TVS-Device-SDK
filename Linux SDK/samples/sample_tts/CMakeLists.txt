@@ -10,4 +10,4 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g -Wall -fexceptions -fpermi
 # 编译测试文件
 add_executable(${PROJECT_NAME} testtts.cpp)
 
-target_link_libraries(${PROJECT_NAME} -L../../libs  taisdk  -pthread dl)
+target_link_libraries(${PROJECT_NAME} -L../../libs taisdk -pthread dl )

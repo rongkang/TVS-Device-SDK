@@ -3,16 +3,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.5"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Tencent TVS Device SDK: include/aisdk_report_online.h 源文件</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/javascript">
-  $(document).ready(function() { searchBox.OnSelectItem(0); });
-</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -21,55 +20,35 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Tencent TVS Device SDK
    </div>
-   <div id="projectbrief">提供腾讯唤醒、语音、语义、TTS能力的SDk</div>
+   <div id="projectbrief">提供腾讯唤醒、语音、语义、TTS能力的SDK</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.8.5 -->
+<!-- 制作者 Doxygen 1.8.13 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </script>
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li><a href="index.html"><span>首页</span></a></li>
-      <li><a href="pages.html"><span>相关页面</span></a></li>
-      <li class="current"><a href="files.html"><span>文件</span></a></li>
-      <li>
-        <div id="MSearchBox" class="MSearchBoxInactive">
-        <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.png"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="搜索" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
-               onkeyup="searchBox.OnSearchFieldChange(event)"/>
-          </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
-          </span>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="files.html"><span>文件列表</span></a></li>
-      <li><a href="globals.html"><span>文件成员</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>页</a></div>
+</div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,43 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="title">aisdk_report_online.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="aisdk__report__online_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef PACKAGE_TMS_AISDK_AISDK_REPORT_H</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PACKAGE_TMS_AISDK_AISDK_REPORT_H</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AISDK_API_EXPORTS __declspec(dllexport)</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AISDK_CALL_CONV __stdcall</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="aisdk__report__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">   16</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AISDK_API_EXPORTS</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="aisdk__report__online_8h.html#a0c7aae0784c0a9b2d261cc305621cd68">   17</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AISDK_CALL_CONV</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="aisdk__report__online_8h.html#aca9b450e33fa0a7b88fb21b5fc2ec3ce">   29</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__report__online_8h.html#aca9b450e33fa0a7b88fb21b5fc2ec3ce">EXCEPTION_LEVEL_REPORT</a> = 1;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="aisdk__report__online_8h.html#aa70d72917cfeebf41b61ce0950c1f9bb">   35</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__report__online_8h.html#aa70d72917cfeebf41b61ce0950c1f9bb">EXCEPTION_LEVEL_WARNNING</a> = 2;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="aisdk__report__online_8h.html#a906a984b880b97287a620d67e44413e0">   41</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__report__online_8h.html#a906a984b880b97287a620d67e44413e0">EXCEPTION_LEVEL_MINOR</a> = 3;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="aisdk__report__online_8h.html#add97ef5b4ba07b697e39a84445688842">   47</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__report__online_8h.html#add97ef5b4ba07b697e39a84445688842">EXCEPTION_LEVEL_MAJOR</a> = 4;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="aisdk__report__online_8h.html#a30b4d9782b602125fbc6d152fd62c8f5">   53</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__report__online_8h.html#a30b4d9782b602125fbc6d152fd62c8f5">EXCEPTION_LEVEL_CRITICAL</a> = 5;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<a class="code" href="aisdk__report__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">void</span> <a class="code" href="aisdk__report__online_8h.html#acd09e838c660f9695c21793b1d9a451c">aisdkReportMediaStarted</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* mediaId);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<a class="code" href="aisdk__report__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">void</span> <a class="code" href="aisdk__report__online_8h.html#a5a58be533670a3b2a4b01d9496af3f19">aisdkReportMediaStopped</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* mediaId, <span class="keywordtype">long</span> <span class="keywordtype">long</span> duration);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<a class="code" href="aisdk__report__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">void</span> <a class="code" href="aisdk__report__online_8h.html#a5873fc2a8b30d53cc3de192361c145c9">aisdkReportMediaFinished</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* mediaId, <span class="keywordtype">long</span> <span class="keywordtype">long</span> duration);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<a class="code" href="aisdk__report__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">void</span> <a class="code" href="aisdk__report__online_8h.html#acf1be463aaba9f85d9fe00bff27cd42e">aisdkReportError</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* sbussinessName, <span class="keyword">const</span> <span class="keywordtype">char</span>* sVersion, <span class="keyword">const</span> <span class="keywordtype">char</span>* sModuleName,<span class="keyword">const</span> <span class="keywordtype">char</span>* sFunctionName,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                              <span class="keywordtype">int</span> exceptionLevel, <span class="keywordtype">int</span> iErrorCode, <span class="keyword">const</span> <span class="keywordtype">char</span>* sErrorMessage, <span class="keyword">const</span> <span class="keywordtype">char</span>* sExtraData);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif //PACKAGE_TMS_AISDK_AISDK_REPORT_H</span></div>
-<div class="ttc" id="aisdk__report__online_8h_html_aa70d72917cfeebf41b61ce0950c1f9bb"><div class="ttname"><a href="aisdk__report__online_8h.html#aa70d72917cfeebf41b61ce0950c1f9bb">EXCEPTION_LEVEL_WARNNING</a></div><div class="ttdeci">const int EXCEPTION_LEVEL_WARNNING</div><div class="ttdoc">一般 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__report__online_8h_source.html#l00035">aisdk_report_online.h:35</a></div></div>
+<a href="aisdk__report__online_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef PACKAGE_TMS_AISDK_AISDK_REPORT_H</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define PACKAGE_TMS_AISDK_AISDK_REPORT_H</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define AISDK_API_EXPORTS __declspec(dllexport)</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define AISDK_CALL_CONV __stdcall</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#else</span></div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="aisdk__report__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">   16</a></span>&#160;<span class="preprocessor">#define AISDK_API_EXPORTS</span></div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="aisdk__report__online_8h.html#a0c7aae0784c0a9b2d261cc305621cd68">   17</a></span>&#160;<span class="preprocessor">#define AISDK_CALL_CONV</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="aisdk__report__online_8h.html#aca9b450e33fa0a7b88fb21b5fc2ec3ce">   29</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__report__online_8h.html#aca9b450e33fa0a7b88fb21b5fc2ec3ce">EXCEPTION_LEVEL_REPORT</a> = 1;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="aisdk__report__online_8h.html#aa70d72917cfeebf41b61ce0950c1f9bb">   35</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__report__online_8h.html#aa70d72917cfeebf41b61ce0950c1f9bb">EXCEPTION_LEVEL_WARNNING</a> = 2;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="aisdk__report__online_8h.html#a906a984b880b97287a620d67e44413e0">   41</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__report__online_8h.html#a906a984b880b97287a620d67e44413e0">EXCEPTION_LEVEL_MINOR</a> = 3;</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="aisdk__report__online_8h.html#add97ef5b4ba07b697e39a84445688842">   47</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__report__online_8h.html#add97ef5b4ba07b697e39a84445688842">EXCEPTION_LEVEL_MAJOR</a> = 4;</div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="aisdk__report__online_8h.html#a30b4d9782b602125fbc6d152fd62c8f5">   53</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="aisdk__report__online_8h.html#a30b4d9782b602125fbc6d152fd62c8f5">EXCEPTION_LEVEL_CRITICAL</a> = 5;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<a class="code" href="aisdk__report__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">void</span> <a class="code" href="aisdk__report__online_8h.html#acd09e838c660f9695c21793b1d9a451c">aisdkReportMediaStarted</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* mediaId);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<a class="code" href="aisdk__report__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">void</span> <a class="code" href="aisdk__report__online_8h.html#a5a58be533670a3b2a4b01d9496af3f19">aisdkReportMediaStopped</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* mediaId, <span class="keywordtype">long</span> <span class="keywordtype">long</span> duration);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<a class="code" href="aisdk__report__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">void</span> <a class="code" href="aisdk__report__online_8h.html#a5873fc2a8b30d53cc3de192361c145c9">aisdkReportMediaFinished</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* mediaId, <span class="keywordtype">long</span> <span class="keywordtype">long</span> duration);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<a class="code" href="aisdk__report__online_8h.html#a8269a58560feaa0a9776a5b3d8de2fc9">AISDK_API_EXPORTS</a> <span class="keywordtype">void</span> <a class="code" href="aisdk__report__online_8h.html#acf1be463aaba9f85d9fe00bff27cd42e">aisdkReportError</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* sbussinessName, <span class="keyword">const</span> <span class="keywordtype">char</span>* sVersion, <span class="keyword">const</span> <span class="keywordtype">char</span>* sModuleName,<span class="keyword">const</span> <span class="keywordtype">char</span>* sFunctionName,</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                              <span class="keywordtype">int</span> exceptionLevel, <span class="keywordtype">int</span> iErrorCode, <span class="keyword">const</span> <span class="keywordtype">char</span>* sErrorMessage, <span class="keyword">const</span> <span class="keywordtype">char</span>* sExtraData);</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif //PACKAGE_TMS_AISDK_AISDK_REPORT_H</span></div><div class="ttc" id="aisdk__report__online_8h_html_aa70d72917cfeebf41b61ce0950c1f9bb"><div class="ttname"><a href="aisdk__report__online_8h.html#aa70d72917cfeebf41b61ce0950c1f9bb">EXCEPTION_LEVEL_WARNNING</a></div><div class="ttdeci">const int EXCEPTION_LEVEL_WARNNING</div><div class="ttdoc">一般 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__report__online_8h_source.html#l00035">aisdk_report_online.h:35</a></div></div>
 <div class="ttc" id="aisdk__report__online_8h_html_a5873fc2a8b30d53cc3de192361c145c9"><div class="ttname"><a href="aisdk__report__online_8h.html#a5873fc2a8b30d53cc3de192361c145c9">aisdkReportMediaFinished</a></div><div class="ttdeci">AISDK_API_EXPORTS void aisdkReportMediaFinished(const char *mediaId, long long duration)</div><div class="ttdoc">统计媒体播放结束 </div></div>
 <div class="ttc" id="aisdk__report__online_8h_html_aca9b450e33fa0a7b88fb21b5fc2ec3ce"><div class="ttname"><a href="aisdk__report__online_8h.html#aca9b450e33fa0a7b88fb21b5fc2ec3ce">EXCEPTION_LEVEL_REPORT</a></div><div class="ttdeci">const int EXCEPTION_LEVEL_REPORT</div><div class="ttdoc">上报，只是做记录 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__report__online_8h_source.html#l00029">aisdk_report_online.h:29</a></div></div>
 <div class="ttc" id="aisdk__report__online_8h_html_a906a984b880b97287a620d67e44413e0"><div class="ttname"><a href="aisdk__report__online_8h.html#a906a984b880b97287a620d67e44413e0">EXCEPTION_LEVEL_MINOR</a></div><div class="ttdeci">const int EXCEPTION_LEVEL_MINOR</div><div class="ttdoc">注意 </div><div class="ttdef"><b>Definition:</b> <a href="aisdk__report__online_8h_source.html#l00041">aisdk_report_online.h:41</a></div></div>
