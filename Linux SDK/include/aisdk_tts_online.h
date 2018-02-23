@@ -37,6 +37,55 @@ const int AISDK_CMD_TTS_ERROR = AISDK_CMD_TTS_RESULT + 1;
 
 // 配置项，key的起始值
 const int AISDK_CONFIG_TTS_ONLINE_BEGIN = 4000;
+/**
+ * @see aisdkSetConfig()
+ *
+ * @brief 配置TTS的音量大小。
+ *
+ * ## 功能
+ * 配置TTS的音量大小。仅支持beta引擎。
+ * ## 值
+ * 值|说明
+ * ## 示例：
+ * ```
+ * // 设置TTS
+ * aisdkSetConfig(AISDK_CONFIG_TTS_VOLUME,"50")
+ * ```
+ */
+const int AISDK_CONFIG_TTS_VOLUME = AISDK_CONFIG_TTS_ONLINE_BEGIN + 1;
+
+/**
+ * @see aisdkSetConfig()
+ *
+ * @brief 配置TTS的环境
+ *
+ * ## 功能
+ * 配置TTS的环境。
+ * ## 值
+ * 值|说明
+ * ## 示例：
+ * ```
+ * // 设置TTS环境为正式环境
+ * aisdkSetConfig(AISDK_CONFIG_TTS_ENV_TYPE,AISDK_CONFIG_VALUE_ENV_TYPE_FORMAL)
+ * ```
+ */
+const int AISDK_CONFIG_TTS_ENV_TYPE = AISDK_CONFIG_TTS_ONLINE_BEGIN + 2;
+/**
+ * @see aisdkSetConfig()
+ *
+ * @brief 配置TTS的角色
+ *
+ * ## 功能
+ * 配置TTS的角色。
+ * ## 值
+ * 值|说明
+ * ## 示例：
+ * ```
+ * // 设置TTS角色为yezi
+ * aisdkSetConfig(AISDK_CONFIG_TTS_ROLE,"4")
+ * ```
+ */
+const int AISDK_CONFIG_TTS_ROLE = AISDK_CONFIG_TTS_ONLINE_BEGIN + 3;
 // 配置项，key的结束值
 const int AISDK_CONFIG_TTS_ONLINE_END = 4999;
 

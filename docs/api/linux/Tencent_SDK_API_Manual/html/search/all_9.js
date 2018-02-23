@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['testsemantic_2ecpp',['testsemantic.cpp',['../testsemantic_8cpp.html',1,'']]],
-  ['testtts_2ecpp',['testtts.cpp',['../testtts_8cpp.html',1,'']]],
-  ['testvoice_2ecpp',['testvoice.cpp',['../testvoice_8cpp.html',1,'']]],
-  ['testwakeup_2ecpp',['testwakeup.cpp',['../testwakeup_8cpp.html',1,'']]],
-  ['ttscache',['ttsCache',['../testsemantic_8cpp.html#af00c5e53907606c9c1cd4eefaab0a0cb',1,'ttsCache():&#160;testsemantic.cpp'],['../testtts_8cpp.html#af00c5e53907606c9c1cd4eefaab0a0cb',1,'ttsCache():&#160;testtts.cpp']]]
+  ['sendaudiodata',['sendAudioData',['../testvoice_8cpp.html#a490b48a5126489db25e7984ab0df81c4',1,'sendAudioData():&#160;testvoice.cpp'],['../testwakeup_8cpp.html#a490b48a5126489db25e7984ab0df81c4',1,'sendAudioData():&#160;testwakeup.cpp']]],
+  ['stopofflinereco',['stopOfflineReco',['../testsemantic_8cpp.html#a850714469a339916d669dd53b1646762',1,'stopOfflineReco():&#160;testsemantic.cpp'],['../testwakeup_8cpp.html#a850714469a339916d669dd53b1646762',1,'stopOfflineReco():&#160;testwakeup.cpp']]],
+  ['stoponlinereco',['stopOnlineReco',['../testsemantic_8cpp.html#a91a1cb6f4156d392cce6c216eebecd58',1,'stopOnlineReco():&#160;testsemantic.cpp'],['../testvoice_8cpp.html#a91a1cb6f4156d392cce6c216eebecd58',1,'stopOnlineReco():&#160;testvoice.cpp']]]
 ];

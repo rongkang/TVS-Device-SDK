@@ -1,33 +1,36 @@
 var indexSectionsWithContent =
 {
-  0: "acegimorstå",
-  1: "acrt",
-  2: "acgms",
-  3: "aeiost",
-  4: "a",
+  0: "acegimoqrstå",
+  1: "a",
+  2: "acrt",
+  3: "acgms",
+  4: "aeioqrst",
   5: "a",
-  6: "cå"
+  6: "a",
+  7: "cå"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "files",
-  2: "functions",
-  3: "variables",
-  4: "typedefs",
-  5: "defines",
-  6: "pages"
+  1: "classes",
+  2: "files",
+  3: "functions",
+  4: "variables",
+  5: "typedefs",
+  6: "defines",
+  7: "pages"
 };
 
 var indexSectionLabels =
 {
   0: "全部",
-  1: "文件",
-  2: "函数",
-  3: "变量",
-  4: "类型定义",
-  5: "宏定义",
-  6: "页"
+  1: "类",
+  2: "文件",
+  3: "函数",
+  4: "变量",
+  5: "类型定义",
+  6: "宏定义",
+  7: "页"
 };
 

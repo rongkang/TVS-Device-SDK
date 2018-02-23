@@ -451,6 +451,8 @@ const int AISDK_CONFIG_QUA= AISDK_CONFIG_COMMON_BEGIN + 16;
  */
 const int AISDK_CONFIG_LOG_TIME_FORMAT = AISDK_CONFIG_COMMON_BEGIN + 17;
 
+
+
 /**
  * @see aisdkSetConfig()
  *
@@ -467,6 +469,25 @@ const int AISDK_CONFIG_LOG_TIME_FORMAT = AISDK_CONFIG_COMMON_BEGIN + 17;
  * ```
  */
 const int AISDK_CONFIG_NETWORK_TYPE = AISDK_CONFIG_COMMON_BEGIN + 18;
+
+/**
+ * @see aisdkSetConfig()
+ *
+ * @brief 配置当前网络状态
+ *
+ * ## 功能
+ * 配置当前网络状态
+ * ## 值
+ * "1":有网
+ * "0":无网
+ * ## 示例：
+ *
+ * ```
+ * //配置当前网络为有网
+ * aisdkSetConfig(AISDK_CONFIG_NETWORK_STATUS, "1")
+ * ```
+ */
+const int AISDK_CONFIG_NETWORK_STATUS = AISDK_CONFIG_COMMON_BEGIN + 19;
 
 // 通用配置项，key的结束值
 const int AISDK_CONFIG_COMMON_END = 999;

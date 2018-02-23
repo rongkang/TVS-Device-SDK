@@ -109,6 +109,15 @@ $(function() {
 <tr class="separator:a5e6a3b2d093f060e0c71f584a2788f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeedc5375249fb702b7dc40341426d40c"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tts__online_8h.html#aeedc5375249fb702b7dc40341426d40c">AISDK_CONFIG_TTS_ONLINE_BEGIN</a> = 4000</td></tr>
 <tr class="separator:aeedc5375249fb702b7dc40341426d40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a576f9660d3653a0ac9a65d8ed982a916"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tts__online_8h.html#a576f9660d3653a0ac9a65d8ed982a916">AISDK_CONFIG_TTS_VOLUME</a> = <a class="el" href="aisdk__tts__online_8h.html#aeedc5375249fb702b7dc40341426d40c">AISDK_CONFIG_TTS_ONLINE_BEGIN</a> + 1</td></tr>
+<tr class="memdesc:a576f9660d3653a0ac9a65d8ed982a916"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置TTS的音量大小。  <a href="#a576f9660d3653a0ac9a65d8ed982a916">更多...</a><br /></td></tr>
+<tr class="separator:a576f9660d3653a0ac9a65d8ed982a916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b9302235b1e20a42bde092911a314c0"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tts__online_8h.html#a7b9302235b1e20a42bde092911a314c0">AISDK_CONFIG_TTS_ENV_TYPE</a> = <a class="el" href="aisdk__tts__online_8h.html#aeedc5375249fb702b7dc40341426d40c">AISDK_CONFIG_TTS_ONLINE_BEGIN</a> + 2</td></tr>
+<tr class="memdesc:a7b9302235b1e20a42bde092911a314c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置TTS的环境  <a href="#a7b9302235b1e20a42bde092911a314c0">更多...</a><br /></td></tr>
+<tr class="separator:a7b9302235b1e20a42bde092911a314c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b48de3c2cd7e00ba29bb1cbe45dcda9"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tts__online_8h.html#a0b48de3c2cd7e00ba29bb1cbe45dcda9">AISDK_CONFIG_TTS_ROLE</a> = <a class="el" href="aisdk__tts__online_8h.html#aeedc5375249fb702b7dc40341426d40c">AISDK_CONFIG_TTS_ONLINE_BEGIN</a> + 3</td></tr>
+<tr class="memdesc:a0b48de3c2cd7e00ba29bb1cbe45dcda9"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置TTS的角色  <a href="#a0b48de3c2cd7e00ba29bb1cbe45dcda9">更多...</a><br /></td></tr>
+<tr class="separator:a0b48de3c2cd7e00ba29bb1cbe45dcda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2ba2ac3f25fafe5ae54ee5b9fa8b9a5"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tts__online_8h.html#ab2ba2ac3f25fafe5ae54ee5b9fa8b9a5">AISDK_CONFIG_TTS_ONLINE_END</a> = 4999</td></tr>
 <tr class="separator:ab2ba2ac3f25fafe5ae54ee5b9fa8b9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a633ff732c9b9190f7d3857510ba4e772"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__tts__online_8h.html#a633ff732c9b9190f7d3857510ba4e772">AISDK_RESULT_CODE_TTS_DATA</a> = 0</td></tr>
@@ -360,6 +369,28 @@ $(function() {
 
 </div>
 </div>
+<a id="a7b9302235b1e20a42bde092911a314c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b9302235b1e20a42bde092911a314c0">&#9670;&nbsp;</a></span>AISDK_CONFIG_TTS_ENV_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int AISDK_CONFIG_TTS_ENV_TYPE = <a class="el" href="aisdk__tts__online_8h.html#aeedc5375249fb702b7dc40341426d40c">AISDK_CONFIG_TTS_ONLINE_BEGIN</a> + 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置TTS的环境 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__common__api_8h.html#a7b2f03b49a4e3818bb11589e684149f4" title="设置配置项 ">aisdkSetConfig()</a></dd></dl>
+<h2>功能</h2>
+<p>配置TTS的环境。 </p><h2>值</h2>
+<p>值|说明 </p><h2>示例：</h2>
+<div class="fragment"><div class="line"><span class="comment">// 设置TTS环境为正式环境</span></div><div class="line"><a class="code" href="aisdk__common__api_8h.html#a7b2f03b49a4e3818bb11589e684149f4">aisdkSetConfig</a>(<a class="code" href="aisdk__tts__online_8h.html#a7b9302235b1e20a42bde092911a314c0">AISDK_CONFIG_TTS_ENV_TYPE</a>,<a class="code" href="aisdk__common__api_8h.html#a7b1421f9235a19f0261406b3ac61751a">AISDK_CONFIG_VALUE_ENV_TYPE_FORMAL</a>)</div></div><!-- fragment --> 
+<p class="definition">在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00072">72</a> 行定义.</p>
+
+</div>
+</div>
 <a id="aeedc5375249fb702b7dc40341426d40c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeedc5375249fb702b7dc40341426d40c">&#9670;&nbsp;</a></span>AISDK_CONFIG_TTS_ONLINE_BEGIN</h2>
 
@@ -388,7 +419,51 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00041">41</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00090">90</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0b48de3c2cd7e00ba29bb1cbe45dcda9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b48de3c2cd7e00ba29bb1cbe45dcda9">&#9670;&nbsp;</a></span>AISDK_CONFIG_TTS_ROLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int AISDK_CONFIG_TTS_ROLE = <a class="el" href="aisdk__tts__online_8h.html#aeedc5375249fb702b7dc40341426d40c">AISDK_CONFIG_TTS_ONLINE_BEGIN</a> + 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置TTS的角色 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__common__api_8h.html#a7b2f03b49a4e3818bb11589e684149f4" title="设置配置项 ">aisdkSetConfig()</a></dd></dl>
+<h2>功能</h2>
+<p>配置TTS的角色。 </p><h2>值</h2>
+<p>值|说明 </p><h2>示例：</h2>
+<div class="fragment"><div class="line"><span class="comment">// 设置TTS角色为yezi</span></div><div class="line"><a class="code" href="aisdk__common__api_8h.html#a7b2f03b49a4e3818bb11589e684149f4">aisdkSetConfig</a>(<a class="code" href="aisdk__tts__online_8h.html#a0b48de3c2cd7e00ba29bb1cbe45dcda9">AISDK_CONFIG_TTS_ROLE</a>,<span class="stringliteral">&quot;4&quot;</span>)</div></div><!-- fragment --> 
+<p class="definition">在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00088">88</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a576f9660d3653a0ac9a65d8ed982a916"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a576f9660d3653a0ac9a65d8ed982a916">&#9670;&nbsp;</a></span>AISDK_CONFIG_TTS_VOLUME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int AISDK_CONFIG_TTS_VOLUME = <a class="el" href="aisdk__tts__online_8h.html#aeedc5375249fb702b7dc40341426d40c">AISDK_CONFIG_TTS_ONLINE_BEGIN</a> + 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置TTS的音量大小。 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__common__api_8h.html#a7b2f03b49a4e3818bb11589e684149f4" title="设置配置项 ">aisdkSetConfig()</a></dd></dl>
+<h2>功能</h2>
+<p>配置TTS的音量大小。仅支持beta引擎。 </p><h2>值</h2>
+<p>值|说明 </p><h2>示例：</h2>
+<div class="fragment"><div class="line"><span class="comment">// 设置TTS</span></div><div class="line"><a class="code" href="aisdk__common__api_8h.html#a7b2f03b49a4e3818bb11589e684149f4">aisdkSetConfig</a>(<a class="code" href="aisdk__tts__online_8h.html#a576f9660d3653a0ac9a65d8ed982a916">AISDK_CONFIG_TTS_VOLUME</a>,<span class="stringliteral">&quot;50&quot;</span>)</div></div><!-- fragment --> 
+<p class="definition">在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00055">55</a> 行定义.</p>
 
 </div>
 </div>
@@ -407,7 +482,7 @@ $(function() {
 <p>TTS的语音包返回code，标识中间语音数据包 </p>
 <p>返回的json数据中的code定义 </p><dl class="section note"><dt>注解</dt><dd></dd></dl>
 
-<p class="definition">在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00051">51</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00100">100</a> 行定义.</p>
 
 </div>
 </div>
@@ -426,7 +501,7 @@ $(function() {
 <p>TTS的最后一个语音包返回code，标识最后一个语音数据包。 </p>
 <dl class="section note"><dt>注解</dt><dd>与AISDK_RESULT_CODE_TTS_DATA的不同在于:当文本较短时，tts语音包较短，只会有AISDK_RESULT_CODE_TTS_LAST_DATA </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00057">57</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__tts__online_8h_source.html">aisdk_tts_online.h</a> 第 <a class="el" href="aisdk__tts__online_8h_source.html#l00106">106</a> 行定义.</p>
 
 </div>
 </div>

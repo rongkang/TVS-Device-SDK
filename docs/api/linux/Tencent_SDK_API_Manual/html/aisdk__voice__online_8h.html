@@ -158,6 +158,11 @@ $(function() {
 <tr class="separator:aa329a27cdab6195480b00b2a0c25d5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad49ac85c1e4380f36033a63494e27d54"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__voice__online_8h.html#ad49ac85c1e4380f36033a63494e27d54">AISDK_CONFIG_VOICE_ONLINE_USER_LOCAL_VAD</a> = <a class="el" href="aisdk__voice__online_8h.html#a9f3b78dda5d5545a5dd2b247cfb7dd98">AISDK_CONFIG_VOICE_ONLINE_BEGIN</a> + 10</td></tr>
 <tr class="separator:ad49ac85c1e4380f36033a63494e27d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72a884c67282cbf529106708bce6090"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__voice__online_8h.html#aa72a884c67282cbf529106708bce6090">AISDK_CONFIG_VOICE_ONLINE_AUDIO_PACKET_SIZE</a> = <a class="el" href="aisdk__voice__online_8h.html#a9f3b78dda5d5545a5dd2b247cfb7dd98">AISDK_CONFIG_VOICE_ONLINE_BEGIN</a> + 11</td></tr>
+<tr class="separator:aa72a884c67282cbf529106708bce6090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b149eb0eee6847ca202a9102b074c8"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__voice__online_8h.html#ad3b149eb0eee6847ca202a9102b074c8">AISDK_CONFIG_VOICE_ENV_TYPE</a> = <a class="el" href="aisdk__voice__online_8h.html#a9f3b78dda5d5545a5dd2b247cfb7dd98">AISDK_CONFIG_VOICE_ONLINE_BEGIN</a> + 12</td></tr>
+<tr class="memdesc:ad3b149eb0eee6847ca202a9102b074c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置语音识别环境  <a href="#ad3b149eb0eee6847ca202a9102b074c8">更多...</a><br /></td></tr>
+<tr class="separator:ad3b149eb0eee6847ca202a9102b074c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d432cb3110e782c824496faa6f9c5de"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__voice__online_8h.html#a3d432cb3110e782c824496faa6f9c5de">AISDK_CONFIG_VOICE_ONLINE_END</a> = 6999</td></tr>
 <tr class="separator:a3d432cb3110e782c824496faa6f9c5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a813f14d33b2ceb490198e2abe5f9a8"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__voice__online_8h.html#a0a813f14d33b2ceb490198e2abe5f9a8">AISDK_FLAG_ONLINE_RECO_MANUAL_MODE</a> = 0x02</td></tr>
@@ -526,6 +531,45 @@ $(function() {
 
 </div>
 </div>
+<a id="ad3b149eb0eee6847ca202a9102b074c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3b149eb0eee6847ca202a9102b074c8">&#9670;&nbsp;</a></span>AISDK_CONFIG_VOICE_ENV_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int AISDK_CONFIG_VOICE_ENV_TYPE = <a class="el" href="aisdk__voice__online_8h.html#a9f3b78dda5d5545a5dd2b247cfb7dd98">AISDK_CONFIG_VOICE_ONLINE_BEGIN</a> + 12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置语音识别环境 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__common__api_8h.html#a7b2f03b49a4e3818bb11589e684149f4" title="设置配置项 ">aisdkSetConfig()</a></dd></dl>
+<h2>功能</h2>
+<p>配置语音识别环境。 </p><h2>值</h2>
+<p>值|说明 </p><h2>示例：</h2>
+<div class="fragment"><div class="line"><span class="comment">// 配置语音识别环境为正式环境</span></div><div class="line"><a class="code" href="aisdk__common__api_8h.html#a7b2f03b49a4e3818bb11589e684149f4">aisdkSetConfig</a>(<a class="code" href="aisdk__voice__online_8h.html#ad3b149eb0eee6847ca202a9102b074c8">AISDK_CONFIG_VOICE_ENV_TYPE</a>,<a class="code" href="aisdk__common__api_8h.html#a7b1421f9235a19f0261406b3ac61751a">AISDK_CONFIG_VALUE_ENV_TYPE_FORMAL</a>)</div></div><!-- fragment --> 
+<p class="definition">在文件 <a class="el" href="aisdk__voice__online_8h_source.html">aisdk_voice_online.h</a> 第 <a class="el" href="aisdk__voice__online_8h_source.html#l00276">276</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa72a884c67282cbf529106708bce6090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa72a884c67282cbf529106708bce6090">&#9670;&nbsp;</a></span>AISDK_CONFIG_VOICE_ONLINE_AUDIO_PACKET_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int AISDK_CONFIG_VOICE_ONLINE_AUDIO_PACKET_SIZE = <a class="el" href="aisdk__voice__online_8h.html#a9f3b78dda5d5545a5dd2b247cfb7dd98">AISDK_CONFIG_VOICE_ONLINE_BEGIN</a> + 11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>在线识别发送的语音数据包大小 </p>
+
+<p class="definition">在文件 <a class="el" href="aisdk__voice__online_8h_source.html">aisdk_voice_online.h</a> 第 <a class="el" href="aisdk__voice__online_8h_source.html#l00258">258</a> 行定义.</p>
+
+</div>
+</div>
 <a id="a9f3b78dda5d5545a5dd2b247cfb7dd98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9f3b78dda5d5545a5dd2b247cfb7dd98">&#9670;&nbsp;</a></span>AISDK_CONFIG_VOICE_ONLINE_BEGIN</h2>
 
@@ -620,7 +664,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="aisdk__voice__online_8h_source.html">aisdk_voice_online.h</a> 第 <a class="el" href="aisdk__voice__online_8h_source.html#l00255">255</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__voice__online_8h_source.html">aisdk_voice_online.h</a> 第 <a class="el" href="aisdk__voice__online_8h_source.html#l00279">279</a> 行定义.</p>
 
 </div>
 </div>
@@ -806,7 +850,7 @@ $(function() {
 
 <p>flags标志取值定义:语音识别改为手动模式。 </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__voice__online_8h_source.html">aisdk_voice_online.h</a> 第 <a class="el" href="aisdk__voice__online_8h_source.html#l00261">261</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__voice__online_8h_source.html">aisdk_voice_online.h</a> 第 <a class="el" href="aisdk__voice__online_8h_source.html#l00285">285</a> 行定义.</p>
 
 </div>
 </div>
@@ -823,7 +867,7 @@ $(function() {
 </div><div class="memdoc">
 <p>语音识别被唤醒打断 </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__voice__online_8h_source.html">aisdk_voice_online.h</a> 第 <a class="el" href="aisdk__voice__online_8h_source.html#l00274">274</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__voice__online_8h_source.html">aisdk_voice_online.h</a> 第 <a class="el" href="aisdk__voice__online_8h_source.html#l00298">298</a> 行定义.</p>
 
 </div>
 </div>
@@ -840,7 +884,7 @@ $(function() {
 </div><div class="memdoc">
 <p>返回的json数据中的code定义 成功 </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__voice__online_8h_source.html">aisdk_voice_online.h</a> 第 <a class="el" href="aisdk__voice__online_8h_source.html#l00269">269</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__voice__online_8h_source.html">aisdk_voice_online.h</a> 第 <a class="el" href="aisdk__voice__online_8h_source.html#l00293">293</a> 行定义.</p>
 
 </div>
 </div>

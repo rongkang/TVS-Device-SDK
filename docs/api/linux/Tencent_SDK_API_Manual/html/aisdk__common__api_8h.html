@@ -208,6 +208,9 @@ $(function() {
 <tr class="memitem:ab60630d44a44a06cde0a7316138cff5b"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__common__api_8h.html#ab60630d44a44a06cde0a7316138cff5b">AISDK_CONFIG_NETWORK_TYPE</a> = <a class="el" href="aisdk__common__api_8h.html#a8cc4665b54f7b72c61bef90ccf42cd8a">AISDK_CONFIG_COMMON_BEGIN</a> + 18</td></tr>
 <tr class="memdesc:ab60630d44a44a06cde0a7316138cff5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置当前网络类型  <a href="#ab60630d44a44a06cde0a7316138cff5b">更多...</a><br /></td></tr>
 <tr class="separator:ab60630d44a44a06cde0a7316138cff5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada7cce146c5872aae829ed9481eaf07a"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__common__api_8h.html#ada7cce146c5872aae829ed9481eaf07a">AISDK_CONFIG_NETWORK_STATUS</a> = <a class="el" href="aisdk__common__api_8h.html#a8cc4665b54f7b72c61bef90ccf42cd8a">AISDK_CONFIG_COMMON_BEGIN</a> + 19</td></tr>
+<tr class="memdesc:ada7cce146c5872aae829ed9481eaf07a"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置当前网络状态  <a href="#ada7cce146c5872aae829ed9481eaf07a">更多...</a><br /></td></tr>
+<tr class="separator:ada7cce146c5872aae829ed9481eaf07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29c991c3ef37f0437ca8490fd08d845a"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__common__api_8h.html#a29c991c3ef37f0437ca8490fd08d845a">AISDK_CONFIG_COMMON_END</a> = 999</td></tr>
 <tr class="separator:a29c991c3ef37f0437ca8490fd08d845a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae09dc736d3c87ee655198b32e45acfd4"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aisdk__common__api_8h.html#ae09dc736d3c87ee655198b32e45acfd4">AISDK_CONFIG_VALUE_ENABLE</a> = &quot;1&quot;</td></tr>
@@ -322,7 +325,7 @@ $(function() {
 <dl class="section warning"><dt>警告</dt><dd>不要在回调函数内做任何阻塞的操作。否则会阻塞其他回调。</dd></dl>
 <p>回调命令 </p><dl class="section see"><dt>参见</dt><dd>参见各接口头文件的AISDK_CMD_*常量定义 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00588">588</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00609">609</a> 行定义.</p>
 
 </div>
 </div>
@@ -805,7 +808,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00472">472</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00493">493</a> 行定义.</p>
 
 </div>
 </div>
@@ -996,6 +999,28 @@ $(function() {
 
 </div>
 </div>
+<a id="ada7cce146c5872aae829ed9481eaf07a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada7cce146c5872aae829ed9481eaf07a">&#9670;&nbsp;</a></span>AISDK_CONFIG_NETWORK_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int AISDK_CONFIG_NETWORK_STATUS = <a class="el" href="aisdk__common__api_8h.html#a8cc4665b54f7b72c61bef90ccf42cd8a">AISDK_CONFIG_COMMON_BEGIN</a> + 19</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置当前网络状态 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="aisdk__common__api_8h.html#a7b2f03b49a4e3818bb11589e684149f4" title="设置配置项 ">aisdkSetConfig()</a></dd></dl>
+<h2>功能</h2>
+<p>配置当前网络状态 </p><h2>值</h2>
+<p>"1":有网 "0":无网 </p><h2>示例：</h2>
+<div class="fragment"><div class="line"><span class="comment">//配置当前网络为有网</span></div><div class="line"><a class="code" href="aisdk__common__api_8h.html#a7b2f03b49a4e3818bb11589e684149f4">aisdkSetConfig</a>(<a class="code" href="aisdk__common__api_8h.html#ada7cce146c5872aae829ed9481eaf07a">AISDK_CONFIG_NETWORK_STATUS</a>, <span class="stringliteral">&quot;1&quot;</span>)</div></div><!-- fragment --> 
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00490">490</a> 行定义.</p>
+
+</div>
+</div>
 <a id="ab60630d44a44a06cde0a7316138cff5b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab60630d44a44a06cde0a7316138cff5b">&#9670;&nbsp;</a></span>AISDK_CONFIG_NETWORK_TYPE</h2>
 
@@ -1014,7 +1039,7 @@ $(function() {
 <p>配置当前网络类型 </p><h2>值</h2>
 <p>取值参考AISDK_CONFIG_VALUE_APN_XXX </p><h2>示例：</h2>
 <div class="fragment"><div class="line"><a class="code" href="aisdk__common__api_8h.html#a7b2f03b49a4e3818bb11589e684149f4">aisdkSetConfig</a>(AISDK_CONFIG_APN_TYPE, XXX)</div></div><!-- fragment --> 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00469">469</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00471">471</a> 行定义.</p>
 
 </div>
 </div>
@@ -1158,7 +1183,7 @@ $(function() {
 </div><div class="memdoc">
 <p>APN类型：3GNET </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00570">570</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00591">591</a> 行定义.</p>
 
 </div>
 </div>
@@ -1175,7 +1200,7 @@ $(function() {
 </div><div class="memdoc">
 <p>APN类型：3GWAP </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00566">566</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00587">587</a> 行定义.</p>
 
 </div>
 </div>
@@ -1192,7 +1217,7 @@ $(function() {
 </div><div class="memdoc">
 <p>APN类型：CMNET </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00546">546</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00567">567</a> 行定义.</p>
 
 </div>
 </div>
@@ -1209,7 +1234,7 @@ $(function() {
 </div><div class="memdoc">
 <p>APN类型：CMWAP </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00542">542</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00563">563</a> 行定义.</p>
 
 </div>
 </div>
@@ -1226,7 +1251,7 @@ $(function() {
 </div><div class="memdoc">
 <p>APN类型：CTNET </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00562">562</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00583">583</a> 行定义.</p>
 
 </div>
 </div>
@@ -1243,7 +1268,7 @@ $(function() {
 </div><div class="memdoc">
 <p>APN类型：CTWAP </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00558">558</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00579">579</a> 行定义.</p>
 
 </div>
 </div>
@@ -1260,7 +1285,7 @@ $(function() {
 </div><div class="memdoc">
 <p>APN类型：UNNET </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00554">554</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00575">575</a> 行定义.</p>
 
 </div>
 </div>
@@ -1277,7 +1302,7 @@ $(function() {
 </div><div class="memdoc">
 <p>APN类型：UNWAP </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00550">550</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00571">571</a> 行定义.</p>
 
 </div>
 </div>
@@ -1294,7 +1319,7 @@ $(function() {
 </div><div class="memdoc">
 <p>禁用 </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00485">485</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00506">506</a> 行定义.</p>
 
 </div>
 </div>
@@ -1311,7 +1336,7 @@ $(function() {
 </div><div class="memdoc">
 <p>开启 </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00480">480</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00501">501</a> 行定义.</p>
 
 </div>
 </div>
@@ -1328,7 +1353,7 @@ $(function() {
 </div><div class="memdoc">
 <p>网络环境：正式环境 </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00490">490</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00511">511</a> 行定义.</p>
 
 </div>
 </div>
@@ -1345,7 +1370,7 @@ $(function() {
 </div><div class="memdoc">
 <p>网络环境：测试环境 </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00495">495</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00516">516</a> 行定义.</p>
 
 </div>
 </div>
@@ -1362,7 +1387,7 @@ $(function() {
 </div><div class="memdoc">
 <p>日志级别，debug </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00515">515</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00536">536</a> 行定义.</p>
 
 </div>
 </div>
@@ -1379,7 +1404,7 @@ $(function() {
 </div><div class="memdoc">
 <p>日志级别，error </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00527">527</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00548">548</a> 行定义.</p>
 
 </div>
 </div>
@@ -1396,7 +1421,7 @@ $(function() {
 </div><div class="memdoc">
 <p>日志级别，info </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00519">519</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00540">540</a> 行定义.</p>
 
 </div>
 </div>
@@ -1413,7 +1438,7 @@ $(function() {
 </div><div class="memdoc">
 <p>日志级别，none </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00531">531</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00552">552</a> 行定义.</p>
 
 </div>
 </div>
@@ -1430,7 +1455,7 @@ $(function() {
 </div><div class="memdoc">
 <p>日志级别，warn </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00523">523</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00544">544</a> 行定义.</p>
 
 </div>
 </div>
@@ -1447,7 +1472,7 @@ $(function() {
 </div><div class="memdoc">
 <p>TTS格式：AMR </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00510">510</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00531">531</a> 行定义.</p>
 
 </div>
 </div>
@@ -1464,7 +1489,7 @@ $(function() {
 </div><div class="memdoc">
 <p>TTS格式：MP3 </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00500">500</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00521">521</a> 行定义.</p>
 
 </div>
 </div>
@@ -1481,7 +1506,7 @@ $(function() {
 </div><div class="memdoc">
 <p>TTS格式：WAV </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00505">505</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00526">526</a> 行定义.</p>
 
 </div>
 </div>
@@ -1498,7 +1523,7 @@ $(function() {
 </div><div class="memdoc">
 <p>APN类型：未知 </p>
 
-<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00538">538</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="aisdk__common__api_8h_source.html">aisdk_common_api.h</a> 第 <a class="el" href="aisdk__common__api_8h_source.html#l00559">559</a> 行定义.</p>
 
 </div>
 </div>

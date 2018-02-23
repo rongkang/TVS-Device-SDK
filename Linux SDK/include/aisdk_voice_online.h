@@ -251,6 +251,30 @@ const int AISDK_CONFIG_VOICE_ONLINE_SIL_TIME = AISDK_CONFIG_VOICE_ONLINE_BEGIN +
  * 是否使用本地vad结束
  */
 const int AISDK_CONFIG_VOICE_ONLINE_USER_LOCAL_VAD = AISDK_CONFIG_VOICE_ONLINE_BEGIN + 10;
+
+/**
+ * 在线识别发送的语音数据包大小
+ */
+const int AISDK_CONFIG_VOICE_ONLINE_AUDIO_PACKET_SIZE = AISDK_CONFIG_VOICE_ONLINE_BEGIN + 11;
+
+
+/**
+ * @see aisdkSetConfig()
+ *
+ * @brief 配置语音识别环境
+ *
+ * ## 功能
+ * 配置语音识别环境。
+ * ## 值
+ * 值|说明
+ * ## 示例：
+ * ```
+ * // 配置语音识别环境为正式环境
+ * aisdkSetConfig(AISDK_CONFIG_VOICE_ENV_TYPE,AISDK_CONFIG_VALUE_ENV_TYPE_FORMAL)
+ * ```
+ */
+const int AISDK_CONFIG_VOICE_ENV_TYPE = AISDK_CONFIG_VOICE_ONLINE_BEGIN + 12;
+
 // 配置项，key的结束值
 const int AISDK_CONFIG_VOICE_ONLINE_END = 6999;
 

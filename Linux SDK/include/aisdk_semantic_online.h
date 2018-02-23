@@ -77,8 +77,50 @@ const int AISDK_CMD_RESOUCES_RESULT = AISDK_CMD_SEMANTIC_RESULT + 6;
  */
 const int AISDK_CMD_RESOUCES_ERROR = AISDK_CMD_SEMANTIC_RESULT + 7;
 
+/**
+ * @brief 回调接口命令定义,上传语法到语义服务器成功
+ * @see AISDK_CALLBACK
+ */
+const int AISDK_CMD_ONLINE_RECO_UPLOAD_SEMANTIC = AISDK_CMD_SEMANTIC_RESULT + 8;
+
+/**
+ * @brief 回调接口命令定义,上传语法到语义服务器失败
+ * @see AISDK_CALLBACK
+ */
+const int AISDK_CMD_ONLINE_RECO_UPLOAD_SEMANTIC_ERROR = AISDK_CMD_SEMANTIC_RESULT + 9;
+
+
+/**
+ * @brief 回调接口命令定义, ex版本语义返回
+ * @note aisdkReqResouceUrl结果回调
+ * @see AISDK_CALLBACK
+ */
+const int AISDK_CMD_EX_SEMANTIC_RESULT = AISDK_CMD_SEMANTIC_RESULT + 10;
+/**
+ * @brief 回调接口命令定义,ex版本语义返回出错
+ * @note aisdkReqResouceUrl结果回调
+ * @see AISDK_CALLBACK
+ */
+const int AISDK_CMD_EX_SEMANTIC_ERROR = AISDK_CMD_SEMANTIC_RESULT + 11;
+
 // 配置项，key的起始值
 const int AISDK_CONFIG_SEMANTIC_ONLINE_BEGIN = 2000;
+/**
+ * @see aisdkSetConfig()
+ *
+ * @brief 配置语义服务的环境
+ *
+ * ## 功能
+ * 配置语义服务的环境。
+ * ## 值
+ * 值|说明
+ * ## 示例：
+ * ```
+ * // 设置语义服务环境为正式环境
+ * aisdkSetConfig(AISDK_CONFIG_SEMANTIC_ENV_TYPE,AISDK_CONFIG_VALUE_ENV_TYPE_FORMAL)
+ * ```
+ */
+const int AISDK_CONFIG_SEMANTIC_ENV_TYPE = AISDK_CONFIG_SEMANTIC_ONLINE_BEGIN + 1;
 // 配置项，key的结束值
 const int AISDK_CONFIG_SEMANTIC_ONLINE_END = 2999;
 
@@ -103,6 +145,12 @@ const int AISDK_SEMANTIC_REQ_TYPE_COMPLEX_SEMANTIC = 3;
  * @note 用于cancel(int)参数
  */
 const int AISDK_SEMANTIC_REQ_TYPE_RESOURCE_URL= 4;
+
+/**
+ * @brief 请求类型：增强版文本请求
+ * @note 用于cancel(int)参数
+ */
+const int AISDK_SEMANTIC_REQ_TYPE_TEXT_EX = 5;
 
 //flags标志取值定义
 /**
@@ -194,6 +242,47 @@ AISDK_API_EXPORTS int aisdkCancelSemanticByUserData(void* userData);
  * @return 0:success other:fail。 错误码定义见AISDK_ERROR_*常量
  */
 AISDK_API_EXPORTS int aisdkCancelSemanticByType(int iReqType);
+
+
+/**
+ * @brief 上传用户相关实体，目前只有联系人实体
+ * @param strJsonBlobInfo
+ */
+AISDK_API_EXPORTS int aisdkUploadSemanticGrammar(char* strJsonBlobInfo, void* userData, int len);
+
+enum AISDKExtContentDataType{
+    E_AIDATATYPE_TEXT            = 1,           //文本。
+    E_AIDATATYPE_IMAGE           = 2,           //图片。
+    E_AIDATATYPE_VOICE           = 3,           //语音。
+    E_AIDATATYPE_VIDEO           = 4,           //视频。
+};
+
+struct AISDKExtContent{
+    enum AISDKExtContentDataType dataType; //见AISDKContentDataType
+    char* data;
+    unsigned int dateLen;
+};
+/**
+ *
+ * @brief 在线语义识别接口。扩展接口，支持明确意图、普通文本请求、带额外数据请求。
+ * @param text 以utf8格式编码的文本串，以'\0'结尾
+ * @param textLen 文本串长度
+ * @param userData 自定义信息，callback时带回。
+ * @param len 自定义信息长度
+ *
+ * @param flags 控制标志，参考AISDK_FLAG_SEMANTIC_*常量定义，支持多flag或运算。默认设置为0即可。
+ * @return 0：ok，other：fail。 错误码定义见AISDK_ERROR_*常量
+ * @note
+ * 获取"上一首/下一首"等.
+ *
+ */
+AISDK_API_EXPORTS int aisdkOnlineText2SemanticEx(const char* text, int textLen,
+                                                 const char* semanticJson, int semanticLen,
+                                                 const struct  AISDKExtContent* contents, int contentsLen,
+                                                 void* userData, int userDataLen,
+                                                 int flags);
+
+
 #ifdef __cplusplus
 }
 #endif
