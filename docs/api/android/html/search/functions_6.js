@@ -11,10 +11,13 @@ var searchData=
   ['onplayinterrupted',['onPlayInterrupted',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_i_tts_listener.html#ad06c7238833b1ff08dfc158b588c0d7b',1,'com::tencent::ai::sdk::tts::ITtsListener']]],
   ['onprogressreturn',['onProgressReturn',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_i_tts_listener.html#a6290b51aafc4f0ce4d730bcea9d3b2b7',1,'com::tencent::ai::sdk::tts::ITtsListener']]],
   ['onprogressruturndata',['onProgressRuturnData',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_i_tts_listener.html#ac06cc75a5f70b5965e82322837f79ff8',1,'com::tencent::ai::sdk::tts::ITtsListener']]],
+  ['onsetkeywordcallback',['onSetKeywordCallback',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tvw_1_1_i_tvw_listener.html#ac092aefda5abbe7398bc5ca73d4f44ef',1,'com::tencent::ai::sdk::tvw::ITvwListener']]],
   ['ontrinited',['onTrInited',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_i_tr_listener.html#aca44e1cc3b4be647c99cf42ad8701f3a',1,'com::tencent::ai::sdk::tr::ITrListener']]],
   ['ontrsemanticerrmsgproc',['onTrSemanticErrMsgProc',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_i_tr_listener.html#a0d9fc23005c2cc947ae52574bf35d71e',1,'com::tencent::ai::sdk::tr::ITrListener']]],
   ['ontrsemanticmsgproc',['onTrSemanticMsgProc',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_i_tr_listener.html#a4f691438c729e32995656c8cb609a3ce',1,'com::tencent::ai::sdk::tr::ITrListener']]],
-  ['ontrvoiceerrmsgproc',['onTrVoiceErrMsgProc',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_i_tr_listener.html#a258242f5c2119811172e50e91cc2ebb1',1,'com::tencent::ai::sdk::tr::ITrListener']]],
-  ['ontrvoicemsgproc',['onTrVoiceMsgProc',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_i_tr_listener.html#a97bbddbe8cefbcd83aac14274f464a89',1,'com::tencent::ai::sdk::tr::ITrListener']]],
-  ['onttsinited',['onTtsInited',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_i_tts_init_listener.html#a1d634097e3155f00f6c26e1bb971c5b1',1,'com::tencent::ai::sdk::tts::ITtsInitListener']]]
+  ['ontrvoiceerrmsgproc',['onTrVoiceErrMsgProc',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_i_tr_listener.html#af81e3d0ac8e9a76807e8a8cfae7f678d',1,'com::tencent::ai::sdk::tr::ITrListener']]],
+  ['ontrvoicemsgproc',['onTrVoiceMsgProc',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_i_tr_listener.html#aca6e50cddf4ae71ce07dd174e9a40b09',1,'com::tencent::ai::sdk::tr::ITrListener']]],
+  ['onttsinited',['onTtsInited',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_i_tts_init_listener.html#a1d634097e3155f00f6c26e1bb971c5b1',1,'com::tencent::ai::sdk::tts::ITtsInitListener']]],
+  ['ontvwinited',['onTvwInited',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tvw_1_1_i_tvw_listener.html#a58ad4202872568103ed4344ca4635b91',1,'com::tencent::ai::sdk::tvw::ITvwListener']]],
+  ['ontvwwakeup',['onTvwWakeup',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tvw_1_1_i_tvw_listener.html#a06ccf72fef08803e20c08af7d8008c4c',1,'com::tencent::ai::sdk::tvw::ITvwListener']]]
 ];

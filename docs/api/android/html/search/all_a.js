@@ -1,10 +1,4 @@
 var searchData=
 [
-  ['release',['release',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#a40d8930cb33edbce7e73c01e60c12cfd',1,'com.tencent.ai.sdk.tr.TrSession.release()'],['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_tts_session.html#aec148d3149b029e8f12d4865c1499f51',1,'com.tencent.ai.sdk.tts.TtsSession.release()'],['../classcom_1_1tencent_1_1ai_1_1sdk_1_1atw_1_1_atw_session.html#ae24602e53733894caf79ec9c4616970b',1,'com.tencent.ai.sdk.atw.AtwSession.release()']]],
-  ['remote_5fexception',['REMOTE_EXCEPTION',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1utils_1_1_i_s_s_errors.html#ab732c6f99514727c459f31b390538435',1,'com::tencent::ai::sdk::utils::ISSErrors']]],
-  ['removecallback',['removeCallback',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1control_1_1_speech_manager.html#a55f19600b1b7de2d683acf5303fc6f9d',1,'com::tencent::ai::sdk::control::SpeechManager']]],
-  ['reqfm',['reqFM',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#ac95d1fb8ab1d0b2d7e0d7afae6b5433a',1,'com.tencent.ai.sdk.tr.TrSession.reqFM(String showId, int showType, Object extraObj)'],['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#a09630d3d314bd07a2f3baea56c46a3e2',1,'com.tencent.ai.sdk.tr.TrSession.reqFM(String showId, int showType, String extraMsg)']]],
-  ['reqmusic',['reqMusic',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#a05c640cbb84233435dbd00eb77fc52fa',1,'com.tencent.ai.sdk.tr.TrSession.reqMusic(String mediaId, String action, Object extraObj)'],['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#adcc91c08f50aa66f3b4b15d99dbcafe8',1,'com.tencent.ai.sdk.tr.TrSession.reqMusic(String mediaId, String extraMsg)']]],
-  ['reqwithcomplexsemantic',['reqWithComplexSemantic',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#a791e030ec6925a95b10602b77fbd19cc',1,'com::tencent::ai::sdk::tr::TrSession']]],
-  ['resumespeak',['resumeSpeak',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_tts_session.html#a005015befadd9a05d938abad5125e7eb',1,'com::tencent::ai::sdk::tts::TtsSession']]]
+  ['query',['query',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_semantic.html#ab92839f78322bac221c0cf2495fc1d6f',1,'com::tencent::ai::sdk::tr::TrSemantic']]]
 ];

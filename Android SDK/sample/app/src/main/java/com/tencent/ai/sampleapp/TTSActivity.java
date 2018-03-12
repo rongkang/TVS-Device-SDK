@@ -80,8 +80,6 @@ public class TTSActivity extends BaseSampleActivity implements View.OnClickListe
             String msg = "";
             if (state) {
                 msg = "初始化成功";
-
-                mTTSSession.sessionStart(AudioManager.STREAM_NOTIFICATION);
             } else {
                 msg = "初始化失败，errId ：" + errId;
             }

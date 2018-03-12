@@ -33,9 +33,9 @@ public class WakeupActivity extends BaseSampleActivity implements View.OnClickLi
     /** 是否延迟开启唤醒流程，一般在初始化时候设置 */
     private boolean mPendingStartWakeup = false;
 
-    /** 唤醒本地模型文件，本Sample必须放在这个目录，否则唤醒无法运行 */
+    /** 唤醒本地模型文件，保证跟识别模型 */
     private static final String RES_PATH = Environment.getExternalStorageDirectory().getAbsolutePath()
-            + "/tencent/dingdang/res/atw";
+            + "/tencent/dingdang/res/tr";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

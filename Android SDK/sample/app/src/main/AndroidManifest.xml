@@ -19,7 +19,7 @@
         android:allowBackup="true" android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name" android:theme="@style/AppTheme">
 
- <meta-data android:name="com.tencent.rdm.uuid" android:value="94cac420-58b6-4509-a044-c20743643ee0" />
+ <meta-data android:name="com.tencent.rdm.uuid" android:value="4a9a7c30-6a34-4f00-843f-7feb8e4a73fc" />
 
         <activity android:name=".MainActivity" android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">

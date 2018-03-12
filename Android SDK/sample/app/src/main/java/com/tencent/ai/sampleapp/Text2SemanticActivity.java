@@ -83,7 +83,7 @@ public class Text2SemanticActivity extends BaseSampleActivity implements View.On
         }
 
         @Override
-        public void onTrVoiceMsgProc(long uMsg, long wParam, String lParam) {
+        public void onTrVoiceMsgProc(long uMsg, long wParam, String lParam, Object extraData) {
             Log.i(TAG, "onTrVoiceMsgProc - uMsg : " + uMsg + ", wParam : " + wParam + ", lParam : " + lParam );
         }
 
@@ -95,7 +95,7 @@ public class Text2SemanticActivity extends BaseSampleActivity implements View.On
         }
 
         @Override
-        public void onTrVoiceErrMsgProc(long uMsg, long errCode, String lParam) {
+        public void onTrVoiceErrMsgProc(long uMsg, long errCode, String lParam, Object extraData) {
             Log.e(TAG, "onTrVoiceErrMsgProc - uMsg : " + uMsg + ", errCode : " + errCode + ", lParam : " + lParam);
         }
 
