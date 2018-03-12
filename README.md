@@ -24,7 +24,7 @@ TVS Device SDK为客户端提供了腾讯语音唤醒、语音识别、语义识
 
 链接：[更新日志](./Linux%20SDK/README.md "README.md") 
 
-### iOS SDK文档
+### iOS SDK文档(version 1.0.2)
 
 链接：[iOS SDK API文档](https://tvsteam.github.io/TVS-Device-SDK/api/iOS/index.html " iOS SDK") 
 
