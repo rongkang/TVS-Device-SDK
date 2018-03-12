@@ -30,7 +30,7 @@ TVS Device SDK为客户端提供了腾讯语音唤醒、语音识别、语义识
 
 链接：[iOS  SDK 接入文档](./iOS%20SDK/ "TVS Device SDK iOS接入说明") 
 
-链接：[sample](./iOS%20SDK/samples "sample") 
+链接：[sample](./iOS%20SDK/sample "sample") 
 
 链接：[iOS SDK所有资料](./iOS%20SDK/  "所有资料") 
 
