@@ -22,6 +22,7 @@ TVS Device SDK为客户端提供了腾讯语音唤醒、语音识别、语义识
 
 链接：[Linux SDK所有资料](./Linux%20SDK/ "所有资料") 
 
+链接：[更新日志](./Linux%20SDK/ "README.md") 
 
 ### iOS SDK文档
 
