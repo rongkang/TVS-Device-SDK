@@ -1,0 +1,6 @@
+framework module AISDK {
+  umbrella header "AISDK.h"
+
+  export *
+  module * { export * }
+}

@@ -8,25 +8,22 @@
 #import <Foundation/Foundation.h>
 #import "SpeechEngine.h"
 
-/*! @brief 语音识别回调接口
- *
- * VoiceSessionDelegate 会在VoiceSession对象中注入
+/*!
+ * @brief 语音识别回调接口，在VoiceSession对象中注入
  */
 @protocol VoiceSessionDelegate <NSObject>
 
 /*!
- @brief 语音识别回调
-
- @param cmd 参照cmd说明,K_AISDK_CMD_ONLINE_RECO_xx
- @param code 通常返回0
- @param data 识别结果
- @param userData 自定义数据
+ * @brief 语音识别回调
+ * @param cmd 参照cmd说明,K_AISDK_CMD_ONLINE_RECO_xx
+ * @param code 通常返回0
+ * @param data 识别结果
+ * @param userData 自定义数据
  */
 -(void)onOnlineVocieCallback:(NSInteger)cmd code:(NSInteger)code data:(NSString *)data userData:(id)userData;
 
 /*!
  @brief 语音识别异常回调
- 
  @param cmd 参照cmd说明, K_AISDK_ERROR_ONLINE_RECO_xx
  @param code 返回的json数据错误码，参照语义说明文档解析
  @param message 错误信息
@@ -48,6 +45,14 @@
  * @return 0：ok，other：fail。 错误码定义见AISDK_ERROR_*常量
  */
 -(int)startVoice2text:(NSInteger)mode;
+
+/*！
+ * @brief 开始一次语音识别流程
+ * @param userdata 自定义数据指针。callback时带回。
+ * @param flags 控制标志，参考K_AISDK_FLAG_ONLINE_RECO_*常量定义。如果不设置，传0即可。
+ * @return 0：ok，other：fail。 错误码定义见AISDK_ERROR_*常量
+ */
+-(int)startVoice2text:(NSInteger)mode userData:(id)userdata;
 
 /*!
  * @brief 输入录音数据
@@ -230,7 +235,6 @@ extern const int K_AISDK_CONFIG_VOICE_ONLINE_ENABLE_CLOUDVAD;
 extern const int K_AISDK_CONFIG_VOICE_ONLINE_ENABLE_CALCULATE_VOLUME;
 
 
-
 /*!
  *
  * @see setConfig:value:
@@ -249,10 +253,61 @@ extern const int K_AISDK_CONFIG_VOICE_ONLINE_ENABLE_CALCULATE_VOLUME;
  */
 extern const int K_AISDK_CONFIG_VOICE_VAD_SILENT_MAX;
 
+/*!
+ *
+ * @see aisdkSetConfig()
+ *
+ * @brief 设置语音识别的语言类型
+ *
+ * 配置项关键字
+ * ## 功能
+ * 配置是
+ * 设置语音识别的语言类型（仅支持讯飞语音识别引擎）
+ * ## 值
+ * 值 |  说明
+ *---|---
+ * 0|默认(普通话)
+ * 1|普通话
+ * 2|英语
+ * ## 示例
+ * ```
+ * //设置语音类型为普通话
+ * aisdkSetConfig(AISDK_CONFIG_VOICE_ONLINE_LANGUAGE_TYPE,0)
+ * ```
+ */
+extern const int K_AISDK_CONFIG_VOICE_ONLINE_LANGUAGE_TYPE;
+
+/**
+ *
+ * @see aisdkSetConfig()
+ *
+ * @brief 配置是否保存录音
+ *
+ * 配置项关键字
+ * ## 功能
+ * 配置是否保存录音
+ * ## 值
+ * ## 示例
+ * ```
+ * //保存录音
+ * aisdkSetConfig(AISDK_CONFIG_VOICE_SAVE_SPEECH,"1")
+ * //不保存录音
+ * aisdkSetConfig(AISDK_CONFIG_VOICE_SAVE_SPEECH,"0")
+ * ```
+ */
+extern const int K_AISDK_CONFIG_VOICE_ONLINE_SAVE_SPEECH;
+
+/*!
+ * @brief 配置语音识别环境
+ * @note 配置语音识别环境为正式环境 aisdkSetConfig(AISDK_CONFIG_VOICE_ENV_TYPE,AISDK_CONFIG_VALUE_ENV_TYPE_FORMAL)
+ * @see aisdkSetConfig()
+ */
+extern const int K_AISDK_CONFIG_VOICE_ENV_TYPE;
+
 // 配置项，key的结束值
 extern const int K_AISDK_CONFIG_VOICE_ONLINE_END;
 
-/**
+/*!
  * @brief flags标志取值定义:语音识别改为模式。
  */
 //extern const int K_AISDK_FLAG_ONLINE_RECO_CLEAR_PREV_SESSION;     // 清空上一次请求的上下文

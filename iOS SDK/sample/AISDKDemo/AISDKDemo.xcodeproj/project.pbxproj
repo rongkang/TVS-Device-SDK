@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A1321D01FFFB24500592B94 /* AISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1321CF1FFFB24500592B94 /* AISDK.framework */; };
+		8A1ACB3F1FDFBD5400C916AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1ACB251FDFBD5400C916AF /* AppDelegate.m */; };
+		8A1ACB401FDFBD5400C916AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1ACB261FDFBD5400C916AF /* Assets.xcassets */; };
+		8A1ACB411FDFBD5400C916AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1ACB271FDFBD5400C916AF /* LaunchScreen.storyboard */; };
+		8A1ACB421FDFBD5400C916AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1ACB291FDFBD5400C916AF /* Main.storyboard */; };
+		8A1ACB431FDFBD5400C916AF /* RecorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1ACB2D1FDFBD5400C916AF /* RecorderView.m */; };
+		8A1ACB441FDFBD5400C916AF /* RecorderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1ACB2E1FDFBD5400C916AF /* RecorderView.xib */; };
+		8A1ACB451FDFBD5400C916AF /* SemanticData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1ACB311FDFBD5400C916AF /* SemanticData.m */; };
+		8A1ACB461FDFBD5400C916AF /* DeveloperUIVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1ACB331FDFBD5400C916AF /* DeveloperUIVC.m */; };
+		8A1ACB481FDFBD5400C916AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1ACB351FDFBD5400C916AF /* main.m */; };
+		8A1ACB491FDFBD5400C916AF /* AQPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A1ACB381FDFBD5400C916AF /* AQPlayer.mm */; };
+		8A1ACB4A1FDFBD5400C916AF /* AQRecorder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A1ACB3A1FDFBD5400C916AF /* AQRecorder.mm */; };
+		8A1ACB4B1FDFBD5400C916AF /* TTSAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1ACB3C1FDFBD5400C916AF /* TTSAudioPlayer.m */; };
+		8A1ACB4C1FDFBD5400C916AF /* TtsFormater.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1ACB3E1FDFBD5400C916AF /* TtsFormater.m */; };
+		8A6352C11F9F680C001BC511 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A6352C01F9F680C001BC511 /* libc++.tbd */; };
+		8A6352C31F9F6812001BC511 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A6352C21F9F6812001BC511 /* libz.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8A1321CF1FFFB24500592B94 /* AISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AISDK.framework; sourceTree = "<group>"; };
+		8A1ACB241FDFBD5400C916AF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8A1ACB251FDFBD5400C916AF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8A1ACB261FDFBD5400C916AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A1ACB281FDFBD5400C916AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A1ACB2A1FDFBD5400C916AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A1ACB2C1FDFBD5400C916AF /* RecorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecorderView.h; sourceTree = "<group>"; };
+		8A1ACB2D1FDFBD5400C916AF /* RecorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecorderView.m; sourceTree = "<group>"; };
+		8A1ACB2E1FDFBD5400C916AF /* RecorderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecorderView.xib; sourceTree = "<group>"; };
+		8A1ACB301FDFBD5400C916AF /* SemanticData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemanticData.h; sourceTree = "<group>"; };
+		8A1ACB311FDFBD5400C916AF /* SemanticData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SemanticData.m; sourceTree = "<group>"; };
+		8A1ACB321FDFBD5400C916AF /* DeveloperUIVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeveloperUIVC.h; sourceTree = "<group>"; };
+		8A1ACB331FDFBD5400C916AF /* DeveloperUIVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeveloperUIVC.m; sourceTree = "<group>"; };
+		8A1ACB341FDFBD5400C916AF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A1ACB351FDFBD5400C916AF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A1ACB371FDFBD5400C916AF /* AQPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQPlayer.h; sourceTree = "<group>"; };
+		8A1ACB381FDFBD5400C916AF /* AQPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AQPlayer.mm; sourceTree = "<group>"; };
+		8A1ACB391FDFBD5400C916AF /* AQRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQRecorder.h; sourceTree = "<group>"; };
+		8A1ACB3A1FDFBD5400C916AF /* AQRecorder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AQRecorder.mm; sourceTree = "<group>"; };
+		8A1ACB3B1FDFBD5400C916AF /* TTSAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSAudioPlayer.h; sourceTree = "<group>"; };
+		8A1ACB3C1FDFBD5400C916AF /* TTSAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSAudioPlayer.m; sourceTree = "<group>"; };
+		8A1ACB3D1FDFBD5400C916AF /* TtsFormater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TtsFormater.h; sourceTree = "<group>"; };
+		8A1ACB3E1FDFBD5400C916AF /* TtsFormater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TtsFormater.m; sourceTree = "<group>"; };
+		8A6352981F9F63DE001BC511 /* AISDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AISDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A6352C01F9F680C001BC511 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		8A6352C21F9F6812001BC511 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A6352951F9F63DE001BC511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A1321D01FFFB24500592B94 /* AISDK.framework in Frameworks */,
+				8A6352C31F9F6812001BC511 /* libz.tbd in Frameworks */,
+				8A6352C11F9F680C001BC511 /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A1ACB231FDFBD5400C916AF /* AISDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8A1ACB241FDFBD5400C916AF /* AppDelegate.h */,
+				8A1ACB251FDFBD5400C916AF /* AppDelegate.m */,
+				8A1ACB261FDFBD5400C916AF /* Assets.xcassets */,
+				8A1ACB271FDFBD5400C916AF /* LaunchScreen.storyboard */,
+				8A1ACB291FDFBD5400C916AF /* Main.storyboard */,
+				8A1ACB2B1FDFBD5400C916AF /* CircleView */,
+				8A1ACB2F1FDFBD5400C916AF /* Data */,
+				8A1ACB321FDFBD5400C916AF /* DeveloperUIVC.h */,
+				8A1ACB331FDFBD5400C916AF /* DeveloperUIVC.m */,
+				8A1ACB341FDFBD5400C916AF /* Info.plist */,
+				8A1ACB351FDFBD5400C916AF /* main.m */,
+				8A1ACB361FDFBD5400C916AF /* Media */,
+			);
+			path = AISDKDemo;
+			sourceTree = "<group>";
+		};
+		8A1ACB2B1FDFBD5400C916AF /* CircleView */ = {
+			isa = PBXGroup;
+			children = (
+				8A1ACB2C1FDFBD5400C916AF /* RecorderView.h */,
+				8A1ACB2D1FDFBD5400C916AF /* RecorderView.m */,
+				8A1ACB2E1FDFBD5400C916AF /* RecorderView.xib */,
+			);
+			path = CircleView;
+			sourceTree = "<group>";
+		};
+		8A1ACB2F1FDFBD5400C916AF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8A1ACB301FDFBD5400C916AF /* SemanticData.h */,
+				8A1ACB311FDFBD5400C916AF /* SemanticData.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8A1ACB361FDFBD5400C916AF /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				8A1ACB371FDFBD5400C916AF /* AQPlayer.h */,
+				8A1ACB381FDFBD5400C916AF /* AQPlayer.mm */,
+				8A1ACB391FDFBD5400C916AF /* AQRecorder.h */,
+				8A1ACB3A1FDFBD5400C916AF /* AQRecorder.mm */,
+				8A1ACB3B1FDFBD5400C916AF /* TTSAudioPlayer.h */,
+				8A1ACB3C1FDFBD5400C916AF /* TTSAudioPlayer.m */,
+				8A1ACB3D1FDFBD5400C916AF /* TtsFormater.h */,
+				8A1ACB3E1FDFBD5400C916AF /* TtsFormater.m */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		8A63528F1F9F63DE001BC511 = {
+			isa = PBXGroup;
+			children = (
+				8A1ACB231FDFBD5400C916AF /* AISDKDemo */,
+				8A6352991F9F63DE001BC511 /* Products */,
+				8A6352BB1F9F67C9001BC511 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A6352991F9F63DE001BC511 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A6352981F9F63DE001BC511 /* AISDKDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A6352BB1F9F67C9001BC511 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A1321CF1FFFB24500592B94 /* AISDK.framework */,
+				8A6352C21F9F6812001BC511 /* libz.tbd */,
+				8A6352C01F9F680C001BC511 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A6352971F9F63DE001BC511 /* AISDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A6352AF1F9F63DE001BC511 /* Build configuration list for PBXNativeTarget "AISDKDemo" */;
+			buildPhases = (
+				8A6352941F9F63DE001BC511 /* Sources */,
+				8A6352951F9F63DE001BC511 /* Frameworks */,
+				8A6352961F9F63DE001BC511 /* Resources */,
+				8AB525751FE9128700743FA2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AISDKDemo;
+			productName = AISDKDemo;
+			productReference = 8A6352981F9F63DE001BC511 /* AISDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A6352901F9F63DE001BC511 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Zacard Fang";
+				TargetAttributes = {
+					8A6352971F9F63DE001BC511 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7XVAJ25VC5;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 8A6352931F9F63DE001BC511 /* Build configuration list for PBXProject "AISDKDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A63528F1F9F63DE001BC511;
+			productRefGroup = 8A6352991F9F63DE001BC511 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A6352971F9F63DE001BC511 /* AISDKDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A6352961F9F63DE001BC511 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A1ACB411FDFBD5400C916AF /* LaunchScreen.storyboard in Resources */,
+				8A1ACB401FDFBD5400C916AF /* Assets.xcassets in Resources */,
+				8A1ACB421FDFBD5400C916AF /* Main.storyboard in Resources */,
+				8A1ACB441FDFBD5400C916AF /* RecorderView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8AB525751FE9128700743FA2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# compress application.\n/bin/rm -rf $CONFIGURATION_BUILD_DIR/Payload\n\n/bin/ls $CONFIGURATION_BUILD_DIR\n\n/bin/mkdir $CONFIGURATION_BUILD_DIR/Payload\n\n/bin/cp -R $CONFIGURATION_BUILD_DIR/AISDKDemo.app $CONFIGURATION_BUILD_DIR/Payload\n\n/bin/cp iTunesArtwork/iTunesArtwork.png $CONFIGURATION_BUILD_DIR/iTunesArtwork\n\ncd $CONFIGURATION_BUILD_DIR\n\n# zip up the application directory\n\n/usr/bin/zip -r AISDKDemo.ipa Payload iTunesArtwork\n\n# 备份符号表\n#echo \"Backup the .dSYM ...\"\n\n#/usr/bin/zip -r AISDKDemo.ipa.dSYM.zip  AISDKDemo.app.dSYM\n\n/bin/ls $CONFIGURATION_BUILD_DIR\n\n#cat $CONFIGURATION_BUILD_DIR\n\necho \"Copy the .ipa to dir out/ ...\"\n\n# 将ipa文件copy到根目录下的result目录\n/bin/rm -rf $SRCROOT/out\n\n/bin/mkdir $SRCROOT/out\n\ncp $CONFIGURATION_BUILD_DIR/AISDKDemo.ipa  $SRCROOT/out/AISDKDemo.ipa\n\necho \"Clean the build dir ...\"\n\n/bin/rm -rf Payload\n\n/bin/rm -rf iTunesArtwork\n\necho \"Packet .ipa done.\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A6352941F9F63DE001BC511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A1ACB481FDFBD5400C916AF /* main.m in Sources */,
+				8A1ACB431FDFBD5400C916AF /* RecorderView.m in Sources */,
+				8A1ACB451FDFBD5400C916AF /* SemanticData.m in Sources */,
+				8A1ACB4A1FDFBD5400C916AF /* AQRecorder.mm in Sources */,
+				8A1ACB4C1FDFBD5400C916AF /* TtsFormater.m in Sources */,
+				8A1ACB3F1FDFBD5400C916AF /* AppDelegate.m in Sources */,
+				8A1ACB4B1FDFBD5400C916AF /* TTSAudioPlayer.m in Sources */,
+				8A1ACB491FDFBD5400C916AF /* AQPlayer.mm in Sources */,
+				8A1ACB461FDFBD5400C916AF /* DeveloperUIVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8A1ACB271FDFBD5400C916AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A1ACB281FDFBD5400C916AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8A1ACB291FDFBD5400C916AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A1ACB2A1FDFBD5400C916AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A6352AD1F9F63DE001BC511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8A6352AE1F9F63DE001BC511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A6352B01F9F63DE001BC511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7XVAJ25VC5;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = AISDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.test.AISDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "28dffd7f-3aae-4f9e-9491-4be04bca8680";
+				PROVISIONING_PROFILE_SPECIFIER = TestAppProfile;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8A6352B11F9F63DE001BC511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7XVAJ25VC5;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = AISDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.test.AISDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "28dffd7f-3aae-4f9e-9491-4be04bca8680";
+				PROVISIONING_PROFILE_SPECIFIER = TestAppProfile;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A6352931F9F63DE001BC511 /* Build configuration list for PBXProject "AISDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A6352AD1F9F63DE001BC511 /* Debug */,
+				8A6352AE1F9F63DE001BC511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A6352AF1F9F63DE001BC511 /* Build configuration list for PBXNativeTarget "AISDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A6352B01F9F63DE001BC511 /* Debug */,
+				8A6352B11F9F63DE001BC511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A6352901F9F63DE001BC511 /* Project object */;
+}
