@@ -14,10 +14,12 @@ var menudata={children:[
 {text:"a",url:"globals.html#index_a"},
 {text:"c",url:"globals_c.html#index_c"},
 {text:"e",url:"globals_e.html#index_e"},
+{text:"f",url:"globals_f.html#index_f"},
 {text:"g",url:"globals_g.html#index_g"},
 {text:"i",url:"globals_i.html#index_i"},
 {text:"m",url:"globals_m.html#index_m"},
 {text:"o",url:"globals_o.html#index_o"},
+{text:"p",url:"globals_p.html#index_p"},
 {text:"s",url:"globals_s.html#index_s"},
 {text:"t",url:"globals_t.html#index_t"}]},
 {text:"函数",url:"globals_func.html",children:[
@@ -34,4 +36,6 @@ var menudata={children:[
 {text:"s",url:"globals_vars.html#index_s"},
 {text:"t",url:"globals_vars.html#index_t"}]},
 {text:"类型定义",url:"globals_type.html"},
+{text:"枚举",url:"globals_enum.html"},
+{text:"枚举值",url:"globals_eval.html"},
 {text:"宏定义",url:"globals_defs.html"}]}]}]}

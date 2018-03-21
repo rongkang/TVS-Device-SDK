@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ttscache',['ttsCache',['../testsemantic_8cpp.html#af00c5e53907606c9c1cd4eefaab0a0cb',1,'ttsCache():&#160;testsemantic.cpp'],['../testtts_8cpp.html#af00c5e53907606c9c1cd4eefaab0a0cb',1,'ttsCache():&#160;testtts.cpp']]]
+  ['refreshtoken',['refreshToken',['../structAISDKAccount.html#a27b0a5f54ee8286c5f68d9d7a7496751',1,'AISDKAccount']]],
+  ['rssi',['rssi',['../structAISDKAPInfo.html#ab6f4522a5a5c4577c16d0e23339a1414',1,'AISDKAPInfo']]]
 ];

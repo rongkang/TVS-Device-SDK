@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['exception_5flevel_5fcritical',['EXCEPTION_LEVEL_CRITICAL',['../aisdk__report__online_8h.html#a30b4d9782b602125fbc6d152fd62c8f5',1,'aisdk_report_online.h']]],
-  ['exception_5flevel_5fmajor',['EXCEPTION_LEVEL_MAJOR',['../aisdk__report__online_8h.html#add97ef5b4ba07b697e39a84445688842',1,'aisdk_report_online.h']]],
-  ['exception_5flevel_5fminor',['EXCEPTION_LEVEL_MINOR',['../aisdk__report__online_8h.html#a906a984b880b97287a620d67e44413e0',1,'aisdk_report_online.h']]],
-  ['exception_5flevel_5freport',['EXCEPTION_LEVEL_REPORT',['../aisdk__report__online_8h.html#aca9b450e33fa0a7b88fb21b5fc2ec3ce',1,'aisdk_report_online.h']]],
-  ['exception_5flevel_5fwarnning',['EXCEPTION_LEVEL_WARNNING',['../aisdk__report__online_8h.html#aa70d72917cfeebf41b61ce0950c1f9bb',1,'aisdk_report_online.h']]],
-  ['expiretime',['expireTime',['../structAISDKAccount.html#a8215dedc136fcd5b7be5095826025795',1,'AISDKAccount']]]
+  ['callback',['callback',['../testrecv_8cpp.html#a7f640c3c97d353f387eb82e31a621627',1,'callback(int cmd, char *data, int dataLen, void *userData, int userDataLen, void *extra, int extraLen):&#160;testrecv.cpp'],['../testsemantic_8cpp.html#a7f640c3c97d353f387eb82e31a621627',1,'callback(int cmd, char *data, int dataLen, void *userData, int userDataLen, void *extra, int extraLen):&#160;testsemantic.cpp'],['../testtts_8cpp.html#a7f640c3c97d353f387eb82e31a621627',1,'callback(int cmd, char *data, int dataLen, void *userData, int userDataLen, void *extra, int extraLen):&#160;testtts.cpp'],['../testvoice_8cpp.html#a7f640c3c97d353f387eb82e31a621627',1,'callback(int cmd, char *data, int dataLen, void *userData, int userDataLen, void *extra, int extraLen):&#160;testvoice.cpp']]],
+  ['changelog_2emd',['CHANGELOG.md',['../CHANGELOG_8md.html',1,'']]],
+  ['channel',['channel',['../structAISDKAPInfo.html#adf7dff2c57c0da9a4a2b70e3e815be31',1,'AISDKAPInfo']]],
+  ['changelog',['CHANGELOG',['../index.html',1,'']]]
 ];

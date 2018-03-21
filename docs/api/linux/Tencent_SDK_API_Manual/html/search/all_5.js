@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['main',['main',['../testsemantic_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;testsemantic.cpp'],['../testtts_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;testtts.cpp'],['../testvoice_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;testvoice.cpp'],['../testwakeup_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;testwakeup.cpp']]]
+  ['getcode',['getCode',['../testtts_8cpp.html#ae198e7cbcff62ee1822fd2e9c76ffd9b',1,'testtts.cpp']]],
+  ['getrc',['getRc',['../testtts_8cpp.html#aebca42acb9467e96c4e6ac452a77048f',1,'testtts.cpp']]]
 ];

@@ -159,7 +159,7 @@ const int AISDK_SEMANTIC_REQ_TYPE_TEXT_EX = 5;
 const int AISDK_FLAG_SEMANTIC_CLEAR_PREV_SESSION = 0x01;
 
 /**
- * 退出当前请求的上下文
+ * 退出当前请求的上下文，
  */
 const int AISDK_FLAG_SEMANTIC_EXIT_CUR_SESSION = 0x02;
 /**
@@ -167,6 +167,16 @@ const int AISDK_FLAG_SEMANTIC_EXIT_CUR_SESSION = 0x02;
  */
 const int AISDK_FLAG_SEMANTIC_NOT_ASR = 0x04;
 
+
+/**
+ * 强制清除后台保存的所有上下文信息
+ */
+const int AISDK_FLAG_SEMANTIC_FORCE_CLEAR_SESSION = 0x08;
+
+/**
+ * 让后台不把当前请求保存到session里
+ */
+const int AISDK_FLAG_SEMANTIC_NOT_SAVE_CURRENT_SESSION = 0x10;
 
 /**
  *
@@ -187,10 +197,10 @@ AISDK_API_EXPORTS int aisdkOnlineText2Semantic(const char* text, int textLen, vo
  * @param len 语义JSON长度
  * @param userData 自定义数据，callback时带回。
  * @param userDataLen 自定义数据长度
- *
+ * @param flags 控制标志，参考AISDK_FLAG_SEMANTIC_*常量定义，支持多flag或运算。默认设置为0即可。
  * @return 0:ok, other:fail。 错误码定义见AISDK_ERROR_*常量
  */
-AISDK_API_EXPORTS int aisdkComplexSemantic2Semantic(const char* semanticJson, int len, void *userData, int userDataLen);
+AISDK_API_EXPORTS int aisdkComplexSemantic2Semantic(const char* semanticJson, int len, void *userData, int userDataLen, int flags);
 
 /**
  * @brief 请求单首音乐的详细信息

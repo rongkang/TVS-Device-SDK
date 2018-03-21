@@ -21,6 +21,20 @@
 extern "C" {
 #endif
 
+/**
+ * @brief  回调接口命令定义,上报QBGuid成功
+ * @note 上报QBGuid成功
+ * @see AISDK_CALLBACK
+ */
+const int AISDK_CMD_ACCOUNT_REPORT_RELATION_SUCCESS = 8000;
+
+/**
+ * @brief  回调接口命令定义,上报QBGuid失败
+ * @note 上报QBGuid失败
+ * @see AISDK_CALLBACK
+ */
+const int AISDK_CMD_ACCOUNT_REPORT_RELATION_FAIL = 8001;
+
 typedef struct{
     char* appId;
     char* openId;
@@ -65,10 +79,22 @@ AISDK_API_EXPORTS int aisdkSetAccountByClientId(const char* clientId, int isNeed
  * @return 0:表示有账号，其他:表示没有账号
  */
 AISDK_API_EXPORTS int aisdkGetAccount(AISDKAccount* account);
+
+/**
+ * @brief 获得clientId形式的账号信息
+ * @param client ，请传入一个空指针，
+ * @return 0:表示成功返回clientId, 其他表示没有账户信息
+ */
+AISDK_API_EXPORTS int aisdkGetAccountClientId(char** client);
 /**
  * @brief 清空账号信息
  */
 AISDK_API_EXPORTS void aisdkClearAccount();
+
+/**
+ * @brief 上报账号的关系
+ */
+AISDK_API_EXPORTS int aisdkReportRelation(const char* qbGuid, void* userData, int len);
 
 
 

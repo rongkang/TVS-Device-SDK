@@ -349,37 +349,6 @@ const int AISDK_CONFIG_APP_KEY_AND_TOKEN = AISDK_CONFIG_COMMON_BEGIN + 12;
 
 
 /**
-* @see aisdkSetConfig()
- *
- * @brief 配置设备信息
- *
- * 配置项关键字。
- * ## 功能
- *
- * ## 值
- * json格式数据
-static const char* json = "{\
-    \"manufacturer\": \"LENOVO\",\
-    \"deviceName\": \"MOTO G\",\
-    \"brandIconUrl\" \"https://rinc.xyz/img/favicon.png\",\
-    \"productId\": \"TVS9876543210\",\
-    \"DSN\": \"9876543210\",\
-    \"MAC\": \"a0:b1:c2:d3:e4:f6\",\
-    \"OS\": \"Android 5.1\"\
-  }";
-
- * ## 示例：
- *
- * ```
- * |manufacturer=|
- * aisdkSetConfig(AISDK_CONFIG_DEVICE_INFO,"ABC|123")
- * ```
- */
-const int AISDK_CONFIG_DEVICE_SHOW_INFO = AISDK_CONFIG_COMMON_BEGIN + 13;
-
-
-
-/**
  * @see aisdkSetConfig()
  *
  * @brief 配置LOG是否同步打印
@@ -640,7 +609,7 @@ AISDK_API_EXPORTS int aisdkInit(const char* folderPath, const char* appKey, cons
 AISDK_API_EXPORTS int aisdkFullInit(const char* folderPath, const char* sharedFilePath, const char* appKey, const char* accessToken);
 /**
  * @brief 设置QUA
- * @param quaVersion qua版本号
+ * @param quaVersion qua版本号，默认填3即可
  * @param platform  平台
  * @param vendor  厂商
  * @param product 产品名称
