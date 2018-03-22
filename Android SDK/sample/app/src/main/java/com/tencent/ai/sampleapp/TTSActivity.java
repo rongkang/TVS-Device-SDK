@@ -23,6 +23,7 @@ public class TTSActivity extends BaseSampleActivity implements View.OnClickListe
     private EditText mTTSEdit;
     /** SDK TtsSession */
     private TtsSession mTTSSession;
+    private String curText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +68,9 @@ public class TTSActivity extends BaseSampleActivity implements View.OnClickListe
                 mTTSSession.stopSpeak();
                 // 设置是否需要播放
                 mTTSSession.setParam(TtsSession.TYPE_TTS_PLAYING, TtsSession.TTS_PLAYING);
-                mTTSSession.startSpeak(text, mTTSListener);
+                if (ret == ISSErrors.TTS_PLAYER_SUCCESS) {
+                    curText = text;
+                }
 
                 printLog("\n请求开始：\n" + text);
             }
@@ -118,7 +121,13 @@ public class TTSActivity extends BaseSampleActivity implements View.OnClickListe
         }
         @Override
         public void onProgressReturn(int textindex, int textlen) {
-            String msg = "播放进度 - textindex ：" +  textindex + ", textlen : " + textlen;
+            String msg;
+            if (TextUtils.isEmpty(curText)) {
+                msg = "播放进度 - textindex ：" +  textindex + ", textlen : " + textlen;
+            } else {
+                msg = "播放进度 - textindex ：" +  textindex + ", textlen : " + textlen + "\n" + curText.substring(textindex,
+                        textindex + textlen);
+            }
             Log.i(TAG, msg);
             printLog(msg);
         }

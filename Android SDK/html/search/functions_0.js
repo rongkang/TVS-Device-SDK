@@ -4,6 +4,7 @@ var searchData=
   ['aisdkclearaccount',['aisdkClearAccount',['../classcom_1_1tencent_1_1ai_1_1account_1_1_account_manager.html#a15e02ca4bead52e8c46aac56c1c3a2f9',1,'com::tencent::ai::account::AccountManager']]],
   ['aisdkgetaccount',['aisdkGetAccount',['../classcom_1_1tencent_1_1ai_1_1account_1_1_account_manager.html#a868d79a6976bb8fd6bd3f5617ffa233b',1,'com::tencent::ai::account::AccountManager']]],
   ['aisdkgetconfig',['aisdkGetConfig',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1control_1_1_speech_manager.html#ae36bd3d9e9138cbd671552bfdc4187f8',1,'com::tencent::ai::sdk::control::SpeechManager']]],
+  ['aisdkreportrelation',['aisdkReportRelation',['../classcom_1_1tencent_1_1ai_1_1account_1_1_account_manager.html#ae29d94db2e542e37e535ba6738f3f509',1,'com::tencent::ai::account::AccountManager']]],
   ['aisdksetaccount',['aisdkSetAccount',['../classcom_1_1tencent_1_1ai_1_1account_1_1_account_manager.html#aebda06890489c44225c3665dbdad2a1f',1,'com::tencent::ai::account::AccountManager']]],
   ['aisdksetaccountbyclientid',['aisdkSetAccountByClientId',['../classcom_1_1tencent_1_1ai_1_1account_1_1_account_manager.html#a0eb73ce7996cb252f8db82a4b4c33769',1,'com::tencent::ai::account::AccountManager']]],
   ['aisdksetconfig',['aisdkSetConfig',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1control_1_1_speech_manager.html#a33bf6ea516f64feebc735d03ebec7c16',1,'com::tencent::ai::sdk::control::SpeechManager']]],

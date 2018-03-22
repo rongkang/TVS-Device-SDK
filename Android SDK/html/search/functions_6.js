@@ -11,6 +11,8 @@ var searchData=
   ['onplayinterrupted',['onPlayInterrupted',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_i_tts_listener.html#ad06c7238833b1ff08dfc158b588c0d7b',1,'com::tencent::ai::sdk::tts::ITtsListener']]],
   ['onprogressreturn',['onProgressReturn',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_i_tts_listener.html#a6290b51aafc4f0ce4d730bcea9d3b2b7',1,'com::tencent::ai::sdk::tts::ITtsListener']]],
   ['onprogressruturndata',['onProgressRuturnData',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_i_tts_listener.html#ac06cc75a5f70b5965e82322837f79ff8',1,'com::tencent::ai::sdk::tts::ITtsListener']]],
+  ['onreportfailed',['onReportFailed',['../classcom_1_1tencent_1_1ai_1_1account_1_1_account_manager.html#a8896dd07a7f803a5264bcecf81f4cee5',1,'com::tencent::ai::account::AccountManager']]],
+  ['onreportsuccess',['onReportSuccess',['../classcom_1_1tencent_1_1ai_1_1account_1_1_account_manager.html#af880d80e9dedd68b1201e40f6dde70d3',1,'com::tencent::ai::account::AccountManager']]],
   ['onsetkeywordcallback',['onSetKeywordCallback',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tvw_1_1_i_tvw_listener.html#ac092aefda5abbe7398bc5ca73d4f44ef',1,'com::tencent::ai::sdk::tvw::ITvwListener']]],
   ['ontrinited',['onTrInited',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_i_tr_listener.html#aca44e1cc3b4be647c99cf42ad8701f3a',1,'com::tencent::ai::sdk::tr::ITrListener']]],
   ['ontrsemanticerrmsgproc',['onTrSemanticErrMsgProc',['../interfacecom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_i_tr_listener.html#a0d9fc23005c2cc947ae52574bf35d71e',1,'com::tencent::ai::sdk::tr::ITrListener']]],
