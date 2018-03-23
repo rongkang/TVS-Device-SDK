@@ -11,6 +11,7 @@ import android.widget.ScrollView;
 import com.tencent.ai.sdk.tts.ITtsInitListener;
 import com.tencent.ai.sdk.tts.ITtsListener;
 import com.tencent.ai.sdk.tts.TtsSession;
+import com.tencent.ai.sdk.utils.ISSErrors;
 
 /**
  * 文字转语音
@@ -68,6 +69,7 @@ public class TTSActivity extends BaseSampleActivity implements View.OnClickListe
                 mTTSSession.stopSpeak();
                 // 设置是否需要播放
                 mTTSSession.setParam(TtsSession.TYPE_TTS_PLAYING, TtsSession.TTS_PLAYING);
+                int ret = mTTSSession.startSpeak(text, mTTSListener);
                 if (ret == ISSErrors.TTS_PLAYER_SUCCESS) {
                     curText = text;
                 }
