@@ -42,18 +42,6 @@ TVS Device SDK为客户端提供了腾讯语音唤醒、语音识别、语义识
 
 链接：[更新日志](./iOS%20SDK/README.md "README.md") 
 
-### Android SDK文档(version 1.9.180227)
-
-链接：[Android 基础 SDK  API文档](https://tvsteam.github.io/TVS-Device-SDK/api/android/index.html "Android 基础 SDK") 
-
-链接：[Android 基础 SDK 接入文档](./Android%20SDK/ "Android 基础SDK") 
-
-链接：[sample](./Android%20SDK/sample "sample") 
-
-链接：[Android SDK所有资料](./Android%20SDK/ "所有资料") 
-
-链接：[更新日志](./Android%20SDK/README.md "README.md") 
-
 ### 音箱专属SDK
 未上架，有需要请联系叮当团队
 
