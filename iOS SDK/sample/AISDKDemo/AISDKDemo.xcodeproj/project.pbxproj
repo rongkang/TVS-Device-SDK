@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5380F456205BF9DC00740EEC /* keywords_model.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5380F455205BF9DC00740EEC /* keywords_model.bundle */; };
 		8A1321D01FFFB24500592B94 /* AISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1321CF1FFFB24500592B94 /* AISDK.framework */; };
 		8A1ACB3F1FDFBD5400C916AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1ACB251FDFBD5400C916AF /* AppDelegate.m */; };
 		8A1ACB401FDFBD5400C916AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1ACB261FDFBD5400C916AF /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5380F455205BF9DC00740EEC /* keywords_model.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = keywords_model.bundle; sourceTree = "<group>"; };
 		8A1321CF1FFFB24500592B94 /* AISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AISDK.framework; sourceTree = "<group>"; };
 		8A1ACB241FDFBD5400C916AF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8A1ACB251FDFBD5400C916AF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				8A1ACB341FDFBD5400C916AF /* Info.plist */,
 				8A1ACB351FDFBD5400C916AF /* main.m */,
 				8A1ACB361FDFBD5400C916AF /* Media */,
+				5380F455205BF9DC00740EEC /* keywords_model.bundle */,
 			);
 			path = AISDKDemo;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				8A1ACB411FDFBD5400C916AF /* LaunchScreen.storyboard in Resources */,
 				8A1ACB401FDFBD5400C916AF /* Assets.xcassets in Resources */,
 				8A1ACB421FDFBD5400C916AF /* Main.storyboard in Resources */,
+				5380F456205BF9DC00740EEC /* keywords_model.bundle in Resources */,
 				8A1ACB441FDFBD5400C916AF /* RecorderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,7 +233,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# compress application.\n/bin/rm -rf $CONFIGURATION_BUILD_DIR/Payload\n\n/bin/ls $CONFIGURATION_BUILD_DIR\n\n/bin/mkdir $CONFIGURATION_BUILD_DIR/Payload\n\n/bin/cp -R $CONFIGURATION_BUILD_DIR/AISDKDemo.app $CONFIGURATION_BUILD_DIR/Payload\n\n/bin/cp iTunesArtwork/iTunesArtwork.png $CONFIGURATION_BUILD_DIR/iTunesArtwork\n\ncd $CONFIGURATION_BUILD_DIR\n\n# zip up the application directory\n\n/usr/bin/zip -r AISDKDemo.ipa Payload iTunesArtwork\n\n# 备份符号表\n#echo \"Backup the .dSYM ...\"\n\n#/usr/bin/zip -r AISDKDemo.ipa.dSYM.zip  AISDKDemo.app.dSYM\n\n/bin/ls $CONFIGURATION_BUILD_DIR\n\n#cat $CONFIGURATION_BUILD_DIR\n\necho \"Copy the .ipa to dir out/ ...\"\n\n# 将ipa文件copy到根目录下的result目录\n/bin/rm -rf $SRCROOT/out\n\n/bin/mkdir $SRCROOT/out\n\ncp $CONFIGURATION_BUILD_DIR/AISDKDemo.ipa  $SRCROOT/out/AISDKDemo.ipa\n\necho \"Clean the build dir ...\"\n\n/bin/rm -rf Payload\n\n/bin/rm -rf iTunesArtwork\n\necho \"Packet .ipa done.\"";
+			shellScript = "# compress application.\n/bin/rm -rf $CONFIGURATION_BUILD_DIR/Payload\n\n/bin/ls $CONFIGURATION_BUILD_DIR\n\n/bin/mkdir $CONFIGURATION_BUILD_DIR/Payload\n\n/bin/cp -R $CONFIGURATION_BUILD_DIR/$PRODUCT_NAME.app $CONFIGURATION_BUILD_DIR/Payload\n\n#/bin/cp iTunesArtwork/iTunesArtwork.png $CONFIGURATION_BUILD_DIR/iTunesArtwork\n\ncd $CONFIGURATION_BUILD_DIR\n\n# zip up the application directory\n\n#/usr/bin/zip -r $PRODUCT_NAME.ipa Payload iTunesArtwork\n\n/usr/bin/zip -r $PRODUCT_NAME.ipa Payload\n\n# 备份符号表\n#echo \"Backup the .dSYM ...\"\n\n#/usr/bin/zip -r AISDKDemo.ipa.dSYM.zip  AISDKDemo.app.dSYM\n\n/bin/ls $CONFIGURATION_BUILD_DIR\n\n#cat $CONFIGURATION_BUILD_DIR\n\n#echo \"Copy the .ipa to dir out/ ...\"\n\n# 将ipa文件copy到根目录下的result目录\n#/bin/rm -rf $SRCROOT/out\n\n#/bin/mkdir $SRCROOT/out\n\n#cp $CONFIGURATION_BUILD_DIR/$PRODUCT_NAME.ipa  $SRCROOT/out/$PRODUCT_NAME.ipa\n\necho \"Clean the build dir ...\"\n\n/bin/rm -rf Payload\n\n#/bin/rm -rf iTunesArtwork\n\necho \"Packet .ipa done.\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 

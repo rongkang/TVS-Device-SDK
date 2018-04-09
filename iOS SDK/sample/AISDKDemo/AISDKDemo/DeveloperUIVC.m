@@ -17,13 +17,15 @@
 
 #define IS_NULL(x) (x == nil || [x isKindOfClass:[NSNull class]])
 
-@interface DeveloperUIVC ()<VoiceSessionDelegate, SemanticSessionDelegate, TtsSessionDelegate, AQRecorderDelegate, TTSAudioPlayerDelegate>
+@interface DeveloperUIVC ()<VoiceSessionDelegate, SemanticSessionDelegate, TtsSessionDelegate, AQRecorderDelegate, TTSAudioPlayerDelegate, SpeechWakeupDelegate>
 
 @property(nonatomic, strong)SpeechEngine *aisdk;
 @property(nonatomic, strong)VoiceSession *voiceSession;
 @property(nonatomic, strong)SemanticSession *semanticSession;
 @property(nonatomic, strong)TtsSession *ttsSession;
-
+@property(nonatomic, strong)SpeechWakeup *wakeup;
+@property(nonatomic, assign)BOOL hadWakeup;
+@property(nonatomic, assign)BOOL wakeupFailed;
 @property(nonatomic, strong)AQRecorder *aqRecorder;
 @property(nonatomic, strong)TTSAudioPlayer *ttsAudioPlayer;
 
@@ -56,9 +58,10 @@
 
 - (void)initSDK {
     _aisdk = [SpeechEngine sharedInstance];
+    
     NSLog(@"sdk version = %@", [_aisdk getSDKVersion]);
     
-    //[_aisdk setConfig:K_AISDK_CONFIG_VOICE_ONLINE_ENABLE_CALCULATE_VOLUME value:K_AISDK_CONFIG_VALUE_DISABLE];
+    [_aisdk setConfig:K_AISDK_CONFIG_VOICE_ONLINE_ENABLE_CALCULATE_VOLUME value:K_AISDK_CONFIG_VALUE_ENABLE];
     
     //voice
     _voiceSession = [[VoiceSession alloc]init];
@@ -72,6 +75,46 @@
     _ttsSession = [[TtsSession alloc]init];
     [_ttsSession setDelegate:self];
     [_aisdk addSession:_ttsSession];
+    
+    _wakeup = [[SpeechWakeup alloc] init];
+    [_wakeup setDelegate:self];
+    [_aisdk addSession:_wakeup];
+    
+    NSString *modelPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"keywords_model.bundle"];
+    
+    //NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    //NSString *documentsDirectory = [paths objectAtIndex:0];
+
+    //创建NSFileManager和NSDirectoryEnumerator来枚举Documents文件夹下的文件。
+    /*
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if ([fileManager fileExistsAtPath:modelPath]) {
+        
+    } else {
+        NSLog(@"error ........");
+    }
+    NSDirectoryEnumerator *dirEnum = [fileManager enumeratorAtPath:modelPath];
+
+    //最后显示Documents文件夹下所有文件。
+    
+    NSString *filepath;
+    while ((filepath = [dirEnum nextObject]) != nil) {
+        NSLog(@"filepath:%@", filepath);
+    }
+    */
+    int ret = [_wakeup initOfflineWakupWithPath:modelPath.UTF8String];
+    NSLog(@"initSDK initOfflineWakupWithPath ret=%d, path=%@.", ret, modelPath);
+    if (ret > 0) {
+        _wakeupFailed = YES;
+        [self showAlertDialog:@"initOfflineWakupWithPath" withErrNo:ret];
+    }
+    
+    ret = [_wakeup startOfflineWakupWithData:nil withLength:0 withFlags:0];
+    NSLog(@"startOfflineWakupWithData ret=%d.", ret);
+    if (ret > 0) {
+        _wakeupFailed = YES;
+        [self showAlertDialog:@"startOfflineWakupWithData" withErrNo:ret];
+    }
 }
 
 /*
@@ -107,10 +150,17 @@
         // 停止播报
         [_ttsAudioPlayer clearAll];
         
-        // 启动录音
-        [_voiceSession cancelVoice2Text];
-        
-        [_voiceSession startVoice2text:0];
+        // 如果没有唤醒，就开始唤醒启动录音
+//        if (!_hadWakeup && !_wakeupFailed) {
+//
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                [_aqRecorder start];
+//            });
+//        } else {
+            [_voiceSession cancelVoice2Text];
+            [_voiceSession startVoice2text:0];
+        //}
+
         
         [self clearToDisplay];
         
@@ -147,6 +197,7 @@
 
 #pragma mark VoiceSessionDelegate
 -(void)onOnlineVocieCallback:(NSInteger)cmd code:(NSInteger)code data:(NSString *)data userData:(id)userData{
+    NSLog(@"onOnlineVocieCallback cmd=%ld.", cmd);
     dispatch_async(dispatch_get_main_queue(), ^{
         if (cmd == K_AISDK_CMD_ONLINE_RECO_START){
             // 在线识别开始，接受录音数据
@@ -188,6 +239,7 @@
             
         } else if (cmd == K_AISDK_CMD_ONLINE_RECO_DATA_VOLUME){
             // 上报输入音频数据的音量值
+            NSLog(@"RECO_DATA_VOLUME value：%f", [data floatValue]);
         } else if (cmd == K_AISDK_CMD_ONLINE_RECO_CANCELED){
             // 已取消在线识别
             [self appendToDisplay:@"已取消在线识别"];
@@ -210,6 +262,7 @@
 
 #pragma mark SemanticSessionDelegate
 -(void)onOnlineSemanticCallback:(NSInteger)cmd code:(NSInteger)code data:(NSString *)data userData:(id)userData {
+    NSLog(@"onOnlineSemanticCallback cmd = %ld", cmd);
     // 语义回调，解析业务场景
     [self appendToDisplay:[NSString stringWithFormat:@"语义回调结果：%@", data]];
     if (K_AISDK_CMD_SEMANTIC_RESULT == cmd) {
@@ -242,7 +295,19 @@
 
 #pragma mark AQRecorderDelegate
 -(void)onInputVoice:(NSData *)data{
-    [_voiceSession inputVoice2TextAudioData:data];
+//    if (!_hadWakeup && !_wakeupFailed) {
+    //不需要主动往唤醒模块传数据，底层识别模块会往唤醒模块传数据；
+//       int ret = [_wakeup inputOfflineWakeupAudioData:data.bytes withLength:data.length];
+//       NSLog(@"onInputVoice inputOfflineWakeupAudioData ret=%d.", ret);
+//        if (ret > 0) {
+//            _wakeupFailed = YES;
+//            [self showAlertDialog:@"inputOfflineWakeupAudioData" withErrNo:ret];
+//        }
+//
+//    } else {
+        [_voiceSession inputVoice2TextAudioData:data];
+    //}
+    
 }
 
 #pragma mark TTSAudioPlayerDelegate
@@ -250,4 +315,42 @@
     // TODO 恢复其他播放
 }
 
+- (void)showAlertDialog:(NSString *)title withErrNo:(int)ret {
+    NSString *errMsg = [NSString stringWithFormat:@"错误码：%d.", ret];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:errMsg preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleDefault handler:nil]];
+    //[alertController addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:nil]];
+    //[alertController show:YES];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+
+#pragma mark SpeechWakeupDelegate
+
+-(void)onSpeechWakeupCallback:(NSInteger)cmd code:(NSInteger)code data:(NSString *)data userData:(id)userData {
+    NSLog(@"onSpeechWakeupCallback cmd = %ld", cmd);
+    if (cmd == K_AISDK_CMD_WAKEUP_RECO_RESULT) {
+        _hadWakeup = YES;
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [_aqRecorder stop];
+            //[self showAlertDialog:@"唤醒成功" withErrNo:0];
+            [self setRecordStatus:STATUS_NORMAL msg:@"叮当叮当"]; //_voiceResultText
+            [self appendToDisplay:@"唤醒成功"];
+        });
+
+    }
+}
+
+-(void)onSpeechWakeupError:(NSInteger)cmd code:(NSInteger)code message:(NSString *)message userData:(id)userData {
+    if (cmd == K_AISDK_CMD_WAKEUP_RECO_ERROR) {
+
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [_aqRecorder stop];
+            //[self showAlertDialog:@"唤醒失败" withErrNo:K_AISDK_CMD_WAKEUP_RECO_ERROR];
+            [self setRecordStatus:STATUS_NORMAL msg:@"唤醒中。。。"];
+            [self appendToDisplay:@"唤醒失败"];
+        });
+        
+    }
+}
 @end

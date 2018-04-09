@@ -62,16 +62,18 @@
 <a name="group___header_SE" href="SemanticSession_h/index.html">SemanticSession</a><br>
 </td>
 <td width="33%">
-<a name="group___header_TT" href="TtsSession_h/index.html">TtsSession</a><br>
+<a href="SpeechWakeup_h/index.html">SpeechWakeup</a><br>
 </td>
-<td width="33%"></td>
+<td width="33%">
+<a name="group___header_VO" href="VoiceSession_h/index.html">VoiceSession</a><br>
+</td>
 </tr>
 <tr>
 <td width="33%">
 <a name="group___header_SP" href="SpeechEngine_h/index.html">SpeechEngine</a><br>
 </td>
 <td width="33%">
-<a name="group___header_VO" href="VoiceSession_h/index.html">VoiceSession</a><br>
+<a name="group___header_TT" href="TtsSession_h/index.html">TtsSession</a><br>
 </td>
 <td width="33%"></td>
 </tr>
@@ -86,21 +88,32 @@
 <a logicalpath="//apple_ref/c/func/addSession:" name="group___function_AD" retarget="yes" href="SpeechEngine_h/index.html#//apple_ref/c/func/addSession:">addSession:</a><br>
 </td>
 <td width="33%">
-<a logicalpath="//apple_ref/c/func/releaseSDK" name="group___function_RE" retarget="yes" href="SpeechEngine_h/index.html#//apple_ref/c/func/releaseSDK">releaseSDK</a><br>
+<a logicalpath="//apple_ref/c/func/inputVoice2TextAudioData:" retarget="yes" href="VoiceSession_h/index.html#//apple_ref/c/func/inputVoice2TextAudioData:">inputVoice2TextAudioData:</a><br>
 </td>
 <td width="33%">
-<a logicalpath="//apple_ref/c/func/stopVoice2Text" name="group___function_ST" retarget="yes" href="VoiceSession_h/index.html#//apple_ref/c/func/stopVoice2Text">stopVoice2Text</a><br>
+<a logicalpath="//apple_ref/occ/intfm/SpeechWakeupDelegate/onSpeechWakeupError:code:message:userData:" retarget="yes" href="SpeechWakeup_h/Protocols/SpeechWakeupDelegate/index.html#//apple_ref/occ/intfm/SpeechWakeupDelegate/onSpeechWakeupError:code:message:userData:">+[ SpeechWakeupDelegate onSpeechWakeupError:code:message:userData: ]</a><br>
 </td>
 </tr>
 <tr>
 <td width="33%">
-<a logicalpath="//apple_ref/c/func/cancelSemanticByType:" name="group___function_CA" retarget="yes" href="SemanticSession_h/index.html#//apple_ref/c/func/cancelSemanticByType:">cancelSemanticByType:</a><br>
+<a logicalpath="//apple_ref/c/func/cancelOfflineWakeup" name="group___function_CA" retarget="yes" href="SpeechWakeup_h/index.html#//apple_ref/c/func/cancelOfflineWakeup">cancelOfflineWakeup</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//apple_ref/c/func/releaseSDK" name="group___function_RE" retarget="yes" href="SpeechEngine_h/index.html#//apple_ref/c/func/releaseSDK">releaseSDK</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//apple_ref/c/func/startOfflineWakupWithData:withLength:withFlags:" name="group___function_ST" retarget="yes" href="SpeechWakeup_h/index.html#//apple_ref/c/func/startOfflineWakupWithData:withLength:withFlags:">startOfflineWakupWithData:withLength:withFlags:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//apple_ref/c/func/cancelSemanticByType:" retarget="yes" href="SemanticSession_h/index.html#//apple_ref/c/func/cancelSemanticByType:">cancelSemanticByType:</a><br>
 </td>
 <td width="33%">
 <a logicalpath="//apple_ref/c/func/removeSDelegate:" retarget="yes" href="SpeechEngine_h/index.html#//apple_ref/c/func/removeSDelegate:">removeSDelegate:</a><br>
 </td>
 <td width="33%">
-<a logicalpath="//apple_ref/c/func/text2semantic:userData:flags:" name="group___function_TE" retarget="yes" href="SemanticSession_h/index.html#//apple_ref/c/func/text2semantic:userData:flags:">text2semantic:userData:flags:</a><br>
+<a logicalpath="//apple_ref/c/func/stopVoice2Text" retarget="yes" href="VoiceSession_h/index.html#//apple_ref/c/func/stopVoice2Text">stopVoice2Text</a><br>
 </td>
 </tr>
 <tr>
@@ -111,7 +124,7 @@
 <a logicalpath="//apple_ref/c/func/reqFM:showType:extraMsg:" retarget="yes" href="SemanticSession_h/index.html#//apple_ref/c/func/reqFM:showType:extraMsg:">reqFM:showType:extraMsg:</a><br>
 </td>
 <td width="33%">
-<a logicalpath="//apple_ref/c/func/text2Speech:userData:" retarget="yes" href="TtsSession_h/index.html#//apple_ref/c/func/text2Speech:userData:">text2Speech:userData:</a><br>
+<a logicalpath="//apple_ref/c/func/text2semantic:userData:flags:" name="group___function_TE" retarget="yes" href="SemanticSession_h/index.html#//apple_ref/c/func/text2semantic:userData:flags:">text2semantic:userData:flags:</a><br>
 </td>
 </tr>
 <tr>
@@ -122,7 +135,7 @@
 <a logicalpath="//apple_ref/c/func/reqMusic:extraMsg:" retarget="yes" href="SemanticSession_h/index.html#//apple_ref/c/func/reqMusic:extraMsg:">reqMusic:extraMsg:</a><br>
 </td>
 <td width="33%">
-<a logicalpath="//apple_ref/c/func/text2SpeechEx:text:userData:" retarget="yes" href="TtsSession_h/index.html#//apple_ref/c/func/text2SpeechEx:text:userData:">text2SpeechEx:text:userData:</a><br>
+<a logicalpath="//apple_ref/c/func/text2Speech:userData:" retarget="yes" href="TtsSession_h/index.html#//apple_ref/c/func/text2Speech:userData:">text2Speech:userData:</a><br>
 </td>
 </tr>
 <tr>
@@ -133,7 +146,7 @@
 <a logicalpath="//apple_ref/occ/intfm/SemanticSessionDelegate/onOnlineSemanticCallback:code:data:userData:" name="group___function_SE" retarget="yes" href="SemanticSession_h/Protocols/SemanticSessionDelegate/index.html#//apple_ref/occ/intfm/SemanticSessionDelegate/onOnlineSemanticCallback:code:data:userData:">+[ SemanticSessionDelegate onOnlineSemanticCallback:code:data:userData: ]</a><br>
 </td>
 <td width="33%">
-<a logicalpath="//apple_ref/occ/intfm/TtsSessionDelegate/onOnlineTtsCallback:code:pcm:userData:" name="group___function_TT" retarget="yes" href="TtsSession_h/Protocols/TtsSessionDelegate/index.html#//apple_ref/occ/intfm/TtsSessionDelegate/onOnlineTtsCallback:code:pcm:userData:">+[ TtsSessionDelegate onOnlineTtsCallback:code:pcm:userData: ]</a><br>
+<a logicalpath="//apple_ref/c/func/text2SpeechEx:text:userData:" retarget="yes" href="TtsSession_h/index.html#//apple_ref/c/func/text2SpeechEx:text:userData:">text2SpeechEx:text:userData:</a><br>
 </td>
 </tr>
 <tr>
@@ -144,7 +157,7 @@
 <a logicalpath="//apple_ref/occ/intfm/SemanticSessionDelegate/onOnlineSemanticError:code:message:userData:" retarget="yes" href="SemanticSession_h/Protocols/SemanticSessionDelegate/index.html#//apple_ref/occ/intfm/SemanticSessionDelegate/onOnlineSemanticError:code:message:userData:">+[ SemanticSessionDelegate onOnlineSemanticError:code:message:userData: ]</a><br>
 </td>
 <td width="33%">
-<a logicalpath="//apple_ref/occ/intfm/TtsSessionDelegate/onOnlineTtsError:code:message:userData:" retarget="yes" href="TtsSession_h/Protocols/TtsSessionDelegate/index.html#//apple_ref/occ/intfm/TtsSessionDelegate/onOnlineTtsError:code:message:userData:">+[ TtsSessionDelegate onOnlineTtsError:code:message:userData: ]</a><br>
+<a logicalpath="//apple_ref/occ/intfm/TtsSessionDelegate/onOnlineTtsCallback:code:pcm:userData:" name="group___function_TT" retarget="yes" href="TtsSession_h/Protocols/TtsSessionDelegate/index.html#//apple_ref/occ/intfm/TtsSessionDelegate/onOnlineTtsCallback:code:pcm:userData:">+[ TtsSessionDelegate onOnlineTtsCallback:code:pcm:userData: ]</a><br>
 </td>
 </tr>
 <tr>
@@ -155,7 +168,7 @@
 <a logicalpath="//apple_ref/c/func/setConfig:value:" retarget="yes" href="SpeechEngine_h/index.html#//apple_ref/c/func/setConfig:value:">setConfig:value:</a><br>
 </td>
 <td width="33%">
-<a logicalpath="//apple_ref/occ/intfm/VoiceSessionDelegate/onOnlineVocieCallback:code:data:userData:" name="group___function_VO" retarget="yes" href="VoiceSession_h/Protocols/VoiceSessionDelegate/index.html#//apple_ref/occ/intfm/VoiceSessionDelegate/onOnlineVocieCallback:code:data:userData:">+[ VoiceSessionDelegate onOnlineVocieCallback:code:data:userData: ]</a><br>
+<a logicalpath="//apple_ref/occ/intfm/TtsSessionDelegate/onOnlineTtsError:code:message:userData:" retarget="yes" href="TtsSession_h/Protocols/TtsSessionDelegate/index.html#//apple_ref/occ/intfm/TtsSessionDelegate/onOnlineTtsError:code:message:userData:">+[ TtsSessionDelegate onOnlineTtsError:code:message:userData: ]</a><br>
 </td>
 </tr>
 <tr>
@@ -166,7 +179,7 @@
 <a logicalpath="//apple_ref/c/func/setQUA:product:version:versionNum:package:device:" retarget="yes" href="SpeechEngine_h/index.html#//apple_ref/c/func/setQUA:product:version:versionNum:package:device:">setQUA:product:version:versionNum:package:device:</a><br>
 </td>
 <td width="33%">
-<a logicalpath="//apple_ref/occ/intfm/VoiceSessionDelegate/onOnlineVocieError:code:message:userData:" retarget="yes" href="VoiceSession_h/Protocols/VoiceSessionDelegate/index.html#//apple_ref/occ/intfm/VoiceSessionDelegate/onOnlineVocieError:code:message:userData:">+[ VoiceSessionDelegate onOnlineVocieError:code:message:userData: ]</a><br>
+<a logicalpath="//apple_ref/occ/intfm/VoiceSessionDelegate/onOnlineVocieCallback:code:data:userData:" name="group___function_VO" retarget="yes" href="VoiceSession_h/Protocols/VoiceSessionDelegate/index.html#//apple_ref/occ/intfm/VoiceSessionDelegate/onOnlineVocieCallback:code:data:userData:">+[ VoiceSessionDelegate onOnlineVocieCallback:code:data:userData: ]</a><br>
 </td>
 </tr>
 <tr>
@@ -176,14 +189,25 @@
 <td width="33%">
 <a logicalpath="//apple_ref/c/func/sharedInstance" name="group___function_SH" retarget="yes" href="SpeechEngine_h/index.html#//apple_ref/c/func/sharedInstance">sharedInstance</a><br>
 </td>
+<td width="33%">
+<a logicalpath="//apple_ref/occ/intfm/VoiceSessionDelegate/onOnlineVocieError:code:message:userData:" retarget="yes" href="VoiceSession_h/Protocols/VoiceSessionDelegate/index.html#//apple_ref/occ/intfm/VoiceSessionDelegate/onOnlineVocieError:code:message:userData:">+[ VoiceSessionDelegate onOnlineVocieError:code:message:userData: ]</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//apple_ref/c/func/initOfflineWakupWithPath:" name="group___function_IN" retarget="yes" href="SpeechWakeup_h/index.html#//apple_ref/c/func/initOfflineWakupWithPath:">initOfflineWakupWithPath:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//apple_ref/c/func/sharedInstance:acess_token:" retarget="yes" href="SpeechEngine_h/index.html#//apple_ref/c/func/sharedInstance:acess_token:">sharedInstance:acess_token:</a><br>
+</td>
 <td width="33%"></td>
 </tr>
 <tr>
 <td width="33%">
-<a logicalpath="//apple_ref/c/func/inputVoice2TextAudioData:" name="group___function_IN" retarget="yes" href="VoiceSession_h/index.html#//apple_ref/c/func/inputVoice2TextAudioData:">inputVoice2TextAudioData:</a><br>
+<a logicalpath="//apple_ref/c/func/inputOfflineWakeupAudioData:withLength:" retarget="yes" href="SpeechWakeup_h/index.html#//apple_ref/c/func/inputOfflineWakeupAudioData:withLength:">inputOfflineWakeupAudioData:withLength:</a><br>
 </td>
 <td width="33%">
-<a logicalpath="//apple_ref/c/func/sharedInstance:acess_token:" retarget="yes" href="SpeechEngine_h/index.html#//apple_ref/c/func/sharedInstance:acess_token:">sharedInstance:acess_token:</a><br>
+<a logicalpath="//apple_ref/occ/intfm/SpeechWakeupDelegate/onSpeechWakeupCallback:code:data:userData:" name="group___function_SP" retarget="yes" href="SpeechWakeup_h/Protocols/SpeechWakeupDelegate/index.html#//apple_ref/occ/intfm/SpeechWakeupDelegate/onSpeechWakeupCallback:code:data:userData:">+[ SpeechWakeupDelegate onSpeechWakeupCallback:code:data:userData: ]</a><br>
 </td>
 <td width="33%"></td>
 </tr>

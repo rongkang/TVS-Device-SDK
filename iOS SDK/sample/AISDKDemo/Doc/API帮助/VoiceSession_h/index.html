@@ -403,6 +403,13 @@ OUT/AISDK_CMD_ONLINE_RECO_ERROR/AISDK_CMD_ONLINE_RECO_RESULT&#26102;&#65292;&#20
 <dt><tt><a href="index.html#//apple_ref/c/data/K_AISDK_CMD_ONLINE_RECO_TIMEOUT" target="_top">K_AISDK_CMD_ONLINE_RECO_TIMEOUT</a></tt></dt>
 <dd><p>&#22238;&#35843;&#25509;&#21475;&#21629;&#20196;&#23450;&#20041;,&#22312;&#32447;&#35782;&#21035;&#36229;&#26102;&#65292;&#27809;&#26377;&#35782;&#21035;&#21040;&#26377;&#25928;&#36755;&#20837;
 </p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/K_AISDK_CONFIG_VOICE_ENV_TYPE" target="_top">K_AISDK_CONFIG_VOICE_ENV_TYPE</a></tt></dt>
+<dd>
+<p>&#37197;&#32622;&#35821;&#38899;&#35782;&#21035;&#29615;&#22659;
+</p>
+<p><b>&#37197;&#32622;&#35821;&#38899;&#35782;&#21035;&#29615;&#22659;&#20026;&#27491;&#24335;&#29615;&#22659; aisdkSetConfig(AISDK_CONFIG_VOICE_ENV_TYPE,AISDK_CONFIG_VALUE_ENV_TYPE_FORMAL):</b><br></p>
+<div class="note_indent"><p></p></div>
+</dd>
 <dt><tt><a href="index.html#//apple_ref/c/data/K_AISDK_CONFIG_VOICE_ONLINE_BEGIN" target="_top">K_AISDK_CONFIG_VOICE_ONLINE_BEGIN</a></tt></dt>
 <dd></dd>
 <dt><tt><a href="index.html#//apple_ref/c/data/K_AISDK_CONFIG_VOICE_ONLINE_ENABLE_CALCULATE_VOLUME" target="_top">K_AISDK_CONFIG_VOICE_ONLINE_ENABLE_CALCULATE_VOLUME</a></tt></dt>
@@ -570,6 +577,25 @@ OUT/AISDK_CMD_ONLINE_RECO_ERROR/AISDK_CMD_ONLINE_RECO_RESULT&#26102;&#65292;&#20
 <p><b>See</b></p>
 <div class="list_indent"><dl>
 <dt><p><a href="Protocols/VoiceSessionDelegate/index.html#//apple_ref/occ/intf/VoiceSessionDelegate" logicalPath="//apple_ref/occ/intf/VoiceSessionDelegate" target="_top">VoiceSessionDelegate</a></p></dt>
+<dd></dd>
+</dl></div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=data;  uid=//apple_ref/c/data/K_AISDK_CONFIG_VOICE_ENV_TYPE;   name=K_AISDK_CONFIG_VOICE_ENV_TYPE -->
+<a name="//apple_ref/c/data/K_AISDK_CONFIG_VOICE_ENV_TYPE"></a>
+<h3><a name="K_AISDK_CONFIG_VOICE_ENV_TYPE">K_AISDK_CONFIG_VOICE_ENV_TYPE</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/data/K_AISDK_CONFIG_VOICE_ENV_TYPE;name=start --><!-- begin abstract --></p>
+<p>&#37197;&#32622;&#35821;&#38899;&#35782;&#21035;&#29615;&#22659;
+</p>
+<p><b>&#37197;&#32622;&#35821;&#38899;&#35782;&#21035;&#29615;&#22659;&#20026;&#27491;&#24335;&#29615;&#22659; aisdkSetConfig(AISDK_CONFIG_VOICE_ENV_TYPE,AISDK_CONFIG_VALUE_ENV_TYPE_FORMAL):</b><br></p>
+<div class="note_indent"><p></p></div>
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/data/K_AISDK_CONFIG_VOICE_ENV_TYPE;name=end -->
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/data/K_AISDK_CONFIG_VOICE_ENV_TYPE;name=start --><span class="keyword">extern</span> <span class="keyword">const</span> <!-- a logicalPath="//apple_ref/occ/cl/int //apple_ref/occ/tdef/int //apple_ref/occ/tag/int //apple_ref/occ/struct/int //apple_ref/occ/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/data/K_AISDK_CONFIG_VOICE_ENV_TYPE" logicalPath="//apple_ref/occ/econst/K_AISDK_CONFIG_VOICE_ENV_TYPE //apple_ref/occ/data/K_AISDK_CONFIG_VOICE_ENV_TYPE" target="_top"><span class="var">K_AISDK_CONFIG_VOICE_ENV_TYPE</span></a>;  <!-- headerDoc=declaration;uid=//apple_ref/c/data/K_AISDK_CONFIG_VOICE_ENV_TYPE;name=end --></pre>
+</div>
+<p><b>See</b></p>
+<div class="list_indent"><dl>
+<dt><p><!-- a logicalPath="//apple_ref/c/cl/aisdkSetConfig //apple_ref/c/tdef/aisdkSetConfig //apple_ref/c/tag/aisdkSetConfig //apple_ref/c/struct/aisdkSetConfig //apple_ref/c/intf/aisdkSetConfig //apple_ref/c/econst/aisdkSetConfig //apple_ref/c/data/aisdkSetConfig //apple_ref/c/clconst/aisdkSetConfig //apple_ref/c/instm/aisdkSetConfig //apple_ref/c/clm/aisdkSetConfig //apple_ref/c/intfcm/aisdkSetConfig //apple_ref/c/intfm/aisdkSetConfig //apple_ref/c/func/aisdkSetConfig //apple_ref/c/ftmplt/aisdkSetConfig //apple_ref/c/defn/aisdkSetConfig //apple_ref/c/macro/aisdkSetConfig //apple_ref/doc/com/intfm/aisdkSetConfig //apple_ref/doc/anysymbol/aisdkSetConfig" -->aisdkSetConfig()<!-- /a --></p></dt>
 <dd></dd>
 </dl></div>
 <hr class="betweenAPIEntries">
@@ -820,7 +846,7 @@ aisdkSetConfig(AISDK_CONFIG_VAD_SILENT_MAX,"500")
 <div class="hd_copyright_and_timestamp">
 <p class="hd_copyright">&copy; &copy; 2017 TENCENT. All rights reserved.
  </p>
-<p class="hd_timestamp">Last Updated: &#26143;&#26399;&#22235;, &#20108;&#26376; 08, 2018
+<p class="hd_timestamp">Last Updated: Monday, April 09, 2018
 </p>
 </div>
 </td>
