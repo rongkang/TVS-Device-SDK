@@ -74,6 +74,11 @@ const int AISDK_CMD_ONLINE_RECO_ERROR = AISDK_CMD_ONLINE_RECO_START + 8;
  * @see AISDK_CALLBACK
  */
 const int AISDK_CMD_ONLINE_RECO_SPEECH_TIMEOUT = AISDK_CMD_ONLINE_RECO_START + 9;
+/**
+ * @brief 回调接口命令定义,完整模式的在线识别流程结束（以FULL_MODE启动时才会回调）
+ * @see AISDK_CALLBACK
+ */
+const int AISDK_CMD_ONLINE_RECO_FULL_MODE_FINISHED = AISDK_CMD_ONLINE_RECO_START + 10;
 
 /**
  * 函数返回错误码定义
@@ -278,11 +283,25 @@ const int AISDK_CONFIG_VOICE_ENV_TYPE = AISDK_CONFIG_VOICE_ONLINE_BEGIN + 12;
 // 配置项，key的结束值
 const int AISDK_CONFIG_VOICE_ONLINE_END = 6999;
 
+/**
+ * @brief flags标志取值定义:语音识别改为完整模式，一个接口完成语音、语义、TTS流程。
+ */
+const int AISDK_FLAG_ONLINE_RECO_FULL_MODE = 0x01;
 
 /**
  * @brief flags标志取值定义:语音识别改为手动模式。
  */
 const int AISDK_FLAG_ONLINE_RECO_MANUAL_MODE = 0x02;
+
+/**
+ * 清空上一次请求的上下文
+ */
+const int AISDK_FLAG_ONLINE_SEMANTIC_CLEAR_PREV_SESSION = 0x04;
+
+/**
+ * 退出当前请求的上下文
+ */
+const int AISDK_FLAG_ONLINE_SEMANTIC_EXIT_CUR_SESSION = 0x08;
 
 /**
  * 返回的json数据中的code定义

@@ -458,6 +458,28 @@ const int AISDK_CONFIG_NETWORK_TYPE = AISDK_CONFIG_COMMON_BEGIN + 18;
  */
 const int AISDK_CONFIG_NETWORK_STATUS = AISDK_CONFIG_COMMON_BEGIN + 19;
 
+/**
+ * @see aisdkSetConfig()
+ *
+ * @brief 配置渠道号
+ *
+ * ## 功能
+ * 配置渠道号
+ *
+ */
+const int AISDK_CONFIG_CHANNEL_ID = AISDK_CONFIG_COMMON_BEGIN + 20;
+
+/**
+ * @see aisdkSetConfig()
+ *
+ * @brief 配置回复语规范
+ *
+ * ## 功能
+ * 配置回复语规范，取值范围：1，2
+ *
+ */
+const int AISDK_CONFIG_RSP_VERSION = AISDK_CONFIG_COMMON_BEGIN + 21;
+
 // 通用配置项，key的结束值
 const int AISDK_CONFIG_COMMON_END = 999;
 
@@ -609,27 +631,21 @@ AISDK_API_EXPORTS int aisdkInit(const char* folderPath, const char* appKey, cons
 AISDK_API_EXPORTS int aisdkFullInit(const char* folderPath, const char* sharedFilePath, const char* appKey, const char* accessToken);
 /**
  * @brief 设置QUA
- * @param quaVersion qua版本号，默认填3即可
  * @param platform  平台
  * @param vendor  厂商
  * @param product 产品名称
- * @param version 版本名称
  * @param versionNum 版本序列号
  * @param package 包名
  * @param device 设备类型
- * @param sp 回复语规范，1或者2
  * @note
  *
  */
-AISDK_API_EXPORTS void aisdkSetQUA(const char* quaVersion,
-                                   const char* platform,
+AISDK_API_EXPORTS void aisdkSetQUA(const char* platform,
                                    const char* vendor,
                                    const char* product,
-                                   const char* version,
                                    const char* versionNum,
                                    const char* package,
-                                   const char* device,
-                                   int sp
+                                   const char* device
                                     );
 
 /**

@@ -87,7 +87,7 @@ typedef struct {
  * @param deviceSerialNum 设备序列号，应能唯一识别一台设备
  * @param productId 产品ID。叮当平台分配
  * @param apName 出厂设备开启的AP SSID。
- * @param netCard 网卡名，如果网卡没有特殊配置，传"wlan0"即可。
+ * @param netCard 网卡名，如果网卡没有特殊配置，传NULL即可，默认是wlan0。
  * @param guid 默认传NULL即可。
  * @return 0表示成功，其他表示失败
  */
@@ -127,7 +127,7 @@ AISDK_API_EXPORTS int aisdkRecvSendDeviceInfo(const char* deviceSerialNum, const
  */
 AISDK_API_EXPORTS int aisdkRecvSendApListByJson(const char* apListJson, int length);
 /**
- * @brief 将附件的wifi热点信息发送给SDK。
+ * @brief 将附近的wifi热点信息发送给SDK。
  * @note 当收到CMD:AISDK_CMD_RECV_GET_AP_LIST时应该调用此函数或者aisdkRecvSendApListByJson
  * @param apList ap列表
  * @param length apList数组长度
@@ -156,12 +156,12 @@ AISDK_API_EXPORTS int aisdkRecvStopHttpServer();
  * @brief 启动设备发现功能。SDK启动时默认就会启动设备发现功能。
  * @return 0:成功 其他失败
  */
-AISDK_API_EXPORTS int aisdkRecvStartDeviceDiscory();
+AISDK_API_EXPORTS int aisdkRecvStartDeviceDiscovery();
 /**
  * @brief 关闭设备发现功能。
  * @return 0:成功 其他失败
  */
-AISDK_API_EXPORTS int aisdkRecvStopDeviceDiscory();
+AISDK_API_EXPORTS int aisdkRecvStopDeviceDiscovery();
 
 #ifdef __cplusplus
 }
