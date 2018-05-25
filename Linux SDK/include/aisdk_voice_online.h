@@ -77,6 +77,7 @@ const int AISDK_CMD_ONLINE_RECO_SPEECH_TIMEOUT = AISDK_CMD_ONLINE_RECO_START + 9
 /**
  * @brief 回调接口命令定义,完整模式的在线识别流程结束（以FULL_MODE启动时才会回调）
  * @see AISDK_CALLBACK
+ * @note 暂不支持 TODO
  */
 const int AISDK_CMD_ONLINE_RECO_FULL_MODE_FINISHED = AISDK_CMD_ONLINE_RECO_START + 10;
 

@@ -75,12 +75,17 @@ const int AISDK_ERROR_COMMON_PARAM_INVALID = 9;
 /**
  * @brief 服务返回异常
  */
-const int AISDK_ERROR_COMMOM_SERVICE_RESP = 10;
+const int AISDK_ERROR_COMMON_SERVICE_RESP = 10;
 
 /**
  * @brief 运行不佳
  */
-const int AISDK_ERROR_COMMOM_BAD_PERFORMANCE = 11;
+const int AISDK_ERROR_COMMON_BAD_PERFORMANCE = 11;
+
+/**
+ * @brief 初始化时未设置Appkey和AccessToken
+ */
+const int AISDK_ERROR_COMMON_APPKEY_NOT_SET = 12;
 
 // 通用配置项，key的起始值
 const int AISDK_CONFIG_COMMON_BEGIN = 0;

@@ -62,6 +62,9 @@ $(function() {
 &#160;
 
 <h3><a id="index_a"></a>- a -</h3><ul>
+<li>aisdkCancelOfflineWakeup()
+: <a class="el" href="aisdk__wakeup_8h.html#a95a053f0829f03649fa00c05036c6861">aisdk_wakeup.h</a>
+</li>
 <li>aisdkCancelOnlineVoice2Text()
 : <a class="el" href="aisdk__voice__online_8h.html#a0a4f8ac882ffb8815e74b067735dc7d0">aisdk_voice_online.h</a>
 </li>
@@ -95,6 +98,12 @@ $(function() {
 <li>aisdkInit()
 : <a class="el" href="aisdk__common__api_8h.html#a994aa73ed1eca035be757ec35a27f855">aisdk_common_api.h</a>
 </li>
+<li>aisdkInitOfflineWakup()
+: <a class="el" href="aisdk__wakeup_8h.html#a1b0b3f553a8346f87eceefb98dff97d5">aisdk_wakeup.h</a>
+</li>
+<li>aisdkInputOfflineWakeupAudioData()
+: <a class="el" href="aisdk__wakeup_8h.html#a3cea4ac01611d03aca239901e9f3b184">aisdk_wakeup.h</a>
+</li>
 <li>aisdkInputOnlineVoice2TextAudioData()
 : <a class="el" href="aisdk__voice__online_8h.html#ac4655e3b401c9ed426acdf3f8c6303f5">aisdk_voice_online.h</a>
 </li>
@@ -113,20 +122,23 @@ $(function() {
 <li>aisdkRecvSendDeviceInfo()
 : <a class="el" href="aisdk__recv_8h.html#ad9601ba4230eea959d94ff147005ccb2">aisdk_recv.h</a>
 </li>
-<li>aisdkRecvStartDeviceDiscory()
-: <a class="el" href="aisdk__recv_8h.html#aca635f231175effa395f6c90e1dbdcc4">aisdk_recv.h</a>
+<li>aisdkRecvStartDeviceDiscovery()
+: <a class="el" href="aisdk__recv_8h.html#a2e66de980b3cd40d13ac4cb9918d1045">aisdk_recv.h</a>
 </li>
 <li>aisdkRecvStartHttpServer()
 : <a class="el" href="aisdk__recv_8h.html#a93fed5ded96905655fdcce204cb37011">aisdk_recv.h</a>
 </li>
-<li>aisdkRecvStopDeviceDiscory()
-: <a class="el" href="aisdk__recv_8h.html#a0d34bc2687ea65d7e3e0d66dd331a7f8">aisdk_recv.h</a>
+<li>aisdkRecvStopDeviceDiscovery()
+: <a class="el" href="aisdk__recv_8h.html#a3fc6c1716f7baad944b3b66bd3f2bfdf">aisdk_recv.h</a>
 </li>
 <li>aisdkRecvStopHttpServer()
 : <a class="el" href="aisdk__recv_8h.html#a8e4830c70caed27a4ed8040a1bc64a66">aisdk_recv.h</a>
 </li>
 <li>aisdkRelease()
 : <a class="el" href="aisdk__common__api_8h.html#acdae2ad85b715820ea53b1ccd0e781b0">aisdk_common_api.h</a>
+</li>
+<li>aisdkReportClientState()
+: <a class="el" href="aisdk__report__online_8h.html#a787233689d007d3b3caa92c076f98f1d">aisdk_report_online.h</a>
 </li>
 <li>aisdkReportError()
 : <a class="el" href="aisdk__report__online_8h.html#acf1be463aaba9f85d9fe00bff27cd42e">aisdk_report_online.h</a>
@@ -162,7 +174,10 @@ $(function() {
 : <a class="el" href="aisdk__common__api_8h.html#a7b2f03b49a4e3818bb11589e684149f4">aisdk_common_api.h</a>
 </li>
 <li>aisdkSetQUA()
-: <a class="el" href="aisdk__common__api_8h.html#a34231709d7221520059c675a0eb7f190">aisdk_common_api.h</a>
+: <a class="el" href="aisdk__common__api_8h.html#a2120651a6305ea522a3612a8e488f7f0">aisdk_common_api.h</a>
+</li>
+<li>aisdkStartOfflineWakup()
+: <a class="el" href="aisdk__wakeup_8h.html#adb2662e8370f80f51e31c40faf8bea2c">aisdk_wakeup.h</a>
 </li>
 <li>aisdkStartOnlineVoice2Text()
 : <a class="el" href="aisdk__voice__online_8h.html#a75d8b28126acc7b66b60a3c6e58818ec">aisdk_voice_online.h</a>
@@ -181,10 +196,10 @@ $(function() {
 
 <h3><a id="index_c"></a>- c -</h3><ul>
 <li>callback()
-: <a class="el" href="testrecv_8cpp.html#a7f640c3c97d353f387eb82e31a621627">testrecv.cpp</a>
+: <a class="el" href="testsemantic_8cpp.html#a7f640c3c97d353f387eb82e31a621627">testsemantic.cpp</a>
+, <a class="el" href="testwakeup_8cpp.html#a7f640c3c97d353f387eb82e31a621627">testwakeup.cpp</a>
 , <a class="el" href="testvoice_8cpp.html#a7f640c3c97d353f387eb82e31a621627">testvoice.cpp</a>
 , <a class="el" href="testtts_8cpp.html#a7f640c3c97d353f387eb82e31a621627">testtts.cpp</a>
-, <a class="el" href="testsemantic_8cpp.html#a7f640c3c97d353f387eb82e31a621627">testsemantic.cpp</a>
 </li>
 </ul>
 
@@ -201,16 +216,10 @@ $(function() {
 
 <h3><a id="index_m"></a>- m -</h3><ul>
 <li>main()
-: <a class="el" href="testrecv_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">testrecv.cpp</a>
-, <a class="el" href="testsemantic_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">testsemantic.cpp</a>
+: <a class="el" href="testsemantic_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">testsemantic.cpp</a>
+, <a class="el" href="testwakeup_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">testwakeup.cpp</a>
 , <a class="el" href="testvoice_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">testvoice.cpp</a>
 , <a class="el" href="testtts_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">testtts.cpp</a>
-</li>
-<li>myConnectApThread()
-: <a class="el" href="testrecv_8cpp.html#a1ef15e91c90c85c73bd62ef3d3c3edf3">testrecv.cpp</a>
-</li>
-<li>myGetApThread()
-: <a class="el" href="testrecv_8cpp.html#a9f44137a9fc4a68b0a85654cc60c0b6c">testrecv.cpp</a>
 </li>
 </ul>
 
@@ -218,6 +227,7 @@ $(function() {
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>sendAudioData()
 : <a class="el" href="testvoice_8cpp.html#a490b48a5126489db25e7984ab0df81c4">testvoice.cpp</a>
+, <a class="el" href="testwakeup_8cpp.html#a490b48a5126489db25e7984ab0df81c4">testwakeup.cpp</a>
 </li>
 </ul>
 </div><!-- contents -->
