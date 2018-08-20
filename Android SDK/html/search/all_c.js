@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['sendonlinetext2semanticex',['sendOnlineText2SemanticEx',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#a3ddc927b6f925ab26da7e7e3cfd18177',1,'com::tencent::ai::sdk::tr::TrSession']]],
+  ['sendonlinetext2semanticex',['sendOnlineText2SemanticEx',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#a3ddc927b6f925ab26da7e7e3cfd18177',1,'com.tencent.ai.sdk.tr.TrSession.sendOnlineText2SemanticEx(String text, TrSemantic semantic, AISDKExtContent[] contents, int iSemanticCmd, Object extraMsg)'],['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#ae633893c0973e45e6699373162567a3d',1,'com.tencent.ai.sdk.tr.TrSession.sendOnlineText2SemanticEx(String text, String semantic, AISDKExtContent[] contents, int iSemanticCmd, Object extraMsg)']]],
   ['service',['service',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_semantic.html#ae7919306ec6e96563f7806a69d1f136e',1,'com::tencent::ai::sdk::tr::TrSemantic']]],
   ['session_5fcomplete',['session_complete',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_semantic.html#a42cd8d9b8d1fc4c01a1ea887d4e22d00',1,'com::tencent::ai::sdk::tr::TrSemantic']]],
   ['sessionstart',['sessionStart',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_tts_session.html#a486d57c8b9755d9dd9e5b1fa820d742c',1,'com::tencent::ai::sdk::tts::TtsSession']]],

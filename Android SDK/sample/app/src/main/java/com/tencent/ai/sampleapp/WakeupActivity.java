@@ -15,6 +15,7 @@ import com.tencent.ai.sampleapp.util.FileUtil;
 import com.tencent.ai.sdk.atw.AtwSession;
 import com.tencent.ai.sdk.atw.IAtwListener;
 import com.tencent.ai.sdk.utils.ISSErrors;
+import com.tencent.ai.sdk.atw.WakeupRsp;
 
 import java.io.File;
 
@@ -136,12 +137,12 @@ public class WakeupActivity extends BaseSampleActivity implements View.OnClickLi
     }
 
     private IAtwListener mvwListener = new IAtwListener() {
-
+		
         @Override
-        public void onAtwWakeup(String lParam) {
-            Log.d(TAG, "wake up : " + lParam);
+        public void onAtwWakeup(WakeupRsp rsp) {
+            Log.d(TAG, "wake up : " + rsp.iEndTimeMs);
 
-            printLog("唤醒成功，你好语音助理");
+            printLog("唤醒成功，你好语音助理, wakeup_time:" + rsp.iEndTimeMs);
 
             stopRecord();
         }

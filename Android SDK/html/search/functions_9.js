@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['sendonlinetext2semanticex',['sendOnlineText2SemanticEx',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#a3ddc927b6f925ab26da7e7e3cfd18177',1,'com::tencent::ai::sdk::tr::TrSession']]],
+  ['sendonlinetext2semanticex',['sendOnlineText2SemanticEx',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#a3ddc927b6f925ab26da7e7e3cfd18177',1,'com.tencent.ai.sdk.tr.TrSession.sendOnlineText2SemanticEx(String text, TrSemantic semantic, AISDKExtContent[] contents, int iSemanticCmd, Object extraMsg)'],['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tr_1_1_tr_session.html#ae633893c0973e45e6699373162567a3d',1,'com.tencent.ai.sdk.tr.TrSession.sendOnlineText2SemanticEx(String text, String semantic, AISDKExtContent[] contents, int iSemanticCmd, Object extraMsg)']]],
   ['sessionstart',['sessionStart',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_tts_session.html#a486d57c8b9755d9dd9e5b1fa820d742c',1,'com::tencent::ai::sdk::tts::TtsSession']]],
   ['sessionstop',['sessionStop',['../classcom_1_1tencent_1_1ai_1_1sdk_1_1tts_1_1_tts_session.html#a0f92e9f04349d8c90b569aefa1a61655',1,'com::tencent::ai::sdk::tts::TtsSession']]],
   ['setaccesstoken',['setAccessToken',['../classcom_1_1tencent_1_1ai_1_1account_1_1_a_i_s_d_k_account.html#a756868c23d0c191e7039213c5e74d847',1,'com::tencent::ai::account::AISDKAccount']]],

@@ -82,9 +82,9 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a3987519f43de27d0b40abd0b411c46cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1tencent_1_1ai_1_1sdk_1_1atw_1_1_i_atw_listener.html#a3987519f43de27d0b40abd0b411c46cb">onAtwInited</a> (boolean state, int errId)</td></tr>
 <tr class="memdesc:a3987519f43de27d0b40abd0b411c46cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">语音唤醒模块初始化结果  <a href="#a3987519f43de27d0b40abd0b411c46cb">更多...</a><br /></td></tr>
 <tr class="separator:a3987519f43de27d0b40abd0b411c46cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0c37d5873785b0fbc0aeaf71e75e0d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1tencent_1_1ai_1_1sdk_1_1atw_1_1_i_atw_listener.html#aa0c37d5873785b0fbc0aeaf71e75e0d6">onAtwWakeup</a> (String lParam)</td></tr>
-<tr class="memdesc:aa0c37d5873785b0fbc0aeaf71e75e0d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">语音唤醒结果回调  <a href="#aa0c37d5873785b0fbc0aeaf71e75e0d6">更多...</a><br /></td></tr>
-<tr class="separator:aa0c37d5873785b0fbc0aeaf71e75e0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd322cc87b19571f755c19615199d56b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1tencent_1_1ai_1_1sdk_1_1atw_1_1_i_atw_listener.html#afd322cc87b19571f755c19615199d56b">onAtwWakeup</a> (int wakeup_time, String lParam)</td></tr>
+<tr class="memdesc:afd322cc87b19571f755c19615199d56b"><td class="mdescLeft">&#160;</td><td class="mdescRight">语音唤醒结果回调  <a href="#afd322cc87b19571f755c19615199d56b">更多...</a><br /></td></tr>
+<tr class="separator:afd322cc87b19571f755c19615199d56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>语音唤醒回调。 </p>
@@ -132,8 +132,8 @@ MvwSession构造函数中传入的Context对象无法绑定服务。
 
 </div>
 </div>
-<a id="aa0c37d5873785b0fbc0aeaf71e75e0d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0c37d5873785b0fbc0aeaf71e75e0d6">&#9670;&nbsp;</a></span>onAtwWakeup()</h2>
+<a id="afd322cc87b19571f755c19615199d56b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd322cc87b19571f755c19615199d56b">&#9670;&nbsp;</a></span>onAtwWakeup()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,9 +141,19 @@ MvwSession构造函数中传入的Context对象无法绑定服务。
         <tr>
           <td class="memname">void com.tencent.ai.sdk.atw.IAtwListener.onAtwWakeup </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>lParam</em></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>wakeup_time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>lParam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -151,6 +161,7 @@ MvwSession构造函数中传入的Context对象无法绑定服务。
 <p>语音唤醒结果回调 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
+    <tr><td class="paramname">wakeup_time</td><td>唤醒成功的时间点, 从start开始计算，如果stop后，重新start，会清0重新计算，单位ms </td></tr>
     <tr><td class="paramname">lParam</td><td>结果字符串 </td></tr>
   </table>
   </dd>

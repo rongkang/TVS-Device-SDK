@@ -69,7 +69,7 @@ public class TTSActivity extends BaseSampleActivity implements View.OnClickListe
                 mTTSSession.stopSpeak();
                 // 设置是否需要播放
                 mTTSSession.setParam(TtsSession.TYPE_TTS_PLAYING, TtsSession.TTS_PLAYING);
-                int ret = mTTSSession.startSpeak(text, mTTSListener);
+				int ret = mTTSSession.startSpeak(text, mTTSListener);
                 if (ret == ISSErrors.TTS_PLAYER_SUCCESS) {
                     curText = text;
                 }
