@@ -2,9 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-
- <key>com.tencent.rdm.uuid</key>
-<string>94143a3f-6ef2-43f5-b783-042f9fae2895</string>
 	<key>AI_ACCESSTOKEN</key>
 	<string>bb8b659ae9894d56b8991cd42140de7f</string>
 	<key>AI_APPKEY</key>

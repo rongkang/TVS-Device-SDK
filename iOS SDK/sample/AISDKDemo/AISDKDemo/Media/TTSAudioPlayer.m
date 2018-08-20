@@ -29,7 +29,7 @@ static TTSAudioPlayer *instance;
     return instance;
 }
 
--(id)init {
+-(instancetype) init {
     if (self = [super init]) {
         _dataArray = [NSMutableArray new];
         _position = -1;

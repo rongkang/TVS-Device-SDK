@@ -51,9 +51,10 @@
  * @brief 特殊功能性接口，复合语义
  * @param semanticJson 语义JSON
  * @param userdata 自定义数据，callback时带回
+ * @param flags 控制标志，参考AISDK_FLAG_SEMANTIC_*常量定义，支持多flag或运算。默认设置为0即可。
  * @return 0:ok, other：fail。 错误码定义见K_AISDK_ERROR_*常量
  */
-- (int) complexSemantic2Semantic:(NSString *)semanticJson userData:(id)userdata;
+- (int) complexSemantic2Semantic:(NSString *)semanticJson userData:(id)userdata semanticFlags:(int)flags ;
 
 /*!
  * @brief 请求单首音乐的详细信息，播放音乐时，音乐的地址可能会有变化，播放前应该用音乐的ID请求一次新的url
@@ -176,4 +177,21 @@ extern const int K_AISDK_FLAG_SEMANTIC_CLEAR_PREV_SESSION;
  * @brief退出当前请求的上下文
  */
 extern const int K_AISDK_FLAG_SEMANTIC_EXIT_CUR_SESSION;
+
+/*!
+ * 标记当前语义请求的文本不是语音识别结果。
+ */
+extern const int K_AISDK_FLAG_SEMANTIC_NOT_ASR; // = 0x04;
+
+
+/*!
+ * 强制清除后台保存的所有上下文信息
+ */
+extern const int K_AISDK_FLAG_SEMANTIC_FORCE_CLEAR_SESSION; // = 0x08;
+
+/*!
+ * 让后台不把当前请求保存到session里
+ */
+extern const int K_AISDK_FLAG_SEMANTIC_NOT_SAVE_CURRENT_SESSION; // = 0x10;
+
 

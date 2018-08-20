@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5346C7082087745000A29169 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5346C7072087745000A29169 /* MainViewController.m */; };
+		5346C70B208827FA00A29169 /* VoiceAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = 5346C70A208827FA00A29169 /* VoiceAssistant.m */; };
+		5346C70E2088305E00A29169 /* Word2VoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5346C70D2088305E00A29169 /* Word2VoiceViewController.m */; };
 		5380F456205BF9DC00740EEC /* keywords_model.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5380F455205BF9DC00740EEC /* keywords_model.bundle */; };
 		8A1321D01FFFB24500592B94 /* AISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1321CF1FFFB24500592B94 /* AISDK.framework */; };
 		8A1ACB3F1FDFBD5400C916AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1ACB251FDFBD5400C916AF /* AppDelegate.m */; };
@@ -27,6 +30,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5346C7062087745000A29169 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		5346C7072087745000A29169 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5346C709208827FA00A29169 /* VoiceAssistant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoiceAssistant.h; sourceTree = "<group>"; };
+		5346C70A208827FA00A29169 /* VoiceAssistant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoiceAssistant.m; sourceTree = "<group>"; };
+		5346C70C2088305E00A29169 /* Word2VoiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Word2VoiceViewController.h; sourceTree = "<group>"; };
+		5346C70D2088305E00A29169 /* Word2VoiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Word2VoiceViewController.m; sourceTree = "<group>"; };
 		5380F455205BF9DC00740EEC /* keywords_model.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = keywords_model.bundle; sourceTree = "<group>"; };
 		8A1321CF1FFFB24500592B94 /* AISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AISDK.framework; sourceTree = "<group>"; };
 		8A1ACB241FDFBD5400C916AF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +91,12 @@
 				8A1ACB2F1FDFBD5400C916AF /* Data */,
 				8A1ACB321FDFBD5400C916AF /* DeveloperUIVC.h */,
 				8A1ACB331FDFBD5400C916AF /* DeveloperUIVC.m */,
+				5346C7062087745000A29169 /* MainViewController.h */,
+				5346C7072087745000A29169 /* MainViewController.m */,
+				5346C709208827FA00A29169 /* VoiceAssistant.h */,
+				5346C70A208827FA00A29169 /* VoiceAssistant.m */,
+				5346C70C2088305E00A29169 /* Word2VoiceViewController.h */,
+				5346C70D2088305E00A29169 /* Word2VoiceViewController.m */,
 				8A1ACB341FDFBD5400C916AF /* Info.plist */,
 				8A1ACB351FDFBD5400C916AF /* main.m */,
 				8A1ACB361FDFBD5400C916AF /* Media */,
@@ -242,12 +257,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5346C70E2088305E00A29169 /* Word2VoiceViewController.m in Sources */,
 				8A1ACB481FDFBD5400C916AF /* main.m in Sources */,
 				8A1ACB431FDFBD5400C916AF /* RecorderView.m in Sources */,
 				8A1ACB451FDFBD5400C916AF /* SemanticData.m in Sources */,
+				5346C7082087745000A29169 /* MainViewController.m in Sources */,
 				8A1ACB4A1FDFBD5400C916AF /* AQRecorder.mm in Sources */,
 				8A1ACB4C1FDFBD5400C916AF /* TtsFormater.m in Sources */,
 				8A1ACB3F1FDFBD5400C916AF /* AppDelegate.m in Sources */,
+				5346C70B208827FA00A29169 /* VoiceAssistant.m in Sources */,
 				8A1ACB4B1FDFBD5400C916AF /* TTSAudioPlayer.m in Sources */,
 				8A1ACB491FDFBD5400C916AF /* AQPlayer.mm in Sources */,
 				8A1ACB461FDFBD5400C916AF /* DeveloperUIVC.m in Sources */,

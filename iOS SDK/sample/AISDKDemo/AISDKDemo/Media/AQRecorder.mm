@@ -154,7 +154,9 @@ void DeriveBufferSize(AudioQueueRef audioQueue, AudioStreamBasicDescription ASBD
 }
 
 -(void)dealloc {
-    CFRelease(mFileURL);
+    if (mFileURL) {
+        CFRelease(mFileURL);
+    }
 }
 
 @end
